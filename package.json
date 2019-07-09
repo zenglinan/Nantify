@@ -1,0 +1,28 @@
+{
+  "name": "coco",
+  "version": "0.0.1",
+  "description": "UI\u001b[D\u001b[DVue\u001b[D\u001b[D\u001b[D基于\u001b[C\u001b[C\u001b[D\u001b[DVue的UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "Zeng Baohao",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
+  }
+}
