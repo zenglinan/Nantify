@@ -23,18 +23,18 @@
 
 <body>
   <div id="app">
+    <c-button icon="i-setting" icon-position="right" :loading='ifLoading' @click="ifLoading = true">
+      设置
+    </c-button>
     <c-button icon="i-setting" icon-position="left">
       设置
     </c-button>
-    <c-button icon="i-setting" icon-position="right">
-      设置
-    </c-button>
-    <c-button icon="i-setting">
-      自定义文字
+    <c-button icon="i-setting" class="nouse">
+      按钮
     </c-button>
   </div>
   <script src="./src/app.js"></script>
-  <script src="//at.alicdn.com/t/font_1286088_wjs85i27ip.js"></script>
+  <script src="//at.alicdn.com/t/font_1286088_xpm7qjinuws.js"></script>
 </body>
 
 </html>

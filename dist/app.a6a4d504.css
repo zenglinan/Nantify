@@ -1,3 +1,10 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 .c-button {
   vertical-align: top;
   display: inline-flex;
@@ -16,28 +23,35 @@
 .c-button .content {
   order: 2;
 }
-.c-button .icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
 .c-button:hover {
   border-color: var(--border-color-hover);
 }
 .c-button:active {
   background-color: var(--button-active-bg);
 }
-.c-button .icon-undefined {
+.c-button.icon-left .icon {
   order: 1;
   margin-right: 0.2em;
 }
-.c-button .icon-left {
-  order: 1;
-  margin-right: 0.2em;
-}
-.c-button .icon-right {
-  margin-left: 0.2em;
+.c-button.icon-right .icon {
   order: 3;
+  margin-left: 0.2em;
+}
+.c-button.nouse {
+  cursor: not-allowed;
+  color: #aaaaaa;
+}
+.c-button.nouse:active {
+  background-color: white;
+}
+.c-button .loading {
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
