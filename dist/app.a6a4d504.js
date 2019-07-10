@@ -12494,6 +12494,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
 var _default = {
   props: {
     icon: {},
@@ -12518,18 +12522,18 @@ exports.default = _default;
         /* template */
         Object.assign($e05ac5, (function () {
           var render = function() {
-  var _obj
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "button",
     {
-      staticClass: "coco c-button",
-      class: ((_obj = {}),
-      (_obj["icon-" + _vm.iconPosition] = true),
-      (_obj.nouse = _vm.loading),
-      _obj),
+      class: [
+        "coco",
+        "c-button",
+        { "`icon-${iconPosition}`": true },
+        { nouse: _vm.loading }
+      ],
       on: {
         click: function($event) {
           return _vm.$emit("click")
@@ -12720,7 +12724,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52494" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52892" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -12896,4 +12900,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/app.js"], null)
-//# sourceMappingURL=app.a6a4d504.js.map
+//# sourceMappingURL=/app.a6a4d504.js.map

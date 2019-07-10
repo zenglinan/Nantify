@@ -1,5 +1,9 @@
 <template>
-  <button class="coco c-button" :class="{[`icon-${iconPosition}`]: true, nouse: loading}" @click="$emit('click')">
+  <button :class="[ 'coco','c-button',
+                    {'`icon-${iconPosition}`': true},
+                    {nouse: loading},
+                  ]"
+          @click="$emit('click')">
     <c-icon class="loading" icon="i-loading" v-show="loading"></c-icon>
     <c-icon :icon=icon v-if="icon && !loading"></c-icon>
     <div class="content">
@@ -68,16 +72,20 @@
         margin-left: .2em;
       }
     }
+
     &.nouse {
       cursor: not-allowed;
       color: #aaaaaa;
+
       &:active {
         background-color: white;
       }
     }
+
     .loading {
       animation: rotate 1s linear infinite;
     }
+
     @keyframes rotate {
       from {
         transform: rotate(0deg);
