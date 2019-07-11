@@ -17,12 +17,20 @@
 
   export default {
     props: {
-      icon: {},
+      icon: {
+        type: String
+      },
       iconPosition: {
-        default: "left"
+        type: String,
+        default: "left",
+        validator(value){   // tip
+          // return value === 'left' || value === 'right'
+          return ['left','right'].indexOf(value) !== -1
+        }
       },
       loading: {
-        default: false
+        type: Boolean,
+        default: false,
       },
     },
     components: {
