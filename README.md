@@ -1,4 +1,18 @@
 # Coco Ui
+使用前需要将这段css代码拷贝
+```
+html {
+    --font-size: 12px;
+    --button-padding: .5em 1em;
+    --button-bg: white;
+    --button-radius: 4px;
+    --color: #333;
+    --border-color: #999;
+    --button-active-bg: #eee;
+    --border-color-hover: #666;
+    --button-width: 60px;
+}
+```
 ### Button
 **相关属性:**<br>
 ```icon```: svg的xlink:href的值<br>
