@@ -1,6 +1,6 @@
 <template>
   <button :class="[ 'coco','c-button',
-                    {'`icon-${iconPosition}`': true},
+                    {[`icon-${iconPosition}`]: true},
                     {nouse: loading},
                   ]"
           @click="$emit('click')">
