@@ -4,7 +4,7 @@
                     {nouse: loading},
                   ]"
           @click="$emit('click')">
-    <c-icon class="loading" icon="i-loading" v-show="loading"></c-icon>
+    <c-icon class="loading" icon="i-loading" v-if="loading"></c-icon>
     <c-icon :icon=icon v-if="icon && !loading"></c-icon>
     <div class="content">
       <slot>按钮</slot>
@@ -23,7 +23,7 @@
       iconPosition: {
         type: String,
         default: "left",
-        validator(value){   // tip
+        validator(value){
           // return value === 'left' || value === 'right'
           return ['left','right'].indexOf(value) !== -1
         }

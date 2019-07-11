@@ -15,7 +15,6 @@ new Vue({
   }
 })
 
-// tip
 // 单元测试
 
 import chai from "chai"
