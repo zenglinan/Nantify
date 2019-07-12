@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coco</title>
+<link rel="stylesheet" href="/app.a6a4d504.css"></head>
+<style>html {
+    --font-size: 12px;
+    --button-padding: .5em 1em;
+    --button-bg: white;
+    --button-radius: 4px;
+    --color: #333;
+    --border-color: #999;
+    --button-active-bg: #eee;
+    --border-color-hover: #666;
+    --button-width: 60px;
+  }
+  .input {
+    margin-bottom: 20px;
+  }</style>
+
+<body>
+<div id="app">
+  <div class="input">
+    <c-input placeholder="请输入用户名"></c-input>
+    <c-input :error-prompt="true" error-message="用户名只能为6~12个英文字符"></c-input>
+    <c-input value="禁止输入" :disabled="true"></c-input>
+  </div>
+  <div class="button">
+    <c-button icon="i-setting" icon-position="right" :loading="ifLoading" @click="ifLoading = true">
+      点击loading
+    </c-button>
+    <c-button :loading="true">loading按钮</c-button>
+    <c-button icon="i-setting" icon-position="right">
+      设置
+    </c-button>
+    <c-button icon="i-setting" class="nouse">
+      按钮
+    </c-button>
+    <c-button-group>
+      <c-button icon="i-left">上一页</c-button>
+      <c-button>更多</c-button>
+      <c-button icon="i-right" icon-position="right">下一页</c-button>
+    </c-button-group>
+  </div>
+
+</div>
+<script src="/app.a6a4d504.js"></script>
+</body>
+
+</html>
