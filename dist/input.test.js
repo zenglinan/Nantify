@@ -321,58 +321,50 @@ describe('Input', function () {
     expect(_input.default).to.be.ok;
   });
   describe('props', function () {
-    it('可以接收value', function () {
-      var Constructor = _vue.default.extend(_input.default);
+    var Constructor = _vue.default.extend(_input.default);
 
-      var vm = new Constructor({
+    var vm;
+    afterEach(function () {
+      vm.$destroy();
+    });
+    it('可以接收value', function () {
+      vm = new Constructor({
         propsData: {
           value: 'value'
         }
       }).$mount();
       var useElement = vm.$el.querySelector('input');
       expect(useElement.value).to.equal('value');
-      vm.$destroy();
     });
     it('可以接收disabled', function () {
-      var Constructor = _vue.default.extend(_input.default);
-
-      var vm = new Constructor({
+      vm = new Constructor({
         propsData: {
           disabled: true
         }
       }).$mount();
       var useElement = vm.$el.querySelector('input');
       expect(useElement.disabled).to.equal(true);
-      vm.$destroy();
     });
     it('可以接收placeholder', function () {
-      var Constructor = _vue.default.extend(_input.default);
-
-      var vm = new Constructor({
+      vm = new Constructor({
         propsData: {
           placeholder: '代替文字'
         }
       }).$mount();
       var useElement = vm.$el.querySelector('input');
       expect(useElement.placeholder).to.equal('代替文字');
-      vm.$destroy();
     });
     it('可以接收errorPrompt', function () {
-      var Constructor = _vue.default.extend(_input.default);
-
-      var vm = new Constructor({
+      vm = new Constructor({
         propsData: {
           errorPrompt: true
         }
       }).$mount();
       var useElement = vm.$el;
       expect(Array.from(useElement.classList)).to.include('error');
-      vm.$destroy();
     });
     it('可以接收errorMessage', function () {
-      var Constructor = _vue.default.extend(_input.default);
-
-      var vm = new Constructor({
+      vm = new Constructor({
         propsData: {
           errorMessage: '错误信息',
           errorPrompt: true
@@ -381,7 +373,29 @@ describe('Input', function () {
       var useElement = vm.$el.querySelector('span');
       console.log(vm.$el);
       expect(useElement.innerHTML).to.equal('错误信息');
+    });
+  });
+  describe('事件监听', function () {
+    var Constructor = _vue.default.extend(_input.default);
+
+    var vm;
+    afterEach(function () {
+      // it断言结束后，销毁vm实例
       vm.$destroy();
+    });
+    it("\u53EF\u4EE5\u89E6\u53D1blur,focus,input,change\u4E8B\u4EF6", function () {
+      ['input', 'change', 'blur', 'focus'].forEach(function (eventName) {
+        vm = new Constructor(_input.default).$mount();
+        var callback = sinon.fake(); // 间谍函数
+
+        vm.$on(eventName, callback); // 手动触发
+
+        var event = new Event(eventName);
+        var inputElement = vm.$el.querySelector('input');
+        inputElement.dispatchEvent(event); // 分发事件
+
+        expect(callback).to.have.been.calledWith(event); // 间谍函数被执行了，而且是被指定事件执行了
+      });
     });
   });
 });
