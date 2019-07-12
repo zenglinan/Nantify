@@ -110,6 +110,12 @@ to {
 .c-input-wrapper.error > input[data-v-b79dcc] {
   border-color: #F1453D;
 }
+.c-input-wrapper.error > input[data-v-b79dcc]:hover {
+  border-color: #F1453D;
+}
+.c-input-wrapper.error > input[data-v-b79dcc]:focus {
+  box-shadow: inset 0 0px 1px #F1453D;
+}
 .c-input-wrapper.error > svg[data-v-b79dcc] {
   fill: #F1453D;
 }

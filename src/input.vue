@@ -70,7 +70,15 @@
     &.error {
       :not(:last-child) {margin-right: 4px;}
       color: $red;
-      > input{border-color: $red;}
+      > input{
+        border-color: $red;
+        &:hover {
+          border-color: $red;
+        }
+        &:focus {
+          box-shadow:  inset 0 0px 1px $red;
+        }
+      }
       > svg {fill: $red;}
     }
   }
