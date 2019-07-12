@@ -39,7 +39,7 @@
   };
 
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   .c-button {
     vertical-align: top;
     display: inline-flex;

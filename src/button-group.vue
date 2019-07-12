@@ -14,7 +14,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .c-button-group {
   display: inline-flex;
   .c-button {
