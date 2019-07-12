@@ -19,14 +19,24 @@
     --border-color-hover: #666;
     --button-width: 60px;
   }
+  .input {
+    margin-bottom: 20px;
+  }
 </style>
 
 <body>
-  <div id="app">
-    <c-button icon="i-setting" icon-position="right" :loading='ifLoading' @click="ifLoading = true">
-      设置
+<div id="app">
+  <div class="input">
+    <c-input placeholder="请输入用户名"></c-input>
+    <c-input :error-prompt=true error-message="用户名只能为6~12个英文字符"></c-input>
+    <c-input value="禁止输入" :disabled=true></c-input>
+  </div>
+  <div class="button">
+    <c-button icon="i-setting" icon-position="right" :loading=ifLoading @click="ifLoading = true">
+      点击loading
     </c-button>
-    <c-button icon="i-setting" icon-position="left">
+    <c-button :loading=true>loading按钮</c-button>
+    <c-button icon="i-setting" icon-position="right">
       设置
     </c-button>
     <c-button icon="i-setting" class="nouse">
@@ -38,8 +48,9 @@
       <c-button icon="i-right" icon-position="right">下一页</c-button>
     </c-button-group>
   </div>
-  <script src="./src/app.js"></script>
-  <script src="//at.alicdn.com/t/font_1286088_xpm7qjinuws.js"></script>
+
+</div>
+<script src="./src/app.js"></script>
 </body>
 
 </html>

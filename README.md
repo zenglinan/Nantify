@@ -1,5 +1,6 @@
 # Coco Ui
-[![Build Status](https://travis-ci.org/zenglinan/Coco-UI.svg?branch=master)](https://travis-ci.org/zenglinan/Coco-UI)<br>
+[![Build Status](https://travis-ci.org/zenglinan/Coco-UI.svg?branch=master)](https://travis-ci.org/zenglinan/Coco-UI)
+<br>
 
 Coco, 一套基于Vue.js开发的UI框架
 ## 安装

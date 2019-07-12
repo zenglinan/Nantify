@@ -16,6 +16,7 @@
   import Icon from './component/icon'
 
   export default {
+    name: 'coco-button',
     props: {
       icon: {
         type: String

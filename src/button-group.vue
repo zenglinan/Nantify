@@ -7,7 +7,7 @@
 <script>
   import Button from './button'
   export default {
-    name: "button-group",
+    name: "coco-button-group",
     components: {
       'c-button': Button
     }
