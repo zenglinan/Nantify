@@ -1,5 +1,18 @@
 # Coco Ui
-使用前需要将这段css代码拷贝
+[![Build Status](https://travis-ci.org/zenglinan/Coco-UI.svg?branch=master)](https://travis-ci.org/zenglinan/Coco-UI)<br>
+
+Coco, 一套基于Vue.js开发的UI框架
+## 安装
+使用npm
+```
+npm install coco-test
+```
+使用yarn
+```
+yarn add coco-test
+```
+## 使用
+引入全局样式变量
 ```
 html {
     --font-size: 12px;
@@ -13,6 +26,7 @@ html {
     --button-width: 60px;
 }
 ```
+## 文档
 ### Button
 **相关属性:**<br>
 ```icon```: svg的xlink:href的值<br>
@@ -28,7 +42,6 @@ html {
   自定义文字
 </c-button>
 ```
-
 ### Button-Group
 **用来包裹Button组件, 形成一个并排按钮组**<br>
 ```
