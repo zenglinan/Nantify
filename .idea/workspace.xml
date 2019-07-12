@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/input.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/input.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,7 +45,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Input.vue">
+        <entry file="file://$PROJECT_DIR$/src/input.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/input.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="432">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
@@ -66,10 +66,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/input.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="383" column="6" selection-start-line="383" selection-start-column="6" selection-end-line="383" selection-end-column="6" />
+              <caret line="382" column="6" selection-start-line="382" selection-start-column="6" selection-end-line="382" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -77,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/button.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
+            <state relative-caret-position="1332">
               <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
@@ -225,7 +234,7 @@
       <workItem from="1562899879489" duration="566000" />
       <workItem from="1562900638936" duration="2749000" />
       <workItem from="1562904766693" duration="11460000" />
-      <workItem from="1562931007617" duration="8537000" />
+      <workItem from="1562931007617" duration="9096000" />
     </task>
     <task id="LOCAL-00001" summary="添加button的loading动画可选项">
       <created>1562737986148</created>
@@ -311,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562941692634</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="优化 Input 的事件监听的单元测试代码">
+      <created>1562948025010</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562948025010</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74150000" />
+    <option name="totallyTimeSpent" value="74709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +395,9 @@
     <MESSAGE value="创建 Input 组件" />
     <MESSAGE value="添加input.vue的样式" />
     <MESSAGE value="优化 Input 的props的单元测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化 Input 的props的单元测试代码" />
+    <MESSAGE value="优化 Input 的事件监听的单元测试代码" />
+    <MESSAGE value="更改Input.vue =&gt; input.vue 统一名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改Input.vue =&gt; input.vue 统一名称" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/app.58671076.js" />
@@ -409,13 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -475,16 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/button.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -495,21 +496,38 @@
     <entry file="file://$PROJECT_DIR$/dist/input.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="383" column="6" selection-start-line="383" selection-start-column="6" selection-end-line="383" selection-end-column="6" />
+          <caret line="382" column="6" selection-start-line="382" selection-start-column="6" selection-end-line="382" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input.vue">
+    <entry file="file://$PROJECT_DIR$/src/input.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/button.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/input.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="432">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>

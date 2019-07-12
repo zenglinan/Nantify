@@ -371,7 +371,6 @@ describe('Input', function () {
         }
       }).$mount();
       var useElement = vm.$el.querySelector('span');
-      console.log(vm.$el);
       expect(useElement.innerHTML).to.equal('错误信息');
     });
   });
