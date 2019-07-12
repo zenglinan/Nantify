@@ -5,11 +5,10 @@
            :value=value
            :disabled=disabled
            :placeholder="placeholder"
-           @change="$emit('change',$event)"
-           @blur="$emit('blur',$event)"
-           @input="$emit('input',$event)"
-           @focus="$emit('focus',$event)"
-
+           @change="$emit('change',$event.target.value)"
+           @blur="$emit('blur',$event.target.value)"
+           @input="$emit('input',$event.target.value)"
+           @focus="$emit('focus',$event.target.value)"
     >
     <template v-if="errorPrompt">
       <c-icon icon="i-error"></c-icon>

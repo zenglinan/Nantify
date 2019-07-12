@@ -12760,7 +12760,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 var _default = {
   name: "coco-input",
   props: {
@@ -12814,16 +12813,16 @@ exports.default = _default;
         domProps: { value: _vm.value },
         on: {
           change: function($event) {
-            return _vm.$emit("change", $event)
+            return _vm.$emit("change", $event.target.value)
           },
           blur: function($event) {
-            return _vm.$emit("blur", $event)
+            return _vm.$emit("blur", $event.target.value)
           },
           input: function($event) {
-            return _vm.$emit("input", $event)
+            return _vm.$emit("input", $event.target.value)
           },
           focus: function($event) {
-            return _vm.$emit("focus", $event)
+            return _vm.$emit("focus", $event.target.value)
           }
         }
       }),
@@ -12894,7 +12893,8 @@ new _vue.default({
   },
   data: function data() {
     return {
-      ifLoading: false
+      ifLoading: false,
+      message: 'Hi,我支持v-model!'
     };
   }
 });

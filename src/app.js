@@ -12,7 +12,8 @@ new Vue({
   },
   data() {
     return {
-      ifLoading: false
+      ifLoading: false,
+      message: 'Hi,我支持v-model!'
     }
   }
 })
