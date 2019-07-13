@@ -12916,13 +12916,10 @@ var _default = {
   name: "coco-col",
   props: {
     type: [Number, String],
-    span: {}
-  },
-  data: function data() {
-    return {
-      spanVal: +this.span || '0' // 将接受的span参数处理为数字类型，使span支持传字符串或数字
-
-    };
+    span: {},
+    offset: {
+      type: [Number, String]
+    }
   }
 };
 exports.default = _default;
@@ -12935,15 +12932,12 @@ exports.default = _default;
         /* template */
         Object.assign($5d1e58, (function () {
           var render = function() {
-  var _obj
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      class: ["c-col", ((_obj = {}), (_obj["col-" + _vm.spanVal] = true), _obj)]
-    },
+    { class: ["c-col", ["col-" + _vm.span, "offset-" + _vm.offset]] },
     [_vm._t("default")],
     2
   )
