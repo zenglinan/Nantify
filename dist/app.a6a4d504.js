@@ -12899,7 +12899,161 @@ render._withStripped = true
       
       }
     })();
-},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
+},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/col.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-col",
+  props: {
+    type: [Number, String],
+    span: {}
+  },
+  data: function data() {
+    return {
+      spanVal: +this.span || '0' // 将接受的span参数处理为数字类型，使span支持传字符串或数字
+
+    };
+  }
+};
+exports.default = _default;
+        var $5d1e58 = exports.default || module.exports;
+      
+      if (typeof $5d1e58 === 'function') {
+        $5d1e58 = $5d1e58.options;
+      }
+    
+        /* template */
+        Object.assign($5d1e58, (function () {
+          var render = function() {
+  var _obj
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      class: ["c-col", ((_obj = {}), (_obj["col-" + _vm.spanVal] = true), _obj)]
+    },
+    [_vm._t("default")],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-5d1e58",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$5d1e58', $5d1e58);
+          } else {
+            api.reload('$5d1e58', $5d1e58);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/row.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _col = _interopRequireDefault(require("./col"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-row",
+  components: {
+    'c-col': _col.default
+  }
+};
+exports.default = _default;
+        var $c5b6e6 = exports.default || module.exports;
+      
+      if (typeof $c5b6e6 === 'function') {
+        $c5b6e6 = $c5b6e6.options;
+      }
+    
+        /* template */
+        Object.assign($c5b6e6, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-row" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-c5b6e6",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$c5b6e6', $c5b6e6);
+          } else {
+            api.reload('$c5b6e6', $c5b6e6);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./col":"src/col.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -12910,6 +13064,10 @@ var _buttonGroup = _interopRequireDefault(require("./button-group"));
 
 var _input = _interopRequireDefault(require("./input"));
 
+var _col = _interopRequireDefault(require("./col"));
+
+var _row = _interopRequireDefault(require("./row"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _vue.default({
@@ -12917,7 +13075,9 @@ new _vue.default({
   components: {
     'c-button': _button.default,
     'c-button-group': _buttonGroup.default,
-    'c-input': _input.default
+    'c-input': _input.default,
+    'c-col': _col.default,
+    'c-row': _row.default
   },
   data: function data() {
     return {
@@ -12927,7 +13087,7 @@ new _vue.default({
     };
   }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js","./button":"src/button.vue","./button-group":"src/button-group.vue","./input":"src/input.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./button":"src/button.vue","./button-group":"src/button-group.vue","./input":"src/input.vue","./col":"src/col.vue","./row":"src/row.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12955,7 +13115,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52411" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61673" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
