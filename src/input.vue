@@ -1,5 +1,5 @@
 <template>
-  <div class="c-input-wrapper" :class="{'error': errorPrompt, [`error-${errorPosition}`]: errorPosition}">
+  <div class="c-input-wrapper" :class="{[`${prompt}`]: prompt, [`prompt-${promptPosition}`]: promptPosition}">
     <input type="text"
            class="c-input"
            :value=value
@@ -10,9 +10,9 @@
            @input="$emit('input',$event.target.value)"
            @focus="$emit('focus',$event.target.value)"
     >
-    <div v-if="errorPrompt">
+    <div v-if="prompt">
       <c-icon icon="i-error"></c-icon>
-      <span>{{errorMessage}}</span>
+      <span>{{prompt === 'error' ? errorMessage : passMessage}}</span>
     </div>
   </div>
 </template>
@@ -33,14 +33,20 @@
       placeholder: {
         type: String,
       },
-      errorPrompt: {  // 是否加入错误提示
-        type: Boolean,
-        default: false
+      prompt: {
+        type: String,
+        validator(value) {
+          return ['', 'pass', 'error'].indexOf(value) !== -1
+        },
+        default: ''
       },
       errorMessage: {
         type: String
       },
-      errorPosition: {
+      passMessage: {
+        type: String
+      },
+      promptPosition: {
         type: String,
         validator(value) {
           return ['right', 'bottom'].indexOf(value) !== -1
@@ -63,11 +69,12 @@
   $box-shadow-color: rgba(0, 0, 0, 0.3);
   $border-radius: 4px;
   $red: #F1453D;
+  $green: rgb(64, 181, 129);
   .c-input-wrapper {box-sizing: border-box;font-size: $font-size; display: inline-flex; align-items: center;
 
-    &.error-right {flex-direction: row;}
+    &.prompt-right {flex-direction: row;}
 
-    &.error-bottom {flex-direction: column;align-items: end;}
+    &.prompt-bottom {flex-direction: column;align-items: end;}
 
     > .c-input {height: $height;border: 1px solid $border-color;border-radius: $border-radius;padding: 0 8px;font-size: inherit;
 
@@ -78,18 +85,31 @@
       &[disabled] {cursor: not-allowed;border-color: #aaa;color: #aaa;background-color: #fff;}
     }
 
-    &.error {color: $red;
+    &.pass, &.error {
+      &.prompt-bottom {
+        svg {margin-right: 4px;}
+      }
 
-      :not(:last-child) {margin-right: 4px;}
+      &.prompt-right {
+        :not(:last-child) {margin-right: 4px;}
+      }
+    }
+
+    &.error {color: $red;
 
       > input {border-color: $red;
 
         &:hover {border-color: $red;}
 
-        &:focus {box-shadow: inset 0 0px 1px $red;}
+        &:focus {box-shadow: inset 0 0px 2px $red;}
       }
 
       > svg {fill: $red;}
+    }
+
+    &.pass {color: $green;
+
+      > svg {fill: $green;}
     }
   }
 </style>

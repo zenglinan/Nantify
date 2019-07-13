@@ -12773,15 +12773,20 @@ var _default = {
     placeholder: {
       type: String
     },
-    errorPrompt: {
-      // 是否加入错误提示
-      type: Boolean,
-      default: false
+    prompt: {
+      type: String,
+      validator: function validator(value) {
+        return ['', 'pass', 'error'].indexOf(value) !== -1;
+      },
+      default: ''
     },
     errorMessage: {
       type: String
     },
-    errorPosition: {
+    passMessage: {
+      type: String
+    },
+    promptPosition: {
       type: String,
       validator: function validator(value) {
         return ['right', 'bottom'].indexOf(value) !== -1;
@@ -12811,8 +12816,9 @@ exports.default = _default;
     "div",
     {
       staticClass: "c-input-wrapper",
-      class: ((_obj = { error: _vm.errorPrompt }),
-      (_obj["error-" + _vm.errorPosition] = _vm.errorPosition),
+      class: ((_obj = {}),
+      (_obj["" + _vm.prompt] = _vm.prompt),
+      (_obj["prompt-" + _vm.promptPosition] = _vm.promptPosition),
       _obj)
     },
     [
@@ -12840,13 +12846,19 @@ exports.default = _default;
         }
       }),
       _vm._v(" "),
-      _vm.errorPrompt
+      _vm.prompt
         ? _c(
             "div",
             [
               _c("c-icon", { attrs: { icon: "i-error" } }),
               _vm._v(" "),
-              _c("span", [_vm._v(_vm._s(_vm.errorMessage))])
+              _c("span", [
+                _vm._v(
+                  _vm._s(
+                    _vm.prompt === "error" ? _vm.errorMessage : _vm.passMessage
+                  )
+                )
+              ])
             ],
             1
           )
