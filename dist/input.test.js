@@ -269,15 +269,20 @@ var _default = {
     placeholder: {
       type: String
     },
-    errorPrompt: {
-      // 是否加入错误提示
-      type: Boolean,
-      default: false
+    prompt: {
+      type: String,
+      validator: function validator(value) {
+        return ['', 'pass', 'error'].indexOf(value) !== -1;
+      },
+      default: ''
     },
     errorMessage: {
       type: String
     },
-    errorPosition: {
+    passMessage: {
+      type: String
+    },
+    promptPosition: {
       type: String,
       validator: function validator(value) {
         return ['right', 'bottom'].indexOf(value) !== -1;
@@ -300,7 +305,7 @@ exports.default = _default;
         Object.assign($b79dcc, (function () {
           var render = function () {
 var _obj;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:( _obj = {'error': _vm.errorPrompt}, _obj[("error-" + _vm.errorPosition)] = _vm.errorPosition, _obj )},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event.target.value)},"blur":function($event){return _vm.$emit('blur',$event.target.value)},"input":function($event){return _vm.$emit('input',$event.target.value)},"focus":function($event){return _vm.$emit('focus',$event.target.value)}}}),_vm._v(" "),(_vm.errorPrompt)?_c('div',[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.errorMessage))])],1):_vm._e()])}
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:( _obj = {}, _obj[("" + _vm.prompt)] = _vm.prompt, _obj[("prompt-" + _vm.promptPosition)] = _vm.promptPosition, _obj )},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event.target.value)},"blur":function($event){return _vm.$emit('blur',$event.target.value)},"input":function($event){return _vm.$emit('input',$event.target.value)},"focus":function($event){return _vm.$emit('focus',$event.target.value)}}}),_vm._v(" "),(_vm.prompt)?_c('div',[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.prompt === 'error' ? _vm.errorMessage : _vm.passMessage))])],1):_vm._e()])}
 var staticRenderFns = []
 
           return {
@@ -362,24 +367,44 @@ describe('Input', function () {
       var useElement = vm.$el.querySelector('input');
       expect(useElement.placeholder).to.equal('代替文字');
     });
-    it('可以接收errorPrompt', function () {
+    it('可以接收prompt', function () {
       vm = new Constructor({
         propsData: {
-          errorPrompt: true
+          prompt: 'pass'
         }
       }).$mount();
       var useElement = vm.$el;
-      expect(Array.from(useElement.classList)).to.include('error');
+      expect(Array.from(useElement.classList)).to.include('pass');
     });
     it('可以接收errorMessage', function () {
       vm = new Constructor({
         propsData: {
           errorMessage: '错误信息',
-          errorPrompt: true
+          prompt: 'error'
         }
       }).$mount();
       var useElement = vm.$el.querySelector('span');
       expect(useElement.innerHTML).to.equal('错误信息');
+    });
+    it('可以接收passMessage', function () {
+      vm = new Constructor({
+        propsData: {
+          prompt: 'pass',
+          passMessage: '通过'
+        }
+      }).$mount();
+      var useElement = vm.$el.querySelector('span');
+      expect(useElement.innerHTML).to.equal('通过');
+    });
+    it('可以接收promptPosition', function () {
+      vm = new Constructor({
+        propsData: {
+          prompt: 'pass',
+          promptPosition: 'right'
+        }
+      }).$mount();
+      var useElement = vm.$el;
+      expect(Array.from(useElement.classList)).to.include('prompt-right');
     });
   });
   describe('事件监听', function () {

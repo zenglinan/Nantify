@@ -42,24 +42,44 @@ describe('Input', () => {
       const useElement = vm.$el.querySelector('input')
       expect(useElement.placeholder).to.equal('代替文字')
     })
-    it('可以接收errorPrompt', () => {
+    it('可以接收prompt', () => {
       vm = new Constructor({
         propsData: {
-          errorPrompt: true
+          prompt: 'pass'
         }
       }).$mount()
       const useElement = vm.$el
-      expect(Array.from(useElement.classList)).to.include('error')
+      expect(Array.from(useElement.classList)).to.include('pass')
     })
     it('可以接收errorMessage', () => {
       vm = new Constructor({
         propsData: {
           errorMessage: '错误信息',
-          errorPrompt: true
+          prompt: 'error'
         }
       }).$mount()
       const useElement = vm.$el.querySelector('span')
       expect(useElement.innerHTML).to.equal('错误信息')
+    })
+    it('可以接收passMessage', () => {
+      vm = new Constructor({
+        propsData: {
+          prompt: 'pass',
+          passMessage: '通过'
+        }
+      }).$mount()
+      const useElement = vm.$el.querySelector('span')
+      expect(useElement.innerHTML).to.equal('通过')
+    })
+    it('可以接收promptPosition', () => {
+      vm = new Constructor({
+        propsData: {
+          prompt: 'pass',
+          promptPosition: 'right'
+        }
+      }).$mount()
+      const useElement = vm.$el
+      expect(Array.from(useElement.classList)).to.include('prompt-right')
     })
   })
   describe('事件监听', () => {

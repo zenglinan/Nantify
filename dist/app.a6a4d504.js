@@ -12922,7 +12922,8 @@ new _vue.default({
   data: function data() {
     return {
       ifLoading: false,
-      message: 'Hi,我支持v-model!'
+      message: 'Hi,我支持v-model!',
+      promptType: 'error'
     };
   }
 });
