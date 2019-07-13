@@ -12780,6 +12780,13 @@ var _default = {
     },
     errorMessage: {
       type: String
+    },
+    errorPosition: {
+      type: String,
+      validator: function validator(value) {
+        return ['right', 'bottom'].indexOf(value) !== -1;
+      },
+      default: 'bottom'
     }
   },
   components: {
@@ -12796,12 +12803,18 @@ exports.default = _default;
         /* template */
         Object.assign($b79dcc, (function () {
           var render = function() {
+  var _obj
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "c-input-wrapper", class: { error: _vm.errorPrompt } },
+    {
+      staticClass: "c-input-wrapper",
+      class: ((_obj = { error: _vm.errorPrompt }),
+      (_obj["error-" + _vm.errorPosition] = _vm.errorPosition),
+      _obj)
+    },
     [
       _c("input", {
         staticClass: "c-input",
@@ -12828,14 +12841,17 @@ exports.default = _default;
       }),
       _vm._v(" "),
       _vm.errorPrompt
-        ? [
-            _c("c-icon", { attrs: { icon: "i-error" } }),
-            _vm._v(" "),
-            _c("span", [_vm._v(_vm._s(_vm.errorMessage))])
-          ]
+        ? _c(
+            "div",
+            [
+              _c("c-icon", { attrs: { icon: "i-error" } }),
+              _vm._v(" "),
+              _c("span", [_vm._v(_vm._s(_vm.errorMessage))])
+            ],
+            1
+          )
         : _vm._e()
-    ],
-    2
+    ]
   )
 }
 var staticRenderFns = []
@@ -12926,7 +12942,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51508" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52411" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

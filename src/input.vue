@@ -1,5 +1,5 @@
 <template>
-  <div class="c-input-wrapper" :class="{'error': errorPrompt}">
+  <div class="c-input-wrapper" :class="{'error': errorPrompt, [`error-${errorPosition}`]: errorPosition}">
     <input type="text"
            class="c-input"
            :value=value
@@ -10,10 +10,10 @@
            @input="$emit('input',$event.target.value)"
            @focus="$emit('focus',$event.target.value)"
     >
-    <template v-if="errorPrompt">
+    <div v-if="errorPrompt">
       <c-icon icon="i-error"></c-icon>
       <span>{{errorMessage}}</span>
-    </template>
+    </div>
   </div>
 </template>
 
@@ -39,11 +39,18 @@
       },
       errorMessage: {
         type: String
+      },
+      errorPosition: {
+        type: String,
+        validator(value) {
+          return ['right', 'bottom'].indexOf(value) !== -1
+        },
+        default: 'bottom'
       }
     },
     components: {
       'c-icon': Icon
-    }
+    },
   }
 </script>
 
@@ -56,7 +63,11 @@
   $box-shadow-color: rgba(0, 0, 0, 0.3);
   $border-radius: 4px;
   $red: #F1453D;
-  .c-input-wrapper {box-sizing: border-box;font-size: $font-size;display: inline-block;
+  .c-input-wrapper {box-sizing: border-box;font-size: $font-size; display: inline-flex; align-items: center;
+
+    &.error-right {flex-direction: row;}
+
+    &.error-bottom {flex-direction: column;align-items: end;}
 
     > .c-input {height: $height;border: 1px solid $border-color;border-radius: $border-radius;padding: 0 8px;font-size: inherit;
 
@@ -67,18 +78,17 @@
       &[disabled] {cursor: not-allowed;border-color: #aaa;color: #aaa;background-color: #fff;}
     }
 
-    &.error {
+    &.error {color: $red;
+
       :not(:last-child) {margin-right: 4px;}
-      color: $red;
-      > input{
-        border-color: $red;
-        &:hover {
-          border-color: $red;
-        }
-        &:focus {
-          box-shadow:  inset 0 0px 1px $red;
-        }
+
+      > input {border-color: $red;
+
+        &:hover {border-color: $red;}
+
+        &:focus {box-shadow: inset 0 0px 1px $red;}
       }
+
       > svg {fill: $red;}
     }
   }

@@ -79,7 +79,15 @@ to {
 .c-input-wrapper[data-v-b79dcc] {
   box-sizing: border-box;
   font-size: 12px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+}
+.c-input-wrapper.error-right[data-v-b79dcc] {
+  flex-direction: row;
+}
+.c-input-wrapper.error-bottom[data-v-b79dcc] {
+  flex-direction: column;
+  align-items: end;
 }
 .c-input-wrapper > .c-input[data-v-b79dcc] {
   height: 28px;

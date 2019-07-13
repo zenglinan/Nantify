@@ -8,7 +8,15 @@
 .c-input-wrapper[data-v-b79dcc] {
   box-sizing: border-box;
   font-size: 12px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+}
+.c-input-wrapper.error-right[data-v-b79dcc] {
+  flex-direction: row;
+}
+.c-input-wrapper.error-bottom[data-v-b79dcc] {
+  flex-direction: column;
+  align-items: end;
 }
 .c-input-wrapper > .c-input[data-v-b79dcc] {
   height: 28px;
@@ -38,6 +46,12 @@
 }
 .c-input-wrapper.error > input[data-v-b79dcc] {
   border-color: #F1453D;
+}
+.c-input-wrapper.error > input[data-v-b79dcc]:hover {
+  border-color: #F1453D;
+}
+.c-input-wrapper.error > input[data-v-b79dcc]:focus {
+  box-shadow: inset 0 0px 1px #F1453D;
 }
 .c-input-wrapper.error > svg[data-v-b79dcc] {
   fill: #F1453D;

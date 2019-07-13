@@ -256,7 +256,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 var _default = {
   name: "coco-input",
   props: {
@@ -277,6 +276,13 @@ var _default = {
     },
     errorMessage: {
       type: String
+    },
+    errorPosition: {
+      type: String,
+      validator: function validator(value) {
+        return ['right', 'bottom'].indexOf(value) !== -1;
+      },
+      default: 'bottom'
     }
   },
   components: {
@@ -292,7 +298,9 @@ exports.default = _default;
     
         /* template */
         Object.assign($b79dcc, (function () {
-          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:{'error': _vm.errorPrompt}},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event)},"blur":function($event){return _vm.$emit('blur',$event)},"input":function($event){return _vm.$emit('input',$event)},"focus":function($event){return _vm.$emit('focus',$event)}}}),_vm._v(" "),(_vm.errorPrompt)?[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.errorMessage))])]:_vm._e()],2)}
+          var render = function () {
+var _obj;
+var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:( _obj = {'error': _vm.errorPrompt}, _obj[("error-" + _vm.errorPosition)] = _vm.errorPosition, _obj )},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event.target.value)},"blur":function($event){return _vm.$emit('blur',$event.target.value)},"input":function($event){return _vm.$emit('input',$event.target.value)},"focus":function($event){return _vm.$emit('focus',$event.target.value)}}}),_vm._v(" "),(_vm.errorPrompt)?_c('div',[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.errorMessage))])],1):_vm._e()])}
 var staticRenderFns = []
 
           return {
@@ -382,18 +390,16 @@ describe('Input', function () {
       // it断言结束后，销毁vm实例
       vm.$destroy();
     });
-    it("\u53EF\u4EE5\u89E6\u53D1blur,focus,input,change\u4E8B\u4EF6", function () {
-      ['input', 'change', 'blur', 'focus'].forEach(function (eventName) {
-        vm = new Constructor(_input.default).$mount();
-        var callback = sinon.fake(); // 间谍函数
-
-        vm.$on(eventName, callback); // 手动触发
+    it('支持 change/input/focus/blur 事件', function () {
+      ['change', 'input', 'focus', 'blur'].forEach(function (eventName) {
+        vm = new Constructor({}).$mount();
+        var callback = sinon.fake();
+        vm.$on(eventName, callback); //触发input的change 事件
 
         var event = new Event(eventName);
         var inputElement = vm.$el.querySelector('input');
-        inputElement.dispatchEvent(event); // 分发事件
-
-        expect(callback).to.have.been.calledWith(event); // 间谍函数被执行了，而且是被指定事件执行了
+        inputElement.dispatchEvent(event);
+        expect(callback).to.have.been.called;
       });
     });
   });

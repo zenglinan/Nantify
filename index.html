@@ -28,6 +28,7 @@
 <div id="app">
   <div class="input">
     <c-input placeholder="请输入用户名"></c-input>
+    <c-input :error-prompt=true error-message="用户名只能为6~12个英文字符" error-position="right"></c-input>
     <c-input :error-prompt=true error-message="用户名只能为6~12个英文字符"></c-input>
     <c-input value="禁止输入" :disabled=true></c-input>
     <c-input v-model="message"></c-input>

@@ -68,19 +68,19 @@ describe('Input', () => {
     afterEach(() => {  // it断言结束后，销毁vm实例
       vm.$destroy()
     })
-    it(`可以触发blur,focus,input,change事件`, function () {
-      ['input', 'change', 'blur', 'focus']
+    it('支持 change/input/focus/blur 事件', () => {
+      ['change', 'input', 'focus', 'blur']
           .forEach((eventName) => {
-            vm = new Constructor(Input).$mount()
-            const callback = sinon.fake()  // 间谍函数
+            vm = new Constructor({}).$mount()
+            const callback = sinon.fake();
             vm.$on(eventName, callback)
-            // 手动触发
+            //触发input的change 事件
             let event = new Event(eventName);
             let inputElement = vm.$el.querySelector('input')
-            inputElement.dispatchEvent(event)  // 分发事件
-            expect(callback).to.have.been.calledWith(event)  // 间谍函数被执行了，而且是被指定事件执行了
+            inputElement.dispatchEvent(event)
+            expect(callback).to.have.been.called
           })
-    });
+    })
   })
 
 })
