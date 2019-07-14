@@ -8,6 +8,11 @@
   <title>Coco</title>
 </head>
 <style>
+  body {
+    padding: 0;
+    margin: 10px;
+  }
+
   html {
     --font-size: 12px;
     --button-padding: .5em 1em;
@@ -26,11 +31,11 @@
   }
 
   .grid {
+    border: 1px solid black;
   }
 
   .grid .c-col {
     height: 30px;
-    border: 1px solid pink;
     margin-bottom: 20px;
   }
 </style>
@@ -38,18 +43,18 @@
 <body>
 <div id="app">
   <div class="grid">
-    <c-row>
-      <c-col span="12">我是其中一格，总格数为24</c-col>
-      <c-col span="12">默认会均分哦</c-col>
+    <c-row gutter="10">
+      <c-col span="12"><div style="border: 1px solid green">我是其中一格，总格数为24</div></c-col>
+      <c-col span="12"><div style="border: 1px solid green">默认会均分哦</div></c-col>
     </c-row>
     <c-row>
-      <c-col span="10">10格</c-col>
-      <c-col span="12" offset="2">我的偏移为2格</c-col>
+      <c-col span="10"><div style="border: 1px solid green">10格</div></c-col>
+      <c-col span="12" offset="2"><div style="border: 1px solid green">我的偏移为2格</div></c-col>
     </c-row>
     <c-row>
-      <c-col span="8">8</c-col>
-      <c-col span="6" offset="1">偏移1</c-col>
-      <c-col span="6" offset="3">偏移3</c-col>
+      <c-col span="8"><div style="border: 1px solid green">8</div></c-col>
+      <c-col span="6" offset="1"><div style="border: 1px solid green">不要给c-row设置宽度，否则可能失效</div></c-col>
+      <c-col span="6" offset="3"><div style="border: 1px solid green">偏移3</div></c-col>
     </c-row>
   </div>
   <div class="input">
