@@ -1,11 +1,16 @@
 <template>
-  <button :class="[ 'coco','c-button',
-                    {[`icon-${iconPosition}`]: true},
-                    {nouse: loading},
+  <button :class="[ 'coco',
+                    'c-button',
+                    buttonClass,
                   ]"
           @click="$emit('click')">
-    <c-icon class="loading" icon="i-loading" v-if="loading"></c-icon>
-    <c-icon :icon=icon v-if="icon && !loading"></c-icon>
+    <c-icon v-if="loading"
+            class="loading"
+            icon="i-loading">
+    </c-icon>
+    <c-icon v-if="icon && !loading"
+            :icon=icon>
+    </c-icon>
     <div class="content">
       <slot>按钮</slot>
     </div>
@@ -14,7 +19,6 @@
 
 <script>
   import Icon from './component/icon'
-
   export default {
     name: 'coco-button',
     props: {
@@ -24,15 +28,24 @@
       iconPosition: {
         type: String,
         default: "left",
-        validator(value){
+        validator(value) {
           // return value === 'left' || value === 'right'
-          return ['left','right'].indexOf(value) !== -1
+          return ['left', 'right'].indexOf(value) !== -1
         }
       },
       loading: {
         type: Boolean,
         default: false,
       },
+    },
+    computed: {
+      buttonClass() {
+        let {iconPosition, loading} = this
+        return [
+          {[`icon-${iconPosition}`]: true},
+          {nouse: loading}
+        ]
+      }
     },
     components: {
       'c-icon': Icon

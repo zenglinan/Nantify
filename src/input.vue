@@ -1,5 +1,5 @@
 <template>
-  <div class="c-input-wrapper" :class="{[`${prompt}`]: prompt, [`prompt-${promptPosition}`]: promptPosition}">
+  <div class="c-input-wrapper" :class="inputClass">
     <input type="text"
            class="c-input"
            :value=value
@@ -54,9 +54,18 @@
         default: 'bottom'
       }
     },
+    computed: {
+      inputClass() {
+        let {prompt, promptPosition} = this
+        return {
+          [`${prompt}`]: prompt,
+          [`prompt-${promptPosition}`]: promptPosition
+        }
+      }
+    },
     components: {
       'c-icon': Icon
-    },
+    }
   }
 </script>
 
