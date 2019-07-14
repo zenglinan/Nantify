@@ -137,6 +137,7 @@ to {
   fill: #40b581;
 }
 .c-col[data-v-5d1e58] {
+  display: flex;
   padding: 0 10px;
 }
 .c-col.col-1[data-v-5d1e58] {

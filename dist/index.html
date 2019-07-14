@@ -7,12 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coco</title>
 <link rel="stylesheet" href="/app.a6a4d504.css"></head>
-<style>body {
-    padding: 0;
-    margin: 10px;
-  }
-
-  html {
+<style>html {
     --font-size: 12px;
     --button-padding: .5em 1em;
     --button-bg: white;
@@ -24,6 +19,15 @@
     --button-width: 60px;
     box-sizing: border-box;
   }
+
+
+
+  body {
+    padding: 0;
+    margin: 10px;
+  }
+
+
 
   .input, .grid {
     margin-bottom: 20px;
@@ -42,17 +46,17 @@
 <div id="app">
   <div class="grid">
     <c-row gutter="10">
-      <c-col span="12"><div style="border: 1px solid green">我是其中一格，总格数为24</div></c-col>
-      <c-col span="12"><div style="border: 1px solid green">啊实打实的</div></c-col>
+      <c-col span="12"><div style="border: 1px solid green; width: 100%">我是其中一格，总格数为24</div></c-col>
+      <c-col span="12"><div style="border: 1px solid green; width: 100%">默认会均分哦</div></c-col>
     </c-row>
     <c-row>
-      <c-col span="10"><div style="border: 1px solid green">10格</div></c-col>
-      <c-col span="12" offset="2"><div style="border: 1px solid green">我的偏移为2格</div></c-col>
+      <c-col span="10"><div style="border: 1px solid green; width: 100%">10格</div></c-col>
+      <c-col span="12" offset="2"><div style="border: 1px solid green; width: 100%">我的偏移为2格</div></c-col>
     </c-row>
     <c-row>
-      <c-col span="8"><div style="border: 1px solid green">8</div></c-col>
-      <c-col span="6" offset="1"><div style="border: 1px solid green">不要给c-row设置宽度，否则可能失效</div></c-col>
-      <c-col span="6" offset="3"><div style="border: 1px solid green">偏移3</div></c-col>
+      <c-col span="8"><div style="border: 1px solid green; width: 100%">8</div></c-col>
+      <c-col span="6" offset="1"><div style="border: 1px solid green; width: 100%">不要给c-row设置宽度，否则可能失效</div></c-col>
+      <c-col span="6" offset="3"><div style="border: 1px solid green; width: 100%">偏移3</div></c-col>
     </c-row>
   </div>
   <div class="input">

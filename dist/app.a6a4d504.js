@@ -12904,7 +12904,8 @@ var _default = {
   computed: {
     colClass: function colClass() {
       var span = this.span,
-          offset = this.offset;
+          offset = this.offset,
+          align = this.align;
       return [[span && "col-".concat(span), offset && "offset-".concat(offset)]];
     },
     colStyle: function colStyle() {
