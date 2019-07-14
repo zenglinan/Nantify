@@ -12890,7 +12890,6 @@ exports.default = void 0;
 var _default = {
   name: "coco-col",
   props: {
-    type: [Number, String],
     span: {},
     offset: {
       type: [Number, String]
