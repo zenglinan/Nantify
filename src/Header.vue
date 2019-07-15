@@ -6,10 +6,12 @@
 
 <script>
   export default {
-    name: "header"
+    name: "coco-header"
   }
 </script>
 
 <style scoped lang="scss">
-
+  .c-header{
+    flex-grow: 1;
+  }
 </style>

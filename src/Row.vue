@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import Col from './col'
+  import Col from './Col'
 
   export default {
     name: "coco-row",

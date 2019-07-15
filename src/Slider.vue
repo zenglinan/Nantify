@@ -6,10 +6,9 @@
 
 <script>
   export default {
-    name: "slider"
+    name: "coco-slider"
   }
 </script>
 
 <style scoped lang="scss">
-
 </style>

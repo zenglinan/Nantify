@@ -6,10 +6,12 @@
 
 <script>
   export default {
-    name: "footer"
+    name: "coco-footer"
   }
 </script>
 
 <style scoped lang="scss">
-
+  .c-footer {
+    flex-grow: 1;
+  }
 </style>

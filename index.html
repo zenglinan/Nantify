@@ -40,29 +40,44 @@
     height: 30px;
     margin-bottom: 20px;
   }
+  .layout .c-wrapper div {
+    height: 50px;
+  }
+  .layout .c-header {
+    background: red
+  }
+  .layout .c-content {
+    background: green
+  }
+  .layout .c-footer {
+    background: blue
+  }
+  .layout .c-slider {
+    background: pink
+  }
 </style>
 
 <body>
 <div id="app">
   <div class="layout">
     <!--    上中下结构-->
-    <c-wrapper>
+    <c-wrapper style="margin-bottom: 30px;">
       <c-header></c-header>
       <c-content></c-content>
       <c-footer></c-footer>
     </c-wrapper>
     <!--    中左slider-->
-    <c-wrapper>
+    <c-wrapper style="margin-bottom: 30px;">
       <c-header></c-header>
       <c-wrapper>
-        <c-slider span="12"></c-slider>
-        <c-content span="12"></c-content>
+        <c-slider style="width: 100px"></c-slider>
+        <c-content style="width: 200px"></c-content>
       </c-wrapper>
       <c-footer></c-footer>
     </c-wrapper>
     <!--    侧边栏-->
-    <c-wrapper>
-      <c-slider></c-slider>
+    <c-wrapper  style="margin-bottom: 30px;">
+      <c-slider style="width: 200px"></c-slider>
       <c-wrapper>
         <c-header></c-header>
         <c-content></c-content>

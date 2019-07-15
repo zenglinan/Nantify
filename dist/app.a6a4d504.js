@@ -12527,7 +12527,7 @@ render._withStripped = true
       
       }
     })();
-},{"../../asset/icon.js":"asset/icon.js","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/button.vue":[function(require,module,exports) {
+},{"../../asset/icon.js":"asset/icon.js","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Button.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12574,14 +12574,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $1d5465 = exports.default || module.exports;
+        var $80d6c5 = exports.default || module.exports;
       
-      if (typeof $1d5465 === 'function') {
-        $1d5465 = $1d5465.options;
+      if (typeof $80d6c5 === 'function') {
+        $80d6c5 = $80d6c5.options;
       }
     
         /* template */
-        Object.assign($1d5465, (function () {
+        Object.assign($80d6c5, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -12622,7 +12622,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-1d5465",
+            _scopeId: "data-v-80d6c5",
             functional: undefined
           };
         })());
@@ -12635,9 +12635,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$1d5465', $1d5465);
+            api.createRecord('$80d6c5', $80d6c5);
           } else {
-            api.reload('$1d5465', $1d5465);
+            api.reload('$80d6c5', $80d6c5);
           }
         }
 
@@ -12648,7 +12648,7 @@ render._withStripped = true
       
       }
     })();
-},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/button-group.vue":[function(require,module,exports) {
+},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Button-Group.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12656,7 +12656,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _button = _interopRequireDefault(require("./button"));
+var _Button = _interopRequireDefault(require("./Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12669,18 +12669,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   name: "coco-button-group",
   components: {
-    'c-button': _button.default
+    'c-button': _Button.default
   }
 };
 exports.default = _default;
-        var $f6d463 = exports.default || module.exports;
+        var $d95664 = exports.default || module.exports;
       
-      if (typeof $f6d463 === 'function') {
-        $f6d463 = $f6d463.options;
+      if (typeof $d95664 === 'function') {
+        $d95664 = $d95664.options;
       }
     
         /* template */
-        Object.assign($f6d463, (function () {
+        Object.assign($d95664, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -12694,7 +12694,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-f6d463",
+            _scopeId: "data-v-d95664",
             functional: undefined
           };
         })());
@@ -12707,9 +12707,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$f6d463', $f6d463);
+            api.createRecord('$d95664', $d95664);
           } else {
-            api.reload('$f6d463', $f6d463);
+            api.reload('$d95664', $d95664);
           }
         }
 
@@ -12720,7 +12720,7 @@ render._withStripped = true
       
       }
     })();
-},{"./button":"src/button.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/input.vue":[function(require,module,exports) {
+},{"./Button":"src/Button.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Input.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12782,14 +12782,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $b79dcc = exports.default || module.exports;
+        var $147855 = exports.default || module.exports;
       
-      if (typeof $b79dcc === 'function') {
-        $b79dcc = $b79dcc.options;
+      if (typeof $147855 === 'function') {
+        $147855 = $147855.options;
       }
     
         /* template */
-        Object.assign($b79dcc, (function () {
+        Object.assign($147855, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -12845,7 +12845,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-b79dcc",
+            _scopeId: "data-v-147855",
             functional: undefined
           };
         })());
@@ -12858,9 +12858,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b79dcc', $b79dcc);
+            api.createRecord('$147855', $147855);
           } else {
-            api.reload('$b79dcc', $b79dcc);
+            api.reload('$147855', $147855);
           }
         }
 
@@ -12871,7 +12871,7 @@ render._withStripped = true
       
       }
     })();
-},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/col.vue":[function(require,module,exports) {
+},{"./component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Col.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12917,14 +12917,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $5d1e58 = exports.default || module.exports;
+        var $0563fd = exports.default || module.exports;
       
-      if (typeof $5d1e58 === 'function') {
-        $5d1e58 = $5d1e58.options;
+      if (typeof $0563fd === 'function') {
+        $0563fd = $0563fd.options;
       }
     
         /* template */
-        Object.assign($5d1e58, (function () {
+        Object.assign($0563fd, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -12943,7 +12943,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-5d1e58",
+            _scopeId: "data-v-0563fd",
             functional: undefined
           };
         })());
@@ -12956,9 +12956,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$5d1e58', $5d1e58);
+            api.createRecord('$0563fd', $0563fd);
           } else {
-            api.reload('$5d1e58', $5d1e58);
+            api.reload('$0563fd', $0563fd);
           }
         }
 
@@ -12969,7 +12969,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/row.vue":[function(require,module,exports) {
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Row.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12977,7 +12977,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _col = _interopRequireDefault(require("./col"));
+var _Col = _interopRequireDefault(require("./Col"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13006,7 +13006,7 @@ var _default = {
     }
   },
   components: {
-    'c-col': _col.default
+    'c-col': _Col.default
   },
   mounted: function mounted() {
     var _this = this;
@@ -13017,14 +13017,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $c5b6e6 = exports.default || module.exports;
+        var $ec5628 = exports.default || module.exports;
       
-      if (typeof $c5b6e6 === 'function') {
-        $c5b6e6 = $c5b6e6.options;
+      if (typeof $ec5628 === 'function') {
+        $ec5628 = $ec5628.options;
       }
     
         /* template */
-        Object.assign($c5b6e6, (function () {
+        Object.assign($ec5628, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -13043,7 +13043,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-c5b6e6",
+            _scopeId: "data-v-ec5628",
             functional: undefined
           };
         })());
@@ -13056,9 +13056,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$c5b6e6', $c5b6e6);
+            api.createRecord('$ec5628', $ec5628);
           } else {
-            api.reload('$c5b6e6', $c5b6e6);
+            api.reload('$ec5628', $ec5628);
           }
         }
 
@@ -13069,31 +13069,382 @@ render._withStripped = true
       
       }
     })();
-},{"./col":"src/col.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
+},{"./Col":"src/Col.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Slider.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-slider"
+};
+exports.default = _default;
+        var $21c0d0 = exports.default || module.exports;
+      
+      if (typeof $21c0d0 === 'function') {
+        $21c0d0 = $21c0d0.options;
+      }
+    
+        /* template */
+        Object.assign($21c0d0, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-slider" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-21c0d0",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$21c0d0', $21c0d0);
+          } else {
+            api.reload('$21c0d0', $21c0d0);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Wrapper.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-wrapper",
+  data: function data() {
+    return {
+      hasSliderClass: false
+    };
+  },
+  mounted: function mounted() {
+    var res = Array.from(this.$el.children).some(function (vm) {
+      return vm.classList.contains('c-slider');
+    });
+    res && (this.hasSliderClass = true);
+  }
+};
+exports.default = _default;
+        var $ca4b5b = exports.default || module.exports;
+      
+      if (typeof $ca4b5b === 'function') {
+        $ca4b5b = $ca4b5b.options;
+      }
+    
+        /* template */
+        Object.assign($ca4b5b, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "c-wrapper", class: { hasSliderClass: _vm.hasSliderClass } },
+    [_vm._t("default")],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-ca4b5b",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$ca4b5b', $ca4b5b);
+          } else {
+            api.reload('$ca4b5b', $ca4b5b);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Header.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-header"
+};
+exports.default = _default;
+        var $adc9cb = exports.default || module.exports;
+      
+      if (typeof $adc9cb === 'function') {
+        $adc9cb = $adc9cb.options;
+      }
+    
+        /* template */
+        Object.assign($adc9cb, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-header" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-adc9cb",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$adc9cb', $adc9cb);
+          } else {
+            api.reload('$adc9cb', $adc9cb);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Footer.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-footer"
+};
+exports.default = _default;
+        var $b33186 = exports.default || module.exports;
+      
+      if (typeof $b33186 === 'function') {
+        $b33186 = $b33186.options;
+      }
+    
+        /* template */
+        Object.assign($b33186, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-footer" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-b33186",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$b33186', $b33186);
+          } else {
+            api.reload('$b33186', $b33186);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Content.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "coco-content"
+};
+exports.default = _default;
+        var $03aab6 = exports.default || module.exports;
+      
+      if (typeof $03aab6 === 'function') {
+        $03aab6 = $03aab6.options;
+      }
+    
+        /* template */
+        Object.assign($03aab6, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-content" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-03aab6",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$03aab6', $03aab6);
+          } else {
+            api.reload('$03aab6', $03aab6);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
 
-var _button = _interopRequireDefault(require("./button"));
+var _Button = _interopRequireDefault(require("./Button"));
 
-var _buttonGroup = _interopRequireDefault(require("./button-group"));
+var _ButtonGroup = _interopRequireDefault(require("./Button-Group"));
 
-var _input = _interopRequireDefault(require("./input"));
+var _Input = _interopRequireDefault(require("./Input"));
 
-var _col = _interopRequireDefault(require("./col"));
+var _Col = _interopRequireDefault(require("./Col"));
 
-var _row = _interopRequireDefault(require("./row"));
+var _Row = _interopRequireDefault(require("./Row"));
+
+var _Slider = _interopRequireDefault(require("./Slider"));
+
+var _Wrapper = _interopRequireDefault(require("./Wrapper"));
+
+var _Header = _interopRequireDefault(require("./Header"));
+
+var _Footer = _interopRequireDefault(require("./Footer"));
+
+var _Content = _interopRequireDefault(require("./Content"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _vue.default({
   el: '#app',
   components: {
-    'c-button': _button.default,
-    'c-button-group': _buttonGroup.default,
-    'c-input': _input.default,
-    'c-col': _col.default,
-    'c-row': _row.default
+    'c-button': _Button.default,
+    'c-button-group': _ButtonGroup.default,
+    'c-input': _Input.default,
+    'c-col': _Col.default,
+    'c-row': _Row.default,
+    'c-footer': _Footer.default,
+    'c-header': _Header.default,
+    'c-wrapper': _Wrapper.default,
+    'c-slider': _Slider.default,
+    'c-content': _Content.default
   },
   data: function data() {
     return {
@@ -13103,7 +13454,7 @@ new _vue.default({
     };
   }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js","./button":"src/button.vue","./button-group":"src/button-group.vue","./input":"src/input.vue","./col":"src/col.vue","./row":"src/row.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./Button":"src/Button.vue","./Button-Group":"src/Button-Group.vue","./Input":"src/Input.vue","./Col":"src/Col.vue","./Row":"src/Row.vue","./Slider":"src/Slider.vue","./Wrapper":"src/Wrapper.vue","./Header":"src/Header.vue","./Footer":"src/Footer.vue","./Content":"src/Content.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -13131,7 +13482,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55679" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54907" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
