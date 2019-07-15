@@ -18,23 +18,26 @@ describe('Row', () => {
     document.body.appendChild(div)
     div.innerHTML = `
       <c-row gutter="10">
-        <c-col></c-col>
-        <c-col></c-col>
+        <c-col span="12"></c-col>
+        <c-col span="12"></c-col>
       <c-row>
     `
     const vm = new Vue({
-      el: "div"
+      el: div
     })
     setTimeout(() => {
-      console.log(vm.$el)
       const row = vm.$el.querySelector('.c-row')
       const col = vm.$el.querySelector('.c-col')
+      console.log(vm.$el);
+      console.log(div)
       expect(getComputedStyle(row).marginLeft).to.eq('-5px')
       expect(getComputedStyle(row).marginRight).to.eq('-5px')
       expect(getComputedStyle(col).paddingLeft).to.eq('5px')
       expect(getComputedStyle(col).paddingLeft).to.eq('5px')
+      vm.$el.remove()
+      vm.$destroy()
       done()
-    },0)
+    })
   })
 
 })
