@@ -237,25 +237,8 @@ var _icon = _interopRequireDefault(require("./component/icon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var _default = {
   name: "coco-input",
   props: {
@@ -290,6 +273,15 @@ var _default = {
       default: 'bottom'
     }
   },
+  computed: {
+    inputClass: function inputClass() {
+      var _ref;
+
+      var prompt = this.prompt,
+          promptPosition = this.promptPosition;
+      return _ref = {}, _defineProperty(_ref, "".concat(prompt), prompt), _defineProperty(_ref, "prompt-".concat(promptPosition), promptPosition), _ref;
+    }
+  },
   components: {
     'c-icon': _icon.default
   }
@@ -303,9 +295,7 @@ exports.default = _default;
     
         /* template */
         Object.assign($b79dcc, (function () {
-          var render = function () {
-var _obj;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:( _obj = {}, _obj[("" + _vm.prompt)] = _vm.prompt, _obj[("prompt-" + _vm.promptPosition)] = _vm.promptPosition, _obj )},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event.target.value)},"blur":function($event){return _vm.$emit('blur',$event.target.value)},"input":function($event){return _vm.$emit('input',$event.target.value)},"focus":function($event){return _vm.$emit('focus',$event.target.value)}}}),_vm._v(" "),(_vm.prompt)?_c('div',[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.prompt === 'error' ? _vm.errorMessage : _vm.passMessage))])],1):_vm._e()])}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-input-wrapper",class:_vm.inputClass},[_c('input',{staticClass:"c-input",attrs:{"type":"text","disabled":_vm.disabled,"placeholder":_vm.placeholder},domProps:{"value":_vm.value},on:{"change":function($event){return _vm.$emit('change',$event.target.value)},"blur":function($event){return _vm.$emit('blur',$event.target.value)},"input":function($event){return _vm.$emit('input',$event.target.value)},"focus":function($event){return _vm.$emit('focus',$event.target.value)}}}),_vm._v(" "),(_vm.prompt)?_c('div',[_c('c-icon',{attrs:{"icon":"i-error"}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.prompt === 'error' ? _vm.errorMessage : _vm.passMessage))])],1):_vm._e()])}
 var staticRenderFns = []
 
           return {

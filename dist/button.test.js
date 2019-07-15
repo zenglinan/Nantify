@@ -237,20 +237,8 @@ var _icon = _interopRequireDefault(require("./component/icon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var _default = {
   name: 'coco-button',
   props: {
@@ -270,6 +258,15 @@ var _default = {
       default: false
     }
   },
+  computed: {
+    buttonClass: function buttonClass() {
+      var iconPosition = this.iconPosition,
+          loading = this.loading;
+      return [_defineProperty({}, "icon-".concat(iconPosition), true), {
+        nouse: loading
+      }];
+    }
+  },
   components: {
     'c-icon': _icon.default
   }
@@ -283,11 +280,9 @@ exports.default = _default;
     
         /* template */
         Object.assign($1d5465, (function () {
-          var render = function () {
-var _obj;
-var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{class:[ 'coco','c-button',
-                  ( _obj = {}, _obj[("icon-" + _vm.iconPosition)] = true, _obj ),
-                  {nouse: _vm.loading} ],on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?_c('c-icon',{staticClass:"loading",attrs:{"icon":"i-loading"}}):_vm._e(),_vm._v(" "),(_vm.icon && !_vm.loading)?_c('c-icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_c('div',{staticClass:"content"},[_vm._t("default",[_vm._v("按钮")])],2)],1)}
+          var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{class:[ 'coco',
+                  'c-button',
+                  _vm.buttonClass ],on:{"click":function($event){return _vm.$emit('click')}}},[(_vm.loading)?_c('c-icon',{staticClass:"loading",attrs:{"icon":"i-loading"}}):_vm._e(),_vm._v(" "),(_vm.icon && !_vm.loading)?_c('c-icon',{attrs:{"icon":_vm.icon}}):_vm._e(),_vm._v(" "),_c('div',{staticClass:"content"},[_vm._t("default",[_vm._v("按钮")])],2)],1)}
 var staticRenderFns = []
 
           return {
