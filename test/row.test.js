@@ -28,8 +28,6 @@ describe('Row', () => {
     setTimeout(() => {
       const row = vm.$el.querySelector('.c-row')
       const col = vm.$el.querySelector('.c-col')
-      console.log(vm.$el);
-      console.log(div)
       expect(getComputedStyle(row).marginLeft).to.eq('-5px')
       expect(getComputedStyle(row).marginRight).to.eq('-5px')
       expect(getComputedStyle(col).paddingLeft).to.eq('5px')

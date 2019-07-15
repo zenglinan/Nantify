@@ -288,17 +288,15 @@ describe('Row', function () {
 
     _vue.default.component('c-col', _col.default);
 
-    var div1 = document.createElement('div');
-    document.body.appendChild(div1);
-    div1.innerHTML = "\n      <c-row gutter=\"10\">\n        <c-col span=\"12\"></c-col>\n        <c-col span=\"12\"></c-col>\n      <c-row>\n    ";
+    var div = document.createElement('div');
+    document.body.appendChild(div);
+    div.innerHTML = "\n      <c-row gutter=\"10\">\n        <c-col span=\"12\"></c-col>\n        <c-col span=\"12\"></c-col>\n      <c-row>\n    ";
     var vm = new _vue.default({
-      el: div1
+      el: div
     });
     setTimeout(function () {
       var row = vm.$el.querySelector('.c-row');
       var col = vm.$el.querySelector('.c-col');
-      console.log(vm.$el);
-      console.log(div1);
       expect(getComputedStyle(row).marginLeft).to.eq('-5px');
       expect(getComputedStyle(row).marginRight).to.eq('-5px');
       expect(getComputedStyle(col).paddingLeft).to.eq('5px');
