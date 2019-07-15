@@ -22,12 +22,10 @@
   }
 
 
-
   body {
     padding: 0;
     margin: 10px;
   }
-
 
 
   .input, .grid {
@@ -46,19 +44,59 @@
 
 <body>
 <div id="app">
+  <div class="layout">
+    <!--    上中下结构-->
+    <c-wrapper>
+      <c-header></c-header>
+      <c-content></c-content>
+      <c-footer></c-footer>
+    </c-wrapper>
+    <!--    中左slider-->
+    <c-wrapper>
+      <c-header></c-header>
+      <c-wrapper>
+        <c-slider span="12"></c-slider>
+        <c-content span="12"></c-content>
+      </c-wrapper>
+      <c-footer></c-footer>
+    </c-wrapper>
+    <!--    侧边栏-->
+    <c-wrapper>
+      <c-slider></c-slider>
+      <c-wrapper>
+        <c-header></c-header>
+        <c-content></c-content>
+        <c-footer></c-footer>
+      </c-wrapper>
+    </c-wrapper>
+  </div>
   <div class="grid">
     <c-row gutter="10">
-      <c-col span="12"><div style="border: 1px solid green; width: 100%">我是其中一格，总格数为24</div></c-col>
-      <c-col span="12"><div style="border: 1px solid green; width: 100%">默认会均分哦</div></c-col>
+      <c-col span="12">
+        <div style="border: 1px solid green; width: 100%">我是其中一格，总格数为24</div>
+      </c-col>
+      <c-col span="12">
+        <div style="border: 1px solid green; width: 100%">默认会均分哦</div>
+      </c-col>
     </c-row>
     <c-row>
-      <c-col span="10"><div style="border: 1px solid green; width: 100%">10格</div></c-col>
-      <c-col span="12" offset="2"><div style="border: 1px solid green; width: 100%">我的偏移为2格</div></c-col>
+      <c-col span="10">
+        <div style="border: 1px solid green; width: 100%">10格</div>
+      </c-col>
+      <c-col span="12" offset="2">
+        <div style="border: 1px solid green; width: 100%">我的偏移为2格</div>
+      </c-col>
     </c-row>
     <c-row>
-      <c-col span="8"><div style="border: 1px solid green; width: 100%">8</div></c-col>
-      <c-col span="6" offset="1"><div style="border: 1px solid green; width: 100%">不要给c-row设置宽度，否则可能失效</div></c-col>
-      <c-col span="6" offset="3"><div style="border: 1px solid green; width: 100%">偏移3</div></c-col>
+      <c-col span="8">
+        <div style="border: 1px solid green; width: 100%">8</div>
+      </c-col>
+      <c-col span="6" offset="1">
+        <div style="border: 1px solid green; width: 100%">不要给c-row设置宽度，否则可能失效</div>
+      </c-col>
+      <c-col span="6" offset="3">
+        <div style="border: 1px solid green; width: 100%">偏移3</div>
+      </c-col>
     </c-row>
   </div>
   <div class="input">
