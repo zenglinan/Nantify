@@ -283,7 +283,7 @@ describe('Row', function () {
   it('存在.', function () {
     expect(_row.default).to.exist;
   });
-  it('可以接收gutter 并设置正确的margin padding', function () {
+  it('可以接收gutter 并设置正确的margin padding', function (done) {
     _vue.default.component('c-row', _row.default);
 
     _vue.default.component('c-col', _col.default);
@@ -295,12 +295,14 @@ describe('Row', function () {
       el: "div"
     });
     setTimeout(function () {
+      console.log(vm.$el);
       var row = vm.$el.querySelector('.c-row');
       var col = vm.$el.querySelector('.c-col');
       expect(getComputedStyle(row).marginLeft).to.eq('-5px');
       expect(getComputedStyle(row).marginRight).to.eq('-5px');
       expect(getComputedStyle(col).paddingLeft).to.eq('5px');
-      expect(getComputedStyle(row).paddingLeft).to.eq('5px');
+      expect(getComputedStyle(col).paddingLeft).to.eq('5px');
+      done();
     }, 0);
   });
 });

@@ -11,7 +11,7 @@ describe('Row', () => {
   it('存在.', () => {
     expect(Row).to.exist
   })
-  it('可以接收gutter 并设置正确的margin padding', () => {
+  it('可以接收gutter 并设置正确的margin padding', (done) => {
     Vue.component('c-row', Row)
     Vue.component('c-col', Col)
     let div = document.createElement('div')
@@ -26,12 +26,14 @@ describe('Row', () => {
       el: "div"
     })
     setTimeout(() => {
+      console.log(vm.$el)
       const row = vm.$el.querySelector('.c-row')
       const col = vm.$el.querySelector('.c-col')
       expect(getComputedStyle(row).marginLeft).to.eq('-5px')
       expect(getComputedStyle(row).marginRight).to.eq('-5px')
       expect(getComputedStyle(col).paddingLeft).to.eq('5px')
-      expect(getComputedStyle(row).paddingLeft).to.eq('5px')
+      expect(getComputedStyle(col).paddingLeft).to.eq('5px')
+      done()
     },0)
   })
 
