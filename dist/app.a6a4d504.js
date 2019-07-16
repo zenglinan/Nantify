@@ -13437,7 +13437,7 @@ var _default = {
       type: String,
       default: 'top',
       validator: function validator(value) {
-        return ['top', 'middle', 'bottom'].includes(value);
+        return ['top', 'middle', 'bottom'].indexOf(value) !== -1;
       }
     }
   },

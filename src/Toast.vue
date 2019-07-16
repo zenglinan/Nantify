@@ -24,7 +24,7 @@
         type: String,
         default: 'top',
         validator(value) {
-          return ['top', 'middle', 'bottom'].includes(value);
+          return ['top', 'middle', 'bottom'].indexOf(value) !== -1;
         }
       }
     },
@@ -58,7 +58,7 @@
 
     &.toast-top {top: 10px;}
 
-    &.toast-middle {top: 50%;}
+    &.toast-middle {top: 50%; transform: translate(-50%, -50%)}
 
     &.toast-bottom {bottom: 10px;}
 

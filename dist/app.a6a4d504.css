@@ -326,6 +326,7 @@ to {
 }
 .c-toast.toast-middle[data-v-3698dc] {
   top: 50%;
+  transform: translate(-50%, -50%);
 }
 .c-toast.toast-bottom[data-v-3698dc] {
   bottom: 10px;
