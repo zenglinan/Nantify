@@ -10,6 +10,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Content from './Content'
 import Toast from './plugin/Toast'
+
 Vue.use(Toast)
 new Vue({
   el: '#app',
@@ -33,8 +34,13 @@ new Vue({
     }
   },
   methods: {
-    toast(message) {
-      this.$toast(message)
+    toast() {
+      this.$toast(
+          {
+            message: 'hello',
+            autoClose: false
+          }
+      )
     }
   }
 })
