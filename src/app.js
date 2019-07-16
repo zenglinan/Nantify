@@ -39,9 +39,9 @@ new Vue({
           {
             message: 'hello',
             autoClose: false,
-            callback: () => {
-              alert(1)
-            },
+            // callback: () => {
+            //   alert(1)
+            // },
             position: 'bottom'
           }
       )

@@ -13538,30 +13538,41 @@ var _Toast = _interopRequireDefault(require("../Toast"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var currentToast;
 var _default = {
   install: function install(Vue, options) {
-    Vue.prototype.$toast = function (_ref) {
-      var message = _ref.message,
-          autoClose = _ref.autoClose,
-          closeDelay = _ref.closeDelay,
-          callback = _ref.callback,
-          position = _ref.position;
-      var Constructor = Vue.extend(_Toast.default);
-      var vm = new Constructor({
-        propsData: {
-          autoClose: autoClose,
-          closeDelay: closeDelay,
-          callback: callback,
-          position: position
-        }
-      });
-      vm.$slots.default = message;
-      vm.$mount();
-      document.body.appendChild(vm.$el);
+    Vue.prototype.$toast = function (toastOptions) {
+      if (currentToast) {
+        // 如果已经有Toast存在，先关掉上一个，避免多个重叠
+        currentToast.close();
+      }
+
+      currentToast = createToast(Vue, toastOptions);
     };
   }
 };
 exports.default = _default;
+
+function createToast(Vue, _ref) {
+  var message = _ref.message,
+      autoClose = _ref.autoClose,
+      closeDelay = _ref.closeDelay,
+      callback = _ref.callback,
+      position = _ref.position;
+  var Constructor = Vue.extend(_Toast.default);
+  var vm = new Constructor({
+    propsData: {
+      autoClose: autoClose,
+      closeDelay: closeDelay,
+      callback: callback,
+      position: position
+    }
+  });
+  vm.$slots.default = message;
+  vm.$mount();
+  document.body.appendChild(vm.$el);
+  return vm;
+}
 },{"../Toast":"src/Toast.vue"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -13619,9 +13630,9 @@ new _vue.default({
       this.$toast({
         message: 'hello',
         autoClose: false,
-        callback: function callback() {
-          alert(1);
-        },
+        // callback: () => {
+        //   alert(1)
+        // },
         position: 'bottom'
       });
     }
