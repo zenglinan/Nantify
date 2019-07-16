@@ -38,7 +38,11 @@ new Vue({
       this.$toast(
           {
             message: 'hello',
-            autoClose: false
+            autoClose: false,
+            callback: () => {
+              alert(1)
+            },
+            position: 'bottom'
           }
       )
     }

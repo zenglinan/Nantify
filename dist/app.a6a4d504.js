@@ -13429,6 +13429,16 @@ var _default = {
     closeDelay: {
       type: [String, Number],
       default: 2
+    },
+    callback: {
+      type: Function
+    },
+    position: {
+      type: String,
+      default: 'top',
+      validator: function validator(value) {
+        return ['top', 'middle', 'bottom'].includes(value);
+      }
     }
   },
   mounted: function mounted() {
@@ -13444,6 +13454,7 @@ var _default = {
     close: function close() {
       this.$el.remove();
       this.$destroy();
+      this.callback && this.callback();
     }
   }
 };
@@ -13457,12 +13468,16 @@ exports.default = _default;
         /* template */
         Object.assign($3698dc, (function () {
           var render = function() {
+  var _obj
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "c-toast" },
+    {
+      staticClass: "c-toast",
+      class: ((_obj = {}), (_obj["toast-" + _vm.position] = true), _obj)
+    },
     [
       _vm._t("default"),
       _vm._v(" "),
@@ -13528,12 +13543,16 @@ var _default = {
     Vue.prototype.$toast = function (_ref) {
       var message = _ref.message,
           autoClose = _ref.autoClose,
-          closeDelay = _ref.closeDelay;
+          closeDelay = _ref.closeDelay,
+          callback = _ref.callback,
+          position = _ref.position;
       var Constructor = Vue.extend(_Toast.default);
       var vm = new Constructor({
         propsData: {
           autoClose: autoClose,
-          closeDelay: closeDelay
+          closeDelay: closeDelay,
+          callback: callback,
+          position: position
         }
       });
       vm.$slots.default = message;
@@ -13599,7 +13618,11 @@ new _vue.default({
     toast: function toast() {
       this.$toast({
         message: 'hello',
-        autoClose: false
+        autoClose: false,
+        callback: function callback() {
+          alert(1);
+        },
+        position: 'bottom'
       });
     }
   }

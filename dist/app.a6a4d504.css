@@ -308,10 +308,9 @@ to {
 }
 .c-toast[data-v-3698dc] {
   font-size: 14px;
-  height: 40px;
+  height: 42px;
   line-height: 1.8;
   position: fixed;
-  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -321,6 +320,15 @@ to {
   border-radius: 4px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   padding: 0 60px;
+}
+.c-toast.toast-top[data-v-3698dc] {
+  top: 10px;
+}
+.c-toast.toast-middle[data-v-3698dc] {
+  top: 50%;
+}
+.c-toast.toast-bottom[data-v-3698dc] {
+  bottom: 10px;
 }
 .c-toast .c-close[data-v-3698dc] {
   cursor: pointer;
