@@ -131,7 +131,7 @@ if ("production" === 'production') {
 } else {
   module.exports = require('./vue.common.dev.js');
 }
-},{"./vue.common.prod.js":"BydX"}],"2sOC":[function(require,module,exports) {
+},{"./vue.common.prod.js":"BydX"}],"dvEv":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -177,14 +177,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $5d1e58 = exports.default || module.exports;
+        var $0563fd = exports.default || module.exports;
       
-      if (typeof $5d1e58 === 'function') {
-        $5d1e58 = $5d1e58.options;
+      if (typeof $0563fd === 'function') {
+        $0563fd = $0563fd.options;
       }
     
         /* template */
-        Object.assign($5d1e58, (function () {
+        Object.assign($0563fd, (function () {
           var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-col",class:_vm.colClass,style:(_vm.colStyle)},[_vm._t("default")],2)}
 var staticRenderFns = []
 
@@ -192,12 +192,12 @@ var staticRenderFns = []
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-5d1e58",
+            _scopeId: "data-v-0563fd",
             functional: undefined
           };
         })());
       
-},{}],"rWcA":[function(require,module,exports) {
+},{}],"j1gz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -205,7 +205,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _col = _interopRequireDefault(require("./col"));
+var _Col = _interopRequireDefault(require("./Col"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -234,7 +234,7 @@ var _default = {
     }
   },
   components: {
-    'c-col': _col.default
+    'c-col': _Col.default
   },
   mounted: function mounted() {
     var _this = this;
@@ -245,14 +245,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $c5b6e6 = exports.default || module.exports;
+        var $ec5628 = exports.default || module.exports;
       
-      if (typeof $c5b6e6 === 'function') {
-        $c5b6e6 = $c5b6e6.options;
+      if (typeof $ec5628 === 'function') {
+        $ec5628 = $ec5628.options;
       }
     
         /* template */
-        Object.assign($c5b6e6, (function () {
+        Object.assign($ec5628, (function () {
           var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-row",style:(_vm.rowStyle)},[_vm._t("default")],2)}
 var staticRenderFns = []
 
@@ -260,19 +260,19 @@ var staticRenderFns = []
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-c5b6e6",
+            _scopeId: "data-v-ec5628",
             functional: undefined
           };
         })());
       
-},{"./col":"2sOC"}],"Tgvo":[function(require,module,exports) {
+},{"./Col":"dvEv"}],"Tgvo":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
 
-var _row = _interopRequireDefault(require("../src/row"));
+var _Row = _interopRequireDefault(require("../src/Row"));
 
-var _col = _interopRequireDefault(require("../src/col"));
+var _Col = _interopRequireDefault(require("../src/Col"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -281,12 +281,12 @@ _vue.default.config.productionTip = false;
 _vue.default.config.devtools = false;
 describe('Row', function () {
   it('存在.', function () {
-    expect(_row.default).to.exist;
+    expect(_Row.default).to.exist;
   });
   it('可以接收gutter 并设置正确的margin padding', function (done) {
-    _vue.default.component('c-row', _row.default);
+    _vue.default.component('c-row', _Row.default);
 
-    _vue.default.component('c-col', _col.default);
+    _vue.default.component('c-col', _Col.default);
 
     var div = document.createElement('div');
     document.body.appendChild(div);
@@ -307,5 +307,5 @@ describe('Row', function () {
     });
   });
 });
-},{"vue":"ApMz","../src/row":"rWcA","../src/col":"2sOC"}]},{},["Tgvo"], null)
+},{"vue":"ApMz","../src/Row":"j1gz","../src/Col":"dvEv"}]},{},["Tgvo"], null)
 //# sourceMappingURL=/row.test.js.map
