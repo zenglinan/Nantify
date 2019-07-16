@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="添加Toast动画 淡入、上滑、下滑，消失动画还未做">
-      <change afterPath="$PROJECT_DIR$/test/toast.test.js" afterDir="false" />
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="upload close.png">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/toast.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -92,6 +82,20 @@
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asset/close.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -147,7 +151,6 @@
         <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/dist/button.test.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/button.test.js" />
@@ -181,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/test/toast.test.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -287,7 +291,7 @@
       <workItem from="1563076290008" duration="17949000" />
       <workItem from="1563166280586" duration="5285000" />
       <workItem from="1563174181706" duration="10898000" />
-      <workItem from="1563245787935" duration="23216000" />
+      <workItem from="1563245787935" duration="23916000" />
     </task>
     <task id="LOCAL-00001" summary="添加button的loading动画可选项">
       <created>1562737986148</created>
@@ -541,11 +545,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563291288108</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="完成Toast的第一个测试用例，解决了异步队列引发的问题">
+      <created>1563295200545</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563295200545</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152492000" />
+    <option name="totallyTimeSpent" value="153192000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,12 +569,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5452931" weight="0.27402702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.40497336" visible="true" weight="0.27402702" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info active="true" id="Terminal" order="4" sideWeight="0.45470694" side_tool="true" visible="true" weight="0.41223192" />
+      <window_info id="Terminal" order="4" sideWeight="0.5950267" side_tool="true" visible="true" weight="0.27402702" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -615,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化 Input 的props的单元测试代码" />
     <MESSAGE value="优化 Input 的事件监听的单元测试代码" />
     <MESSAGE value="更改Input.vue =&gt; input.vue 统一名称" />
     <MESSAGE value="让Input组件支持v-model" />
@@ -640,7 +651,8 @@
     <MESSAGE value="修复Toast不完全居中的bug" />
     <MESSAGE value="修复多次点击后出现多个Toast重叠的bug" />
     <MESSAGE value="添加Toast动画 淡入、上滑、下滑，消失动画还未做" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Toast动画 淡入、上滑、下滑，消失动画还未做" />
+    <MESSAGE value="完成Toast的第一个测试用例，解决了异步队列引发的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成Toast的第一个测试用例，解决了异步队列引发的问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/app.58671076.js" />
@@ -659,13 +671,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/button.test.js" />
     <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -802,9 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/close.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -899,6 +901,16 @@
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/close.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
