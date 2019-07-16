@@ -24,14 +24,14 @@
     name: "coco-input",
     props: {
       value: {
-        type: String,
+        type: String
       },
       disabled: {
         type: Boolean,
         default: false
       },
       placeholder: {
-        type: String,
+        type: String
       },
       prompt: {
         type: String,

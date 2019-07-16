@@ -27,7 +27,7 @@
   }
 
 
-  .input, .grid {
+  .input, .grid, .toast {
     margin-bottom: 20px;
   }
 
@@ -57,6 +57,9 @@
 
 <body>
 <div id="app">
+  <div class="toast">
+    <button @click="toast('hello')">点我</button>
+  </div>
   <div class="layout">
     <!--    上中下结构-->
     <c-wrapper style="margin-bottom: 30px;">

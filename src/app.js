@@ -9,7 +9,8 @@ import Wrapper from './Wrapper'
 import Header from './Header'
 import Footer from './Footer'
 import Content from './Content'
-
+import Toast from './plugin/Toast'
+Vue.use(Toast)
 new Vue({
   el: '#app',
   components: {
@@ -29,6 +30,11 @@ new Vue({
       ifLoading: false,
       message: 'Hi,我支持v-model!',
       promptType: 'error'
+    }
+  },
+  methods: {
+    toast(message) {
+      this.$toast(message)
     }
   }
 })

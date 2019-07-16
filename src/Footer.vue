@@ -11,7 +11,5 @@
 </script>
 
 <style scoped lang="scss">
-  .c-footer {
-    flex-grow: 1;
-  }
+  .c-footer {flex-grow: 1;}
 </style>
