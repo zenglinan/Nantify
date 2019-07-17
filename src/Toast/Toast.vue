@@ -92,7 +92,7 @@
 
     &.toast-bottom {bottom: 10px; animation: slideUp $animation-time;}
 
-    & .c-close {cursor: pointer;background-position: center;background-image: url("../asset/close.png");
+    & .c-close {cursor: pointer;background-position: center;background-image: url("../../asset/close.png");
       background-size: cover;content: '';height: 10px;display: block;position: absolute;
       right: 3px;top: 3px;width: 10px;}
   }

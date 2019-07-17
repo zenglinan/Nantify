@@ -57,6 +57,23 @@
 
 <body>
 <div id="app">
+  <div class="tabs">
+    <c-tabs>
+      <c-tab-nav>
+        <c-tab name="tab1">Tab1</c-tab>
+        <c-tab name="tab2">Tab2</c-tab>
+      </c-tab-nav>
+      <c-tab-content>
+        <c-tab-pane name="tab1">
+          <div>content1</div>
+        </c-tab-pane>
+        <c-tab-pane name="tab2">
+          <div>content2</div>
+        </c-tab-pane>
+      </c-tab-content>
+    </c-tabs>
+
+  </div>
   <div class="toast">
     <button @click="toast()">点我</button>
   </div>

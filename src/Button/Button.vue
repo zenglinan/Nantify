@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import Icon from './component/icon'
+  import Icon from '../component/icon'
   export default {
     name: 'coco-button',
     props: {

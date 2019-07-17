@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import '../icon.js'
+  import '../../asset/icon.js'
   export default {
     name:"coco-icon",
     props: {
