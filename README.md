@@ -96,3 +96,12 @@ html {
 
 #### Slider
 边栏组件, 需设置宽度, 默认高度为0
+
+### Toast
+**相关属性:**<br>
+```autoClose[Boolean]```: 是否自动关闭Toast提示框<br>
+```position[String]```: Toast提示框的位置, ('top'[default] | 'middle' | 'bottom')<br>
+```closeDelay[String | Boolean]```: 指定多少秒后自动关闭Toast, 需先设置```autoClose```为true<br>
+```callback[Function]```: 指定关闭Toast后触发的回调函数
+
+
