@@ -13603,6 +13603,7 @@ var _default = {
   props: {
     direction: {
       type: String,
+      default: 'row',
       validator: function validator(value) {
         return ['column', 'row'].indexOf(value) !== -1;
       }

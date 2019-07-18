@@ -46,6 +46,12 @@
 
 <style scoped lang="scss">
   $active-color: #4A90E2;
+  .c-tab-column {  // 纵向
+    .c-tab-item {
+      padding: 1em .5em;
+    }
+  }
+
   .c-tab-item {box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;
     min-height: 32px;padding: 0 1em;position: relative;cursor: pointer;
 

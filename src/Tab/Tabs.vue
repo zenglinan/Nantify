@@ -19,6 +19,7 @@
     props: {
       direction: {
         type: String,
+        default: 'row',
         validator(value) {
           return ['column', 'row'].indexOf(value) !== -1
         }
@@ -40,11 +41,8 @@
 
 <style scoped lang="scss">
   .c-tabs {
-    /*&.c-tab-row{*/
-    /*  flex-direction: row;*/
-    /*}*/
-    /*&.c-tab-column{*/
-    /*  flex-direction: column;*/
-    /*}*/
+    &.c-tab-column{
+      display: flex;
+    }
   }
 </style>

@@ -11,7 +11,12 @@
 </script>
 
 <style scoped lang="scss">
+  .c-tab-column {
+    .c-tab-content {
+      padding: 1em 1.5em;
+    }
+  }
   .c-tab-content {
-    padding: 10px 16px;
+    padding: 1em;
   }
 </style>
