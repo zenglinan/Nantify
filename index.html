@@ -28,8 +28,8 @@
   }
 
 
-  .input, .grid, .toast {
-    margin-bottom: 20px;
+  .input, .grid, .toast, .tabs {
+    margin-bottom: 40px;
   }
 
   .grid {
@@ -40,18 +40,23 @@
     height: 30px;
     margin-bottom: 20px;
   }
+
   .layout .c-wrapper div {
     height: 50px;
   }
+
   .layout .c-header {
     background: red
   }
+
   .layout .c-content {
     background: green
   }
+
   .layout .c-footer {
     background: blue
   }
+
   .layout .c-slider {
     background: pink
   }
@@ -60,11 +65,12 @@
 <body>
 <div id="app">
   <div class="tabs">
-    <c-tabs>
+    <c-tabs :selected.sync="selectedTab" direction="column">
       <c-tab-nav>
-        <c-tab name="tab1">Tab1</c-tab>
+        <c-tab active name="tab1" icon="i-setting">Tab1</c-tab>
         <c-tab name="tab2">Tab2</c-tab>
       </c-tab-nav>
+
       <c-tab-content>
         <c-tab-pane name="tab1">
           <div>content1</div>
@@ -74,7 +80,6 @@
         </c-tab-pane>
       </c-tab-content>
     </c-tabs>
-
   </div>
   <div class="toast">
     <button @click="toast()">点我</button>
@@ -96,7 +101,7 @@
       <c-footer></c-footer>
     </c-wrapper>
     <!--    侧边栏-->
-    <c-wrapper  style="margin-bottom: 30px;">
+    <c-wrapper style="margin-bottom: 30px;">
       <c-slider style="width: 200px"></c-slider>
       <c-wrapper>
         <c-header></c-header>

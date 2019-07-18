@@ -10,6 +10,11 @@ import Header from './Layout/Header'
 import Footer from './Layout/Footer'
 import Content from './Layout/Content'
 import Toast from './Toast/plugin/Toast'
+import Tabs from './Tab/Tabs'
+import TabContent from './Tab/Tab-Content'
+import TabNav from './Tab/Tab-Nav'
+import TabPane from './Tab/Tab-Pane'
+import TabItem from './Tab/Tab-Item'
 
 Vue.use(Toast)
 new Vue({
@@ -24,13 +29,19 @@ new Vue({
     'c-header': Header,
     'c-wrapper': Wrapper,
     'c-slider': Slider,
-    'c-content': Content
+    'c-content': Content,
+    'c-tabs': Tabs,
+    'c-tab': TabItem,
+    'c-tab-pane': TabPane,
+    'c-tab-nav': TabNav,
+    'c-tab-content': TabContent
   },
   data() {
     return {
       ifLoading: false,
       message: 'Hi,我支持v-model!',
-      promptType: 'error'
+      promptType: 'error',
+      selectedTab: "tab1"
     }
   },
   methods: {
@@ -45,6 +56,6 @@ new Vue({
             position: 'bottom'
           }
       )
-    }
+    },
   }
 })
