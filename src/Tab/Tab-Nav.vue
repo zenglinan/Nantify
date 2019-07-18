@@ -12,6 +12,7 @@
 
 <style scoped lang="scss">
   .c-tab-nav {
+    border-bottom: 2px solid rgb(225,225,225);
     display: flex;
   }
 </style>

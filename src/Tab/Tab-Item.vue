@@ -41,15 +41,33 @@
 </script>
 
 <style scoped lang="scss">
+  $active-color: #4A90E2;
   .c-tab-item {
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 32px;
-    padding-right: 1em;
-    &.active {
-      border-bottom: 1px solid blue;
+    padding: 0 1em;
+    position: relative;
+    cursor: pointer;
+    .icon {
+      padding-right: 5px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: none;
+    }
+    &.active, &:hover {
+      color: $active-color;
+    }
+    &.active::after {
+      background: $active-color;
     }
   }
 </style>
