@@ -32,13 +32,13 @@
     },
     inject: ['eventBus'],  // 订阅eventBus
     mounted() {
-      this.eventBus.$on('update:selectedTab', (selectedName) => {  // 接收到传递的修改事件
+      this.eventBus.$on('changeSelectedTab', (selectedName) => {  // 接收到传递的修改事件
         this.active = (selectedName === this.name)
       })
     },
     methods: {
       changeSelectedTab() {  // 点击tab时传递事件，传递点击的tab的name
-        !this.disabled && this.eventBus.$emit('update:selectedTab', this.name)
+        !this.disabled && this.eventBus.$emit('changeSelectedTab', this.name)
       }
     }
   }

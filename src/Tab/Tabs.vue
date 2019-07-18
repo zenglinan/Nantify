@@ -34,7 +34,7 @@
       }
     },
     mounted(){
-      this.eventBus.$emit('update:selectedTab',this.selected)  // 向后代传递修改selectedTab的事件，值为用户初始定义的name
+      this.eventBus.$emit('changeSelectedTab',this.selected)  // 向后代传递修改selectedTab的事件，值为用户初始定义的name
     }
   }
 </script>

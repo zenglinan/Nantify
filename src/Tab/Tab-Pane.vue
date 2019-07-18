@@ -19,7 +19,7 @@
     },
     inject: ['eventBus'],
     mounted() {
-      this.eventBus.$on('update:selectedTab', (selectedName) => {
+      this.eventBus.$on('changeSelectedTab', (selectedName) => {
         this.active = (selectedName === this.name)
       })
     }

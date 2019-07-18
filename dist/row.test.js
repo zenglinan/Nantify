@@ -131,7 +131,7 @@ if ("production" === 'production') {
 } else {
   module.exports = require('./vue.common.dev.js');
 }
-},{"./vue.common.prod.js":"BydX"}],"dvEv":[function(require,module,exports) {
+},{"./vue.common.prod.js":"BydX"}],"Mrf+":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -177,14 +177,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $0563fd = exports.default || module.exports;
+        var $f27bfa = exports.default || module.exports;
       
-      if (typeof $0563fd === 'function') {
-        $0563fd = $0563fd.options;
+      if (typeof $f27bfa === 'function') {
+        $f27bfa = $f27bfa.options;
       }
     
         /* template */
-        Object.assign($0563fd, (function () {
+        Object.assign($f27bfa, (function () {
           var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-col",class:_vm.colClass,style:(_vm.colStyle)},[_vm._t("default")],2)}
 var staticRenderFns = []
 
@@ -192,12 +192,12 @@ var staticRenderFns = []
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-0563fd",
+            _scopeId: "data-v-f27bfa",
             functional: undefined
           };
         })());
       
-},{}],"j1gz":[function(require,module,exports) {
+},{}],"2597":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -245,14 +245,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $ec5628 = exports.default || module.exports;
+        var $1baa71 = exports.default || module.exports;
       
-      if (typeof $ec5628 === 'function') {
-        $ec5628 = $ec5628.options;
+      if (typeof $1baa71 === 'function') {
+        $1baa71 = $1baa71.options;
       }
     
         /* template */
-        Object.assign($ec5628, (function () {
+        Object.assign($1baa71, (function () {
           var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"c-row",style:(_vm.rowStyle)},[_vm._t("default")],2)}
 var staticRenderFns = []
 
@@ -260,19 +260,19 @@ var staticRenderFns = []
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-ec5628",
+            _scopeId: "data-v-1baa71",
             functional: undefined
           };
         })());
       
-},{"./Col":"dvEv"}],"Tgvo":[function(require,module,exports) {
+},{"./Col":"Mrf+"}],"Tgvo":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
 
-var _Row = _interopRequireDefault(require("../src/Row"));
+var _Row = _interopRequireDefault(require("../src/Grid System/Row"));
 
-var _Col = _interopRequireDefault(require("../src/Col"));
+var _Col = _interopRequireDefault(require("../src/Grid System/Col"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -307,5 +307,5 @@ describe('Row', function () {
     });
   });
 });
-},{"vue":"ApMz","../src/Row":"j1gz","../src/Col":"dvEv"}]},{},["Tgvo"], null)
+},{"vue":"ApMz","../src/Grid System/Row":"2597","../src/Grid System/Col":"Mrf+"}]},{},["Tgvo"], null)
 //# sourceMappingURL=/row.test.js.map

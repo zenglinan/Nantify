@@ -13619,7 +13619,7 @@ var _default = {
     };
   },
   mounted: function mounted() {
-    this.eventBus.$emit('update:selectedTab', this.selected); // 向后代传递修改selectedTab的事件，值为用户初始定义的name
+    this.eventBus.$emit('changeSelectedTab', this.selected); // 向后代传递修改selectedTab的事件，值为用户初始定义的name
   }
 };
 exports.default = _default;
@@ -13832,7 +13832,7 @@ var _default = {
   mounted: function mounted() {
     var _this = this;
 
-    this.eventBus.$on('update:selectedTab', function (selectedName) {
+    this.eventBus.$on('changeSelectedTab', function (selectedName) {
       _this.active = selectedName === _this.name;
     });
   }
@@ -13946,7 +13946,7 @@ var _default = {
   mounted: function mounted() {
     var _this = this;
 
-    this.eventBus.$on('update:selectedTab', function (selectedName) {
+    this.eventBus.$on('changeSelectedTab', function (selectedName) {
       // 接收到传递的修改事件
       _this.active = selectedName === _this.name;
     });
@@ -13954,7 +13954,7 @@ var _default = {
   methods: {
     changeSelectedTab: function changeSelectedTab() {
       // 点击tab时传递事件，传递点击的tab的name
-      !this.disabled && this.eventBus.$emit('update:selectedTab', this.name);
+      !this.disabled && this.eventBus.$emit('changeSelectedTab', this.name);
     }
   }
 };
