@@ -65,16 +65,20 @@
   <div class="tabs">
     <c-tabs :selected.sync="selectedTab" direction="column">
       <c-tab-nav>
-        <c-tab active="" name="tab1" icon="i-setting">Tab1</c-tab>
+        <c-tab active="" name="setting" icon="i-setting">Setting</c-tab>
         <c-tab name="tab2">Tab2</c-tab>
+        <c-tab name="girl" disabled="">美女</c-tab>
       </c-tab-nav>
 
       <c-tab-content>
-        <c-tab-pane name="tab1">
+        <c-tab-pane name="setting">
           <div>content1</div>
         </c-tab-pane>
         <c-tab-pane name="tab2">
           <div>content2</div>
+        </c-tab-pane>
+        <c-tab-pane name="girl">
+          <div>骗你的</div>
         </c-tab-pane>
       </c-tab-content>
     </c-tabs>

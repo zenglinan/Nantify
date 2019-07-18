@@ -408,9 +408,14 @@ to {
   width: 100%;
   background: none;
 }
-.c-tab-item.active[data-v-96c8b1], .c-tab-item[data-v-96c8b1]:hover {
+.c-tab-item.active[data-v-96c8b1], .c-tab-item[data-v-96c8b1]:not(.disabled):hover {
   color: #4A90E2;
 }
 .c-tab-item.active[data-v-96c8b1]::after {
+  transition: all 0.5s;
   background: #4A90E2;
+}
+.c-tab-item.disabled[data-v-96c8b1] {
+  cursor: not-allowed;
+  color: #aaaaaa;
 }

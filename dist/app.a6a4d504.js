@@ -13926,6 +13926,10 @@ var _default = {
     },
     name: {
       type: String
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   data: function data() {
@@ -13949,7 +13953,7 @@ var _default = {
   methods: {
     changeSelectedTab: function changeSelectedTab() {
       // 点击tab时传递事件，传递点击的tab的name
-      this.eventBus.$emit('update:selectedTab', this.name);
+      !this.disabled && this.eventBus.$emit('update:selectedTab', this.name);
     }
   }
 };
@@ -13970,7 +13974,7 @@ exports.default = _default;
     "div",
     {
       staticClass: "c-tab-item",
-      class: { active: _vm.active },
+      class: { active: _vm.active, disabled: _vm.disabled },
       on: { click: _vm.changeSelectedTab }
     },
     [
@@ -14079,7 +14083,7 @@ new _vue.default({
       ifLoading: false,
       message: 'Hi,我支持v-model!',
       promptType: 'error',
-      selectedTab: "tab1"
+      selectedTab: "setting"
     };
   },
   methods: {
