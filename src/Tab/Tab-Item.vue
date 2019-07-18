@@ -39,6 +39,8 @@
     methods: {
       changeSelectedTab() {  // 点击tab时传递事件，传递点击的tab的name
         !this.disabled && this.eventBus.$emit('changeSelectedTab', this.name)
+
+        this.eventBus.$emit('xxx')
       }
     }
   }

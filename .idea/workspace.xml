@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="添加Tab组件的方向选项">
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.a6a4d504.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/button.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/button.test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/input.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/input.test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/row.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/row.test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/button.test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/button.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/button.test.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/input.test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/input.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/input.test.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/row.test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/row.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/row.test.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tab/Tab-Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tab/Tab-Item.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tab/Tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tab/Tabs.vue" afterDir="false" />
@@ -38,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -46,17 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Item.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            <state relative-caret-position="342">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="36" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tab/Tabs.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="36" column="44" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="44" />
+            <state relative-caret-position="415">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -65,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/test/toast.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="936">
-              <caret line="52" column="4" lean-forward="true" selection-end-line="69" selection-end-column="2" />
+              <caret line="52" column="4" selection-end-line="69" selection-end-column="2" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
@@ -89,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/test/col.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
@@ -97,11 +101,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Pane.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="450">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -110,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Content.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -118,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Nav.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="306">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -195,10 +208,10 @@
         <option value="$PROJECT_DIR$/test/tabs.test.js" />
         <option value="$PROJECT_DIR$/test/tab.test.js" />
         <option value="$PROJECT_DIR$/test/tab-item.test.js" />
+        <option value="$PROJECT_DIR$/src/Tab/Tab-Pane.vue" />
+        <option value="$PROJECT_DIR$/src/Tab/Tab-Item.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/Tab/Tabs.vue" />
-        <option value="$PROJECT_DIR$/src/Tab/Tab-Item.vue" />
-        <option value="$PROJECT_DIR$/src/Tab/Tab-Pane.vue" />
       </list>
     </option>
   </component>
@@ -219,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,6 +264,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +324,8 @@
       <workItem from="1563174181706" duration="10898000" />
       <workItem from="1563245787935" duration="23916000" />
       <workItem from="1563332071762" duration="14374000" />
-      <workItem from="1563425387244" duration="20622000" />
+      <workItem from="1563425387244" duration="22456000" />
+      <workItem from="1563464099763" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="添加button的loading动画可选项">
       <created>1562737986148</created>
@@ -621,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563451600812</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="子组件不用修改父组件传来的props，去掉sync修饰符">
+      <created>1563458828360</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563458828360</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188188000" />
+    <option name="totallyTimeSpent" value="190319000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,11 +661,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.38188276" visible="true" weight="0.24861" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.38010657" visible="true" weight="0.24861" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info id="Terminal" order="4" sideWeight="0.6181172" side_tool="true" visible="true" weight="0.24861" />
+      <window_info active="true" id="Terminal" order="4" sideWeight="0.61989343" side_tool="true" visible="true" weight="0.24861" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -696,7 +717,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给col添加offset偏移属性" />
     <MESSAGE value="给网格系统添加gutter，基本实现功能" />
     <MESSAGE value="重构代码，将复杂的class和style样式拆分到computed中" />
     <MESSAGE value="修复一个bug，scss循环写错" />
@@ -721,7 +741,8 @@
     <MESSAGE value="完善Tab组件的样式" />
     <MESSAGE value="添加Tab组件的禁用选项" />
     <MESSAGE value="添加Tab组件的方向选项" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Tab组件的方向选项" />
+    <MESSAGE value="子组件不用修改父组件传来的props，去掉sync修饰符" />
+    <option name="LAST_COMMIT_MESSAGE" value="子组件不用修改父组件传来的props，去掉sync修饰符" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/app.58671076.js" />
@@ -877,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Input/Input.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -905,36 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/toast.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="4" lean-forward="true" selection-end-line="69" selection-end-column="2" />
-          <folding>
-            <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/col.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/input.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-          <folding>
-            <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -952,65 +936,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tab-item.test.js">
+    <entry file="file://$PROJECT_DIR$/test/tab-item.test.js" />
+    <entry file="file://$PROJECT_DIR$/test/tab.test.js" />
+    <entry file="file://$PROJECT_DIR$/test/toast.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="936">
+          <caret line="52" column="4" selection-end-line="69" selection-end-column="2" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tab.test.js">
+    <entry file="file://$PROJECT_DIR$/test/input.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="28" />
+        <state>
+          <caret selection-end-line="1" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/test/col.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="306">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tab/Tabs.vue">
+    <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Pane.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="450">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Nav.vue">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Content.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Nav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Item.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        <state relative-caret-position="342">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="36" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Pane.vue">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state relative-caret-position="126">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tab/Tabs.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
         </state>
       </provider>
     </entry>
