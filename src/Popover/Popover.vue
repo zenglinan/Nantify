@@ -27,21 +27,31 @@
       }
     },
     mounted() {
-      this.$el.querySelector('.c-trigger').addEventListener('click', () => {
-        this.show = !this.show
+      this.listenToClick()
+      this.setPopover()
+    },
+    methods: {
+      setPopover() { // 将popover放置为body的子元素, 并且定位
+        // 将元素移出
+        let contentDom = this.$el.removeChild(this.$refs.content)
+        // 作为body的子元素
+        document.body.appendChild(contentDom)
+        const {top, left} = this.$refs.trigger.getBoundingClientRect()
+        contentDom.style.left = `${left + window.scrollX}px`
+        contentDom.style.top = `${top - 6 + window.scrollY}px`
+      },
+      listenToClick() {
         let eventHandle = (e) => {
+          console.log(1);
           this.show = false;
+          document.removeEventListener('click', eventHandle)
         }
-        document.removeEventListener('click', eventHandle)
-        document.addEventListener('click', eventHandle)
-      })
-      // 将元素移出
-      let contentDom = this.$el.removeChild(this.$refs.content)
-      // 作为body的子元素
-      document.body.appendChild(contentDom)
-      const {width, height, top, left} = this.$refs.trigger.getBoundingClientRect()
-      contentDom.style.left = `${left + window.scrollX}px`
-      contentDom.style.top = `${top - 6 + window.scrollY}px`
+        this.$el.querySelector('.c-trigger').addEventListener('click', () => {
+          this.show = !this.show
+          document.removeEventListener('click', eventHandle)
+          document.addEventListener('click', eventHandle)   // 再重新监听
+        })
+      }
     }
   }
 </script>
