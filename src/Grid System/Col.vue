@@ -23,7 +23,7 @@
     },
     computed: {
       colClass() {
-        let {span, offset, align} = this
+        let {span, offset} = this
         return [
           [ span && `col-${span}`,
             offset && `offset-${offset}`,

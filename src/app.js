@@ -15,6 +15,7 @@ import TabContent from './Tab/Tab-Content'
 import TabNav from './Tab/Tab-Nav'
 import TabPane from './Tab/Tab-Pane'
 import TabItem from './Tab/Tab-Item'
+import Popover from './Popover/Popover'
 
 Vue.use(Toast)
 new Vue({
@@ -34,7 +35,8 @@ new Vue({
     'c-tab': TabItem,
     'c-tab-pane': TabPane,
     'c-tab-nav': TabNav,
-    'c-tab-content': TabContent
+    'c-tab-content': TabContent,
+    'c-popover': Popover
   },
   data() {
     return {
