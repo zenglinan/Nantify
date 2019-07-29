@@ -42,7 +42,6 @@
       },
       listenToClick() {
         let eventHandle = (e) => {
-          console.log(1);
           this.show = false;
           document.removeEventListener('click', eventHandle)
         }
@@ -74,32 +73,26 @@
     color: #606266;
     font-size: 14px;
     border-radius: 4px;
+    &::after, &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      height: 0;
+      width: 0;
+      border: 6px solid transparent;
+
+    }
+    &::after {
+      border-top-color: #ffffff;
+      transform: translateY(-1px);
+    }
+    &::before {
+      border-top-color: #ebeef5;
+    }
   }
 
-  .c-content::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 10px;
-    height: 0;
-    width: 0;
-    border: 6px solid transparent;
-    border-top-color: #ffffff;
-    transform: translateY(-1px);
 
-  }
 
-  .c-content::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 10px;
-    height: 0;
-    width: 0;
-    border: 6px solid transparent;
-    border-top-color: #ebeef5;
-
-  }
 </style>
