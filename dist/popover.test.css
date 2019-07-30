@@ -1,0 +1,91 @@
+.c-popover[data-v-845c96] {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+.c-content[data-v-845c96] {
+  box-sizing: border-box;
+  padding: 14px 18px;
+  background: white;
+  border: 1px solid #ebeef5;
+  position: absolute;
+  color: #606266;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 20em;
+  word-break: break-all;
+}
+.c-content[data-v-845c96]::after, .c-content[data-v-845c96]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+}
+.c-content.c-top[data-v-845c96] {
+  margin-top: -6px;
+  transform: translateY(-100%);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+.c-content.c-top[data-v-845c96]::after, .c-content.c-top[data-v-845c96]::before {
+  top: 100%;
+  left: 5px;
+  border-bottom: none;
+}
+.c-content.c-top[data-v-845c96]::after {
+  border-top-color: #ffffff;
+  transform: translateY(-1px);
+}
+.c-content.c-top[data-v-845c96]::before {
+  border-top-color: #ebeef5;
+}
+.c-content.c-bottom[data-v-845c96] {
+  margin-top: 6px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1));
+}
+.c-content.c-bottom[data-v-845c96]::after, .c-content.c-bottom[data-v-845c96]::before {
+  bottom: 100%;
+  left: 5px;
+  border-top: none;
+}
+.c-content.c-bottom[data-v-845c96]::after {
+  border-bottom-color: #ffffff;
+  transform: translateY(1px);
+}
+.c-content.c-bottom[data-v-845c96]::before {
+  border-bottom-color: #ebeef5;
+}
+.c-content.c-left[data-v-845c96] {
+  transform: translateX(-6px);
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1));
+}
+.c-content.c-left[data-v-845c96]::after, .c-content.c-left[data-v-845c96]::before {
+  top: 4px;
+  left: 100%;
+}
+.c-content.c-left[data-v-845c96]::after {
+  border-bottom-color: #ffffff;
+  transform: translateX(-1px) rotate(90deg);
+}
+.c-content.c-left[data-v-845c96]::before {
+  border-bottom-color: #ebeef5;
+  transform: rotate(90deg);
+}
+.c-content.c-right[data-v-845c96] {
+  transform: translateX(6px);
+  filter: drop-shadow(0px 0 2px rgba(0, 0, 0, 0.1));
+}
+.c-content.c-right[data-v-845c96]::after, .c-content.c-right[data-v-845c96]::before {
+  top: 4px;
+  left: 0;
+  margin-left: -12px;
+}
+.c-content.c-right[data-v-845c96]::after {
+  border-bottom-color: #ffffff;
+  transform: translateX(1px) rotate(270deg);
+}
+.c-content.c-right[data-v-845c96]::before {
+  border-bottom-color: #ebeef5;
+  transform: rotate(270deg);
+}

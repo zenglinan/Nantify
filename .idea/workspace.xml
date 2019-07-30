@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="upload dist">
+      <change afterPath="$PROJECT_DIR$/dist/app.5531ecc6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/app.5531ecc6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/app.a6a4d504.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/app.a6a4d504.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/app.a6a4d504.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/app.f5570706.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/button.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/button.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/button.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/close.864d4ebb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/close.d5500daf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/col.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/col.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/col.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/input.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/input.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/input.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/popover.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/row.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/row.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/row.test.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/toast.test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/toast.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/toast.test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/coco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coco.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Popover/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Popover/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,10 +59,32 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
-              <caret line="77" column="17" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="77" selection-end-column="17" />
+              <caret line="199" selection-start-line="94" selection-start-column="2" selection-end-line="199" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-wrapper#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-slider#0;n#c-wrapper#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-wrapper#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-slider#0;n#c-wrapper#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#c-col#2;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -59,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/test/popover.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
@@ -79,7 +134,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Popover/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -92,34 +147,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tab/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="126">
-                <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+                <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Toast/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="5" selection-start-line="5" selection-end-line="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tab/Tab-Content.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -164,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/component/icon.vue" />
         <option value="$PROJECT_DIR$/test/input.test.js" />
         <option value="$PROJECT_DIR$/src/grid.vue" />
         <option value="$PROJECT_DIR$/src/button.vue" />
@@ -188,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/icon.js" />
         <option value="$PROJECT_DIR$/src/plugin/Toast.js" />
         <option value="$PROJECT_DIR$/src/Toast.vue" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/toast.test.js" />
         <option value="$PROJECT_DIR$/src/Tab/Tab-pane.vue" />
         <option value="$PROJECT_DIR$/src/Tab/Tab.vue" />
@@ -211,10 +252,12 @@
         <option value="$PROJECT_DIR$/test/popover.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/Popover/Popover.vue" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/test/popover.test.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Popover/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -336,21 +379,7 @@
       <workItem from="1564321953306" duration="8592000" />
       <workItem from="1564366800797" duration="40091000" />
       <workItem from="1564455560623" duration="24884000" />
-      <workItem from="1564499839172" duration="4575000" />
-    </task>
-    <task id="LOCAL-00007" summary="引入 karma mocha sinon(spy库)进行自动化测试">
-      <created>1562827085871</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1562827085872</updated>
-    </task>
-    <task id="LOCAL-00008" summary="修改npm包的名字，准备上传">
-      <created>1562829721430</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1562829721430</updated>
+      <workItem from="1564499839172" duration="5345000" />
     </task>
     <task id="LOCAL-00009" summary="更新README">
       <created>1562905962483</created>
@@ -681,11 +710,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564489363848</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="添加Popover项目总结">
+      <created>1564504534716</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564504534717</updated>
+    </task>
+    <task id="LOCAL-00057" summary="upload dist">
+      <created>1564504836229</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564504836229</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269666000" />
+    <option name="totallyTimeSpent" value="270436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,8 +844,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建Toast组件和插件" />
-    <MESSAGE value="添加Toast的自动关闭选项和关闭按钮" />
     <MESSAGE value="支持自定义回调函数(关闭Toast时触发)，增加Toast位置选项" />
     <MESSAGE value="修复Toast不完全居中的bug" />
     <MESSAGE value="修复多次点击后出现多个Toast重叠的bug" />
@@ -826,7 +867,9 @@
     <MESSAGE value="解决hover时鼠标移到小三角形时抖动的bug" />
     <MESSAGE value="通过slot传递一个close方法，支持外部关闭popover，解决mouseleave后马上mouseenter popover会消失的定时器的bug" />
     <MESSAGE value="添加测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加测试用例" />
+    <MESSAGE value="添加Popover项目总结" />
+    <MESSAGE value="upload dist" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload dist" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dist/button.test.js" />
@@ -874,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/icon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -907,13 +943,6 @@
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1144,19 +1173,9 @@
     <entry file="file://$PROJECT_DIR$/test/popover.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="77" column="17" lean-forward="true" selection-start-line="74" selection-start-column="6" selection-end-line="77" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1165,7 +1184,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="126">
-            <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
           </first_editor>
           <second_editor />
         </state>
@@ -1185,6 +1204,43 @@
             <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="199" selection-start-line="94" selection-start-column="2" selection-end-line="199" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-wrapper#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-slider#0;n#c-wrapper#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-wrapper#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-slider#0;n#c-wrapper#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#0;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#1;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#c-col#2;n#c-row#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
