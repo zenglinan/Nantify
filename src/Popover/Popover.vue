@@ -17,7 +17,7 @@
         type: String,
         default: 'click',
         validator(value) {
-          return ['click', 'focus', 'hover'].indexOf(value) !== -1
+          return ['click', 'hover'].indexOf(value) !== -1
         }
       },
       direction: {
@@ -30,32 +30,44 @@
     },
     data() {
       return {
-        show: false
+        show: false,
+      }
+    },
+    computed:{
+      triggerButton(){
+        return this.$refs.trigger
       }
     },
     mounted() {
-      this.listenToClick()
+      this.trigger === 'click' && this.listenToClick()
+      this.trigger === 'hover' && this.listenToHover()
       this.setPopover()
     },
     methods: {
-      setPopover() { // 将popover放置为body的子元素, 并且定位
+      setPopover() { // 将popover放置为body的子元素, 并且定位， 避免父元素设了overlow: hidden看不见popover提示框
         // 将元素移出
         let contentDom = this.$el.removeChild(this.$refs.content)
         // 作为body的子元素
         document.body.appendChild(contentDom)
         const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
-        if (this.direction === 'top') {
-          contentDom.style.left = `${left + window.scrollX}px`
-          contentDom.style.top = `${top + window.scrollY}px`
-        } else if (this.direction === 'bottom') {
-          contentDom.style.left = `${left + window.scrollX}px`
-          contentDom.style.top = `${top + window.scrollY + height}px`
-        } else if (this.direction === 'left') {
-          contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`
-          contentDom.style.top = `${top + window.scrollY}px`
-        } else if (this.direction === 'right') {
-          contentDom.style.left = `${left + window.scrollX + width}px`
-          contentDom.style.top = `${top + window.scrollY}px`
+
+        switch (this.direction) {
+          case 'top':
+            contentDom.style.left = `${left + window.scrollX}px`;
+            contentDom.style.top = `${top + window.scrollY}px`;
+            break;
+          case 'bottom':
+            contentDom.style.left = `${left + window.scrollX}px`;
+            contentDom.style.top = `${top + window.scrollY + height}px`;
+            break;
+          case 'left':
+            contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`;
+            contentDom.style.top = `${top + window.scrollY}px`;
+            break;
+          case 'right':
+            contentDom.style.left = `${left + window.scrollX + width}px`;
+            contentDom.style.top = `${top + window.scrollY}px`;
+            break;
         }
       },
       listenToClick() {
@@ -63,10 +75,18 @@
           this.show = false;
           document.removeEventListener('click', eventHandle)
         }
-        this.$el.querySelector('.c-trigger').addEventListener('click', () => {
+        this.triggerButton.addEventListener('click', () => {
           this.show = !this.show
           document.removeEventListener('click', eventHandle)
           document.addEventListener('click', eventHandle)   // 再重新监听
+        })
+      },
+      listenToHover(){
+        this.triggerButton.addEventListener('mouseenter', () => {
+          this.show = true
+        })
+        this.triggerButton.addEventListener('mouseleave', () => {
+          this.show = false
         })
       }
     }
@@ -74,113 +94,51 @@
 </script>
 
 <style scoped lang="scss">
-  .c-popover {
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-  }
+  .c-popover {display: inline-flex;flex-direction: column;position: relative;}
 
-  .c-content {
-    box-sizing: border-box;
-    padding: 10px 24px;
-    background: white;
-    border: 1px solid #ebeef5;
-    position: absolute;
-    color: #606266;
-    font-size: 14px;
-    border-radius: 5px;
-    max-width: 20em;
-    word-break: break-all;
+  .c-content {box-sizing: border-box;padding: 10px 24px;background: white;
+    border: 1px solid #ebeef5;position: absolute;color: #606266;font-size: 14px;
+    border-radius: 5px;max-width: 20em;word-break: break-all;
 
-    &::after, &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 0;
-      width: 0;
-      border: 6px solid transparent;
-    }
+    &::after, &::before {content: '';display: block;position: absolute;
+      height: 0;width: 0;border: 6px solid transparent;}
 
 
-    &.c-top {
-      margin-top: -6px;
-      transform: translateY(-100%);
+    &.c-top {margin-top: -6px;transform: translateY(-100%);
       filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {
-        top: 100%;
-        left: 5px;
-      }
+      &::after, &::before {top: 100%;left: 5px;}
 
-      &::after {
-        border-top-color: #ffffff;
-        transform: translateY(-1px);
-      }
+      &::after {border-top-color: #ffffff;transform: translateY(-1px);}
 
-      &::before {
-        border-top-color: #ebeef5;
-      }
-
+      &::before {border-top-color: #ebeef5;}
     }
 
-    &.c-bottom {
-      margin-top: 6px;
-      filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
+    &.c-bottom {margin-top: 6px;filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {
-        bottom: 100%;
-        left: 5px;
-      }
+      &::after, &::before {bottom: 100%;left: 5px;}
 
-      &::after {
-        border-bottom-color: #ffffff;
-        transform: translateY(1px);
-      }
+      &::after {border-bottom-color: #ffffff;transform: translateY(1px);}
 
-      &::before {
-        border-bottom-color: #ebeef5;
-      }
+      &::before {border-bottom-color: #ebeef5;}
     }
 
-    &.c-left {
-      transform: translateX(-6px);
-      filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
+    &.c-left {transform: translateX(-6px);filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {
-        top: 4px;
-        left: 100%;
-      }
+      &::after, &::before {top: 4px;left: 100%;}
 
-      &::after {
-        border-bottom-color: #ffffff;
-        transform: translateX(-1px) rotate(90deg);
-      }
+      &::after {border-bottom-color: #ffffff;transform: translateX(-1px) rotate(90deg);}
 
-      &::before {
-        border-bottom-color: #ebeef5;
-        transform: rotate(90deg);
-      }
+      &::before {border-bottom-color: #ebeef5;transform: rotate(90deg);}
     }
 
-    &.c-right {
-      transform: translateX(6px);
-      filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));
+    &.c-right {transform: translateX(6px);filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {
-        top: 4px;
-        left: 0;
-        margin-left: -12px;
-      }
+      &::after, &::before {top: 4px;left: 0;margin-left: -12px;}
 
-      &::after {
-        border-bottom-color: #ffffff;
-        transform: translateX(1px) rotate(270deg);
-      }
+      &::after {border-bottom-color: #ffffff;transform: translateX(1px) rotate(270deg);}
 
-      &::before {
-        border-bottom-color: #ebeef5;
-        transform: rotate(270deg);
-      }
+      &::before {border-bottom-color: #ebeef5;transform: rotate(270deg);}
     }
 
   }
