@@ -6,7 +6,8 @@
   "scripts": {
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
-    "serve": "parcel index.html --no-cache"
+    "serve": "parcel index.html --no-cache",
+    "build": "parcel build index.html --public-url ./"
   },
   "keywords": [
     "vue",
