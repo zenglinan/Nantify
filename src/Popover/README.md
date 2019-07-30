@@ -10,3 +10,10 @@
 8. 面向表结构编程
 9. 支持html
 10. 支持内部关闭
+11. slot-scoped
+12. 两种测试的方法
+13. 手动派发mouseenter事件
+```
+const event = new Event('mouseenter')
+vm.$el.dispatchEvent(event)
+```

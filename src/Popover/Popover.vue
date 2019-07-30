@@ -111,7 +111,7 @@
 <style scoped lang="scss">
   .c-popover {display: inline-flex;flex-direction: column;position: relative;}
 
-  .c-content {box-sizing: border-box;padding: 10px 24px;background: white;
+  .c-content {box-sizing: border-box;padding: 14px 18px;background: white;
     border: 1px solid #ebeef5;position: absolute;color: #606266;font-size: 14px;
     border-radius: 5px;max-width: 20em;word-break: break-all;
 

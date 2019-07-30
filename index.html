@@ -73,6 +73,7 @@
     </c-popover>
     <c-popover trigger="hover" direction="bottom" delay="300">
       <template v-slot:content="slotProps">
+        <p>我里面可以加html标签,还可以加关闭按钮</p>
         <c-button @click="slotProps.close()">关闭</c-button>
       </template>
       <c-button>Delay 300ms</c-button>
