@@ -60,7 +60,6 @@ new Vue({
       )
     },
     x(){
-      console.log('xxx')
     }
   }
 })

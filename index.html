@@ -71,15 +71,15 @@
       </template>
       <c-button>Left(click)</c-button>
     </c-popover>
-    <c-popover trigger="hover" direction="bottom">
-      <template v-slot:content>
-        Bottom
+    <c-popover trigger="hover" direction="bottom" delay="300">
+      <template v-slot:content="slotProps">
+        <c-button @click="slotProps.close()">关闭</c-button>
       </template>
-      <c-button>Bottom(hover)</c-button>
+      <c-button>Delay 300ms</c-button>
     </c-popover>
-    <c-popover trigger="hover" direction="top">
-      <template v-slot:content>
-        Top
+    <c-popover trigger="hover" direction="top" delay="1000">
+      <template v-slot:content="slotProps">
+        <c-button @click="slotProps.close()">关闭</c-button>
       </template>
       <c-button>Top(hover)</c-button>
     </c-popover>

@@ -1,7 +1,8 @@
 <template>
   <div class="c-popover">
     <div class="c-content" v-show=show ref="content" :class="{[`c-${direction}`]: true}" @click.stop>
-      <slot name="content"></slot>
+      <slot name="content" :close="close">
+      </slot>
     </div>
     <div class="c-trigger" ref="trigger" @click.stop>
       <slot></slot>
@@ -26,15 +27,20 @@
         validator(value) {
           return ['top', 'bottom', 'left', 'right'].indexOf(value) !== -1
         }
+      },
+      delay: {
+        type: [Number, String],
+        default: 0
       }
     },
     data() {
       return {
         show: false,
+        timer: null  // 定时器
       }
     },
-    computed:{
-      triggerButton(){
+    computed: {
+      triggerButton() {
         return this.$refs.trigger
       }
     },
@@ -61,19 +67,18 @@
             contentDom.style.top = `${top + window.scrollY + height}px`;
             break;
           case 'left':
-            contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`;
-            contentDom.style.top = `${top + window.scrollY}px`;
+            contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`
+            contentDom.style.top = `${top + window.scrollY}px`
             break;
           case 'right':
-            contentDom.style.left = `${left + window.scrollX + width}px`;
-            contentDom.style.top = `${top + window.scrollY}px`;
+            contentDom.style.left = `${left + window.scrollX + width}px`
+            contentDom.style.top = `${top + window.scrollY}px`
             break;
         }
       },
       listenToClick() {
         let eventHandle = (e) => {
-          this.show = false;
-          document.removeEventListener('click', eventHandle)
+          this.close()
         }
         this.triggerButton.addEventListener('click', () => {
           this.show = !this.show
@@ -81,14 +86,24 @@
           document.addEventListener('click', eventHandle)   // 再重新监听
         })
       },
-      listenToHover(){
+      listenToHover() {
         this.triggerButton.addEventListener('mouseenter', () => {
-          this.show = true
+          clearInterval(this.timer)
+          this.open()
         })
         this.triggerButton.addEventListener('mouseleave', () => {
-          this.show = false
+          this.timer = setInterval(() => {
+            this.close()
+          }, this.delay)
         })
+      },
+      close() {
+        this.show = false
+      },
+      open() {
+        this.show = true
       }
+
     }
   }
 </script>
@@ -125,7 +140,7 @@
 
     &.c-left {transform: translateX(-6px);filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {top: 4px;left: 100%;border-right: none;}
+      &::after, &::before {top: 4px;left: 100%;}
 
       &::after {border-bottom-color: #ffffff;transform: translateX(-1px) rotate(90deg);}
 
@@ -134,7 +149,7 @@
 
     &.c-right {transform: translateX(6px);filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));
 
-      &::after, &::before {top: 4px;left: 0;margin-left: -12px;border-left: none;}
+      &::after, &::before {top: 4px;left: 0;margin-left: -12px;}
 
       &::after {border-bottom-color: #ffffff;transform: translateX(1px) rotate(270deg);}
 
