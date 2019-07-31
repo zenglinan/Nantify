@@ -46,7 +46,8 @@ new Vue({
       ifLoading: false,
       message: 'Hi,我支持v-model!',
       promptType: 'error',
-      selectedTab: "setting"
+      selectedTab: "setting",
+      name: '1'
     }
   },
   methods: {

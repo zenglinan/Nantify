@@ -29,11 +29,12 @@
         type: [String, Number]
       }
     },
-    mounted() {
-      this.eventBus.$on('changeCollapse', (name) => {
-        if (name !== this.name) {
-          this.close()
-        }
+    created() {
+      this.eventBus.$on('selecetedChange', (name) => {
+        name !== this.name && this.close()
+      })
+      this.eventBus.$on('selecetedDefault', (name) => {
+        name == this.name && (this.show = true)
       })
     },
     components: {
@@ -42,7 +43,7 @@
     methods: {
       open() {
         this.show = !this.show
-        this.eventBus.$emit('changeCollapse', this.name)
+        this.eventBus.$emit('selecetedChange', this.name) // 更新开启的Collapse的name值
       },
       close() {
         if (this.$parent.accordion !== undefined) {  // 开启了自动关闭

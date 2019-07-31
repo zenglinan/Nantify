@@ -137,7 +137,7 @@ html {
 ```trigger[String]```: 指定触发方式('click' | 'hover')<br>
 ```direction[String]```: 指定Pooover弹出框的位置('top' | 'bottom' | 'left' | 'right')<br>
 ```delay[String, Number]```: 指定hover方式下移出时延迟几ms关闭Popover弹出框<br>
-
+支持在Popover提示框中加html
 ```asp
 <c-popover trigger="hover" direction="bottom" delay="300">
   <template v-slot:content="slotProps">

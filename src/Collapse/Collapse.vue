@@ -14,11 +14,22 @@
         eventBus: new Vue({})
       }
     },
-    props: ['accordion'],
+    props: {
+      accordion: {},
+      selected: {
+        type: [String]
+      }
+    },
     provide() {
       return {
         eventBus: this.eventBus
       }
+    },
+    mounted() {
+      this.eventBus.$emit('selecetedDefault', this.selected)  // 开启默认
+      this.eventBus.$on('selecetedChange', (name) => {  // 监听更改
+        this.$emit("update:selected", name)
+      })
     }
   }
 </script>
