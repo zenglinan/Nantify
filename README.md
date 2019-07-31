@@ -105,4 +105,45 @@ html {
 ```closeDelay[String | Boolean]```: 指定多少秒后自动关闭Toast, 需先设置```autoClose```为true<br>
 ```callback[Function]```: 指定关闭Toast后触发的回调函数
 
+### Tab
+**相关属性:**<br>
+```direction[String]```: Tab的方向('column' | 'row')<br>
+```name```: 需要给Tab和对应的内容指定相同的name<br>
+```selected```:默认选中的Tab的name值<br>
+```disabled```: 禁用指定的Tab
+```asp
+<c-tabs :selected.sync="selectedTab" direction="column">
+  <c-tab-nav>
+    <c-tab active name="setting" icon="i-setting">Setting</c-tab>
+    <c-tab name="tab2">Tab2</c-tab>
+    <c-tab name="girl" disabled>美女</c-tab>
+  </c-tab-nav>
 
+  <c-tab-content>
+    <c-tab-pane name="setting">
+      <div>content1</div>
+    </c-tab-pane>
+    <c-tab-pane name="tab2">
+      <div>content2</div>
+    </c-tab-pane>
+    <c-tab-pane name="girl">
+      <div>骗你的</div>
+    </c-tab-pane>
+  </c-tab-content>
+</c-tabs>
+```
+### Popover
+**相关属性**:<br>
+```trigger[String]```: 指定触发方式('click' | 'hover')<br>
+```direction[String]```: 指定Pooover弹出框的位置('top' | 'bottom' | 'left' | 'right')<br>
+```delay[String, Number]```: 指定hover方式下移出时延迟几ms关闭Popover弹出框<br>
+
+```asp
+<c-popover trigger="hover" direction="bottom" delay="300">
+  <template v-slot:content="slotProps">
+    <p>我里面可以加html标签,还可以加关闭按钮</p>
+    <c-button @click="slotProps.close()">关闭</c-button>
+  </template>
+    <c-button>Delay 300ms</c-button>
+</c-popover>
+```
