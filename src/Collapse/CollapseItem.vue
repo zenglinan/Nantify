@@ -35,6 +35,7 @@
       })
       this.eventBus.$on('selecetedDefault', (name) => {
         name == this.name && (this.show = true)
+        this.eventBus.$off('selecetedDefault')
       })
     },
     components: {
