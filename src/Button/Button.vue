@@ -59,12 +59,12 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: var(--button-padding);
-    font-size: var(--font-size);
-    border-radius: var(--button-radius);
-    border: 1px solid var(--border-color);
-    background: var(--button-bg);
-    color: var(--color);
+    padding: .5em 1em;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    background: white;
+    color: #333;
     outline: none;
     cursor: pointer;
     min-width: 60px;
@@ -74,11 +74,11 @@
     }
 
     &:hover {
-      border-color: var(--border-color-hover);
+      border-color: #666;
     }
 
     &:active {
-      background-color: var(--button-active-bg);
+      background-color: #eee;
     }
 
     &.icon-left {

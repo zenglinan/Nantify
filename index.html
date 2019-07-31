@@ -64,7 +64,7 @@
 
 <body>
 <div id="app">
-  <div class="collapse" style="width: 60%; padding-top: 50px; padding-left: 50px;">
+  <div class="collapse">
     <c-collapse accordion :selected.sync="name">
       <c-collapse-item title="标题1" name="1">
         内容1
@@ -80,139 +80,139 @@
       </c-collapse-item>
     </c-collapse>
   </div>
-<!--  <div class="popover">-->
-  <!--    <c-popover trigger="click" direction="left">-->
-  <!--      <template v-slot:content>-->
-  <!--        Left-->
-  <!--      </template>-->
-  <!--      <c-button>Left(click)</c-button>-->
-  <!--    </c-popover>-->
-  <!--    <c-popover trigger="hover" direction="bottom" delay="300">-->
-  <!--      <template v-slot:content="slotProps">-->
-  <!--        <p>我里面可以加html标签,还可以加关闭按钮</p>-->
-  <!--        <c-button @click="slotProps.close()">关闭</c-button>-->
-  <!--      </template>-->
-  <!--      <c-button>Delay 300ms</c-button>-->
-  <!--    </c-popover>-->
-  <!--    <c-popover trigger="hover" direction="top" delay="1000">-->
-  <!--      <template v-slot:content="slotProps">-->
-  <!--        <c-button @click="slotProps.close()">关闭</c-button>-->
-  <!--      </template>-->
-  <!--      <c-button>Top(hover)</c-button>-->
-  <!--    </c-popover>-->
-  <!--    <c-popover trigger="click" direction="right">-->
-  <!--      <template v-slot:content>-->
-  <!--        Right-->
-  <!--      </template>-->
-  <!--      <c-button>Right(click)</c-button>-->
-  <!--    </c-popover>-->
-  <!--  </div>-->
+  <div class="popover">
+      <c-popover trigger="click" direction="left">
+        <template v-slot:content>
+          Left
+        </template>
+        <c-button>Left(click)</c-button>
+      </c-popover>
+      <c-popover trigger="hover" direction="bottom" delay="300">
+        <template v-slot:content="slotProps">
+          <p>我里面可以加html标签,还可以加关闭按钮</p>
+          <c-button @click="slotProps.close()">关闭</c-button>
+        </template>
+        <c-button>Delay 300ms</c-button>
+      </c-popover>
+      <c-popover trigger="hover" direction="top" delay="1000">
+        <template v-slot:content="slotProps">
+          <c-button @click="slotProps.close()">关闭</c-button>
+        </template>
+        <c-button>Top(hover)</c-button>
+      </c-popover>
+      <c-popover trigger="click" direction="right">
+        <template v-slot:content>
+          Right
+        </template>
+        <c-button>Right(click)</c-button>
+      </c-popover>
+    </div>
 
-  <!--    <div class="tabs">-->
-  <!--      <c-tabs :selected.sync="selectedTab" direction="row">-->
-  <!--        <c-tab-nav>-->
-  <!--          <c-tab name="setting" icon="i-setting">Setting</c-tab>-->
-  <!--          <c-tab name="tab2">Tab2</c-tab>-->
-  <!--          <c-tab name="girl" disabled>美女</c-tab>-->
-  <!--        </c-tab-nav>-->
+      <div class="tabs">
+        <c-tabs :selected.sync="selectedTab" direction="row">
+          <c-tab-nav>
+            <c-tab name="setting" icon="i-setting">Setting</c-tab>
+            <c-tab name="tab2">Tab2</c-tab>
+            <c-tab name="girl" disabled>美女</c-tab>
+          </c-tab-nav>
 
-  <!--        <c-tab-content>-->
-  <!--          <c-tab-pane name="setting">-->
-  <!--            <div>content1</div>-->
-  <!--          </c-tab-pane>-->
-  <!--          <c-tab-pane name="tab2">-->
-  <!--            <div>content2</div>-->
-  <!--          </c-tab-pane>-->
-  <!--          <c-tab-pane name="girl">-->
-  <!--            <div>骗你的</div>-->
-  <!--          </c-tab-pane>-->
-  <!--        </c-tab-content>-->
-  <!--      </c-tabs>-->
-  <!--    </div>-->
-  <!--    <div class="toast">-->
-  <!--      <button @click="toast()">点我</button>-->
-  <!--    </div>-->
-  <!--    <div class="layout">-->
-  <!--      &lt;!&ndash;    上中下结构&ndash;&gt;-->
-  <!--      <c-wrapper style="margin-bottom: 30px;">-->
-  <!--        <c-header></c-header>-->
-  <!--        <c-content></c-content>-->
-  <!--        <c-footer></c-footer>-->
-  <!--      </c-wrapper>-->
-  <!--      &lt;!&ndash;    中左slider&ndash;&gt;-->
-  <!--      <c-wrapper style="margin-bottom: 30px;">-->
-  <!--        <c-header></c-header>-->
-  <!--        <c-wrapper>-->
-  <!--          <c-slider style="width: 100px"></c-slider>-->
-  <!--          <c-content style="width: 200px"></c-content>-->
-  <!--        </c-wrapper>-->
-  <!--        <c-footer></c-footer>-->
-  <!--      </c-wrapper>-->
-  <!--      &lt;!&ndash;    侧边栏&ndash;&gt;-->
-  <!--      <c-wrapper style="margin-bottom: 30px;">-->
-  <!--        <c-slider style="width: 200px"></c-slider>-->
-  <!--        <c-wrapper>-->
-  <!--          <c-header></c-header>-->
-  <!--          <c-content></c-content>-->
-  <!--          <c-footer></c-footer>-->
-  <!--        </c-wrapper>-->
-  <!--      </c-wrapper>-->
-  <!--    </div>-->
-  <!--    <div class="grid">-->
-  <!--      <c-row gutter="10">-->
-  <!--        <c-col span="12">-->
-  <!--          <div style="border: 1px solid green; width: 100%">我是其中一格，总格数为24</div>-->
-  <!--        </c-col>-->
-  <!--        <c-col span="12">-->
-  <!--          <div style="border: 1px solid green; width: 100%">默认会均分哦</div>-->
-  <!--        </c-col>-->
-  <!--      </c-row>-->
-  <!--      <c-row>-->
-  <!--        <c-col span="10">-->
-  <!--          <div style="border: 1px solid green; width: 100%">10格</div>-->
-  <!--        </c-col>-->
-  <!--        <c-col span="12" offset="2">-->
-  <!--          <div style="border: 1px solid green; width: 100%">我的偏移为2格</div>-->
-  <!--        </c-col>-->
-  <!--      </c-row>-->
-  <!--      <c-row>-->
-  <!--        <c-col span="8">-->
-  <!--          <div style="border: 1px solid green; width: 100%">8</div>-->
-  <!--        </c-col>-->
-  <!--        <c-col span="6" offset="1">-->
-  <!--          <div style="border: 1px solid green; width: 100%">不要给c-row设置宽度，否则可能失效</div>-->
-  <!--        </c-col>-->
-  <!--        <c-col span="6" offset="3">-->
-  <!--          <div style="border: 1px solid green; width: 100%">偏移3</div>-->
-  <!--        </c-col>-->
-  <!--      </c-row>-->
-  <!--    </div>-->
-  <!--    <div class="input">-->
-  <!--      <c-input placeholder="请输入用户名" value="支持value,placeholder"></c-input>-->
-  <!--      <c-input prompt='error' error-message="用户名只能为6~12个英文字符" prompt-position="right"></c-input>-->
-  <!--      <c-input :prompt='promptType' placeholder="点我一下就通过" error-message="用户名只能为6~12个英文字符" pass-message="通过"-->
-  <!--               @blur="promptType = 'pass'"></c-input>-->
-  <!--      <c-input value="禁止输入" :disabled=true></c-input>-->
-  <!--      <c-input v-model="message"></c-input>-->
-  <!--      <span>{{message}}</span>-->
-  <!--    </div>-->
-  <!--    <div class="button">-->
-  <!--      <c-button icon="i-setting" icon-position="right" :loading=ifLoading @click="ifLoading = true">-->
-  <!--        点击loading-->
-  <!--      </c-button>-->
-  <!--      <c-button :loading=true>loading按钮</c-button>-->
-  <!--      <c-button icon="i-setting" icon-position="right">-->
-  <!--        设置-->
-  <!--      </c-button>-->
-  <!--      <c-button icon="i-setting" class="nouse">-->
-  <!--        按钮-->
-  <!--      </c-button>-->
-  <!--      <c-button-group>-->
-  <!--        <c-button icon="i-left">上一页</c-button>-->
-  <!--        <c-button>更多</c-button>-->
-  <!--        <c-button icon="i-right" icon-position="right">下一页</c-button>-->
-  <!--      </c-button-group>-->
-  <!--    </div>-->
+          <c-tab-content>
+            <c-tab-pane name="setting">
+              <div>content1</div>
+            </c-tab-pane>
+            <c-tab-pane name="tab2">
+              <div>content2</div>
+            </c-tab-pane>
+            <c-tab-pane name="girl">
+              <div>骗你的</div>
+            </c-tab-pane>
+          </c-tab-content>
+        </c-tabs>
+      </div>
+      <div class="toast">
+        <button @click="toast()">点我</button>
+      </div>
+      <div class="layout">
+        <!--    上中下结构-->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-header></c-header>
+          <c-content></c-content>
+          <c-footer></c-footer>
+        </c-wrapper>
+        <!--    中左slider-->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-header></c-header>
+          <c-wrapper>
+            <c-slider style="width: 100px"></c-slider>
+            <c-content style="width: 200px"></c-content>
+          </c-wrapper>
+          <c-footer></c-footer>
+        </c-wrapper>
+        <!--    侧边栏-->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-slider style="width: 200px"></c-slider>
+          <c-wrapper>
+            <c-header></c-header>
+            <c-content></c-content>
+            <c-footer></c-footer>
+          </c-wrapper>
+        </c-wrapper>
+      </div>
+      <div class="grid">
+        <c-row gutter="10">
+          <c-col span="12">
+            <div style="border: 1px solid green; width: 100%">我是其中一格，总格数为24</div>
+          </c-col>
+          <c-col span="12">
+            <div style="border: 1px solid green; width: 100%">默认会均分哦</div>
+          </c-col>
+        </c-row>
+        <c-row>
+          <c-col span="10">
+            <div style="border: 1px solid green; width: 100%">10格</div>
+          </c-col>
+          <c-col span="12" offset="2">
+            <div style="border: 1px solid green; width: 100%">我的偏移为2格</div>
+          </c-col>
+        </c-row>
+        <c-row>
+          <c-col span="8">
+            <div style="border: 1px solid green; width: 100%">8</div>
+          </c-col>
+          <c-col span="6" offset="1">
+            <div style="border: 1px solid green; width: 100%">不要给c-row设置宽度，否则可能失效</div>
+          </c-col>
+          <c-col span="6" offset="3">
+            <div style="border: 1px solid green; width: 100%">偏移3</div>
+          </c-col>
+        </c-row>
+      </div>
+      <div class="input">
+        <c-input placeholder="请输入用户名" value="支持value,placeholder"></c-input>
+        <c-input prompt='error' error-message="用户名只能为6~12个英文字符" prompt-position="right"></c-input>
+        <c-input :prompt='promptType' placeholder="点我一下就通过" error-message="用户名只能为6~12个英文字符" pass-message="通过"
+                 @blur="promptType = 'pass'"></c-input>
+        <c-input value="禁止输入" :disabled=true></c-input>
+        <c-input v-model="message"></c-input>
+        <span>{{message}}</span>
+      </div>
+      <div class="button">
+        <c-button icon="i-setting" icon-position="right" :loading=ifLoading @click="ifLoading = true">
+          点击loading
+        </c-button>
+        <c-button :loading=true>loading按钮</c-button>
+        <c-button icon="i-setting" icon-position="right">
+          设置
+        </c-button>
+        <c-button icon="i-setting" class="nouse">
+          按钮
+        </c-button>
+        <c-button-group>
+          <c-button icon="i-left">上一页</c-button>
+          <c-button>更多</c-button>
+          <c-button icon="i-right" icon-position="right">下一页</c-button>
+        </c-button-group>
+      </div>
 
 </div>
 <script src="./src/app.js"></script>

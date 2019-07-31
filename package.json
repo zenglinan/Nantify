@@ -7,7 +7,9 @@
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
     "serve": "parcel index.html --no-cache",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "keywords": [
     "vue",
@@ -34,7 +36,10 @@
     "sass": "^1.22.3",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.0.3",
+    "sass-loader": "*",
+    "node-sass": "*"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
