@@ -14244,7 +14244,255 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/Collapse/Collapse.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _vue = _interopRequireDefault(require("vue"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "Collapse",
+  data: function data() {
+    return {
+      eventBus: new _vue.default({})
+    };
+  },
+  props: {
+    accordion: {},
+    selected: {
+      type: [String]
+    }
+  },
+  provide: function provide() {
+    return {
+      eventBus: this.eventBus
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.eventBus.$emit('selecetedDefault', this.selected); // 开启默认
+
+    this.eventBus.$on('selecetedChange', function (name) {
+      // 监听更改
+      _this.$emit("update:selected", name);
+    });
+  }
+};
+exports.default = _default;
+        var $707da9 = exports.default || module.exports;
+      
+      if (typeof $707da9 === 'function') {
+        $707da9 = $707da9.options;
+      }
+    
+        /* template */
+        Object.assign($707da9, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "c-collapse" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-707da9",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$707da9', $707da9);
+          } else {
+            api.reload('$707da9', $707da9);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"vue":"node_modules/vue/dist/vue.common.js","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js"}],"src/Collapse/CollapseItem.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _icon = _interopRequireDefault(require("../component/icon"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: "CollapseItem",
+  data: function data() {
+    return {
+      show: false
+    };
+  },
+  props: {
+    title: {
+      type: String,
+      default: "标题"
+    },
+    name: {
+      type: [String, Number]
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    this.eventBus.$on('selecetedChange', function (name) {
+      name !== _this.name && _this.close();
+    });
+    this.eventBus.$on('selecetedDefault', function (name) {
+      name == _this.name && (_this.show = true);
+
+      _this.eventBus.$off('selecetedDefault');
+    });
+  },
+  components: {
+    'c-icon': _icon.default
+  },
+  methods: {
+    open: function open() {
+      this.show = !this.show;
+      this.eventBus.$emit('selecetedChange', this.name); // 更新开启的Collapse的name值
+    },
+    close: function close() {
+      if (this.$parent.accordion !== undefined) {
+        // 开启了自动关闭
+        this.show = false;
+      } else {}
+    }
+  },
+  inject: ['eventBus']
+};
+exports.default = _default;
+        var $c2e3c5 = exports.default || module.exports;
+      
+      if (typeof $c2e3c5 === 'function') {
+        $c2e3c5 = $c2e3c5.options;
+      }
+    
+        /* template */
+        Object.assign($c2e3c5, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "c-collapse-item", on: { click: _vm.open } },
+    [
+      _c(
+        "div",
+        { staticClass: "c-collapse-title" },
+        [
+          _c("span", [_vm._v(_vm._s(_vm.title))]),
+          _vm._v(" "),
+          _c("c-icon", {
+            staticClass: "icon",
+            class: { open: _vm.show },
+            attrs: { icon: "i-right" }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.show,
+              expression: "show"
+            }
+          ],
+          staticClass: "c-collapse-content"
+        },
+        [_vm._t("default")],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-c2e3c5",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$c2e3c5', $c2e3c5);
+          } else {
+            api.reload('$c2e3c5', $c2e3c5);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"../component/icon":"src/component/icon.vue","_css_loader":"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.common.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -14283,6 +14531,10 @@ var _TabItem = _interopRequireDefault(require("./Tab/Tab-Item"));
 
 var _Popover = _interopRequireDefault(require("./Popover/Popover"));
 
+var _Collapse = _interopRequireDefault(require("./Collapse/Collapse"));
+
+var _CollapseItem = _interopRequireDefault(require("./Collapse/CollapseItem"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue.default.use(_Toast.default);
@@ -14305,14 +14557,17 @@ new _vue.default({
     'c-tab-pane': _TabPane.default,
     'c-tab-nav': _TabNav.default,
     'c-tab-content': _TabContent.default,
-    'c-popover': _Popover.default
+    'c-popover': _Popover.default,
+    'c-collapse': _Collapse.default,
+    'c-collapse-item': _CollapseItem.default
   },
   data: function data() {
     return {
       ifLoading: false,
       message: 'Hi,我支持v-model!',
       promptType: 'error',
-      selectedTab: "setting"
+      selectedTab: "setting",
+      name: '1'
     };
   },
   methods: {
@@ -14323,13 +14578,13 @@ new _vue.default({
         // callback: () => {
         //   alert(1)
         // },
-        position: 'bottom'
+        position: 'top'
       });
     },
     x: function x() {}
   }
 });
-},{"vue":"node_modules/vue/dist/vue.common.js","./Button/Button":"src/Button/Button.vue","./Button/Button-Group":"src/Button/Button-Group.vue","./Input/Input":"src/Input/Input.vue","./Grid System/Col":"src/Grid System/Col.vue","./Grid System/Row":"src/Grid System/Row.vue","./Layout/Slider":"src/Layout/Slider.vue","./Layout/Wrapper":"src/Layout/Wrapper.vue","./Layout/Header":"src/Layout/Header.vue","./Layout/Footer":"src/Layout/Footer.vue","./Layout/Content":"src/Layout/Content.vue","./Toast/plugin/Toast":"src/Toast/plugin/Toast.js","./Tab/Tabs":"src/Tab/Tabs.vue","./Tab/Tab-Content":"src/Tab/Tab-Content.vue","./Tab/Tab-Nav":"src/Tab/Tab-Nav.vue","./Tab/Tab-Pane":"src/Tab/Tab-Pane.vue","./Tab/Tab-Item":"src/Tab/Tab-Item.vue","./Popover/Popover":"src/Popover/Popover.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.common.js","./Button/Button":"src/Button/Button.vue","./Button/Button-Group":"src/Button/Button-Group.vue","./Input/Input":"src/Input/Input.vue","./Grid System/Col":"src/Grid System/Col.vue","./Grid System/Row":"src/Grid System/Row.vue","./Layout/Slider":"src/Layout/Slider.vue","./Layout/Wrapper":"src/Layout/Wrapper.vue","./Layout/Header":"src/Layout/Header.vue","./Layout/Footer":"src/Layout/Footer.vue","./Layout/Content":"src/Layout/Content.vue","./Toast/plugin/Toast":"src/Toast/plugin/Toast.js","./Tab/Tabs":"src/Tab/Tabs.vue","./Tab/Tab-Content":"src/Tab/Tab-Content.vue","./Tab/Tab-Nav":"src/Tab/Tab-Nav.vue","./Tab/Tab-Pane":"src/Tab/Tab-Pane.vue","./Tab/Tab-Item":"src/Tab/Tab-Item.vue","./Popover/Popover":"src/Popover/Popover.vue","./Collapse/Collapse":"src/Collapse/Collapse.vue","./Collapse/CollapseItem":"src/Collapse/CollapseItem.vue"}],"node_modules/_parcel-bundler@1.12.3@parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -14357,7 +14612,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54466" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50465" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

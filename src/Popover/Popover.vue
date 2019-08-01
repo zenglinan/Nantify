@@ -113,7 +113,7 @@
 
   .c-content {box-sizing: border-box;padding: 14px 18px;background: white;
     border: 1px solid #ebeef5;position: absolute;color: #606266;font-size: 14px;
-    border-radius: 5px;max-width: 20em;word-break: break-all;
+    border-radius: 5px;max-width: 20em;word-break: break-all;z-index: 10;
 
     &::after, &::before {content: '';display: block;position: absolute;
       height: 0;width: 0;border: 6px solid transparent;}

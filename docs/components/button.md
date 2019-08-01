@@ -2,7 +2,6 @@
 title: Button
 ---
 # 按钮
-
-  <button-demo></button-demo>
-
-
+<ClientOnly>
+    <button-demo></button-demo>
+</ClientOnly>

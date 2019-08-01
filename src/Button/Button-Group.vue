@@ -27,12 +27,12 @@
       z-index: 2;
     }
     &:first-child {
-      border-top-left-radius: var(--button-radius);
-      border-bottom-left-radius: var(--button-radius);
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
     }
     &:last-child {
-      border-top-right-radius: var(--button-radius);
-      border-bottom-right-radius: var(--button-radius);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
     }
   }
 }
