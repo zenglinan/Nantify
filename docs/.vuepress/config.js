@@ -1,6 +1,7 @@
 module.exports = {
   title: 'CoCo UI',
   description: '一个适合学习的 UI 框架',
+  base: '/Coco-UI/',
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},

@@ -18,6 +18,7 @@ import TabItem from './Tab/Tab-Item'
 import Popover from './Popover/Popover'
 import Collapse from './Collapse/Collapse'
 import CollapseItem from './Collapse/CollapseItem'
+
 Vue.use(Toast)
 new Vue({
   el: '#app',
@@ -59,11 +60,11 @@ new Vue({
             // callback: () => {
             //   alert(1)
             // },
-            position: 'bottom'
+            position: 'top'
           }
       )
     },
-    x(){
+    x() {
     }
   }
 })

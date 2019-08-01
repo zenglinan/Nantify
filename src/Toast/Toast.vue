@@ -84,7 +84,7 @@
     font-size: $font-size; height: $toast-min-height; line-height: 1.8;
     position: fixed; left: 50%; transform: translateX(-50%); display: flex;
     color: white;align-items: center;background: $toast-bg;border-radius: $border-radius;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);padding: 0 60px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);padding: 0 60px;z-index: 100;
 
     &.toast-top {top: 10px; animation: slideDown $animation-time;}
 
