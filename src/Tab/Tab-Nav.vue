@@ -11,6 +11,7 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../common/scss/base";
   .c-tab-column { // 纵向
     .c-tab-nav {
       flex-direction: column;
@@ -20,7 +21,7 @@
 
   .c-tab-row {
     .c-tab-nav {
-      border-bottom: 2px solid rgb(225, 225, 225);
+      border-bottom: 2px solid $beige;
       display: flex;
     }
   }

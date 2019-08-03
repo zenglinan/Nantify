@@ -58,19 +58,21 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../common/scss/base";
+
   .c-collapse-item {
     cursor: pointer;
-    color: #303113;
+    color: $brown;
     padding: 16px 0 22px 0;
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-    border-bottom: 1px solid rgb(235, 238, 245);
+    border-bottom: 1px solid $beige;
 
     .c-collapse-title {
       padding: 0 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 15px;
+      font-size: $font-size-b;
 
       &.icon {
         width: .8em;
@@ -78,19 +80,15 @@
       }
 
       & span:hover {
-        color: #409EFF;
+        color: $blue;
       }
     }
 
     .c-collapse-content {
       padding: 22px 10px 0 10px;
-      font-size: 13px;
-      color: #5E6D82;
+      font-size: $font-size-m;
+      color: $gray;
     }
-  }
-
-  .active {
-
   }
 
   .open {

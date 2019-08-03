@@ -109,10 +109,11 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../common/scss/base";
   .c-popover {display: inline-flex;flex-direction: column;position: relative;}
 
-  .c-content {box-sizing: border-box;padding: 14px 18px;background: white;
-    border: 1px solid #ebeef5;position: absolute;color: #606266;font-size: 14px;
+  .c-content {box-sizing: border-box;padding: 14px 18px;background: $bg;
+    border: 1px solid $border-color-light;position: absolute;color: $gray-light;font-size: 14px;
     border-radius: 5px;max-width: 20em;word-break: break-all;z-index: 10;
 
     &::after, &::before {content: '';display: block;position: absolute;
@@ -124,36 +125,36 @@
 
       &::after, &::before {top: 100%;left: 5px;border-bottom: none;}
 
-      &::after {border-top-color: #ffffff;transform: translateY(-1px);}
+      &::after {border-top-color: $bg;transform: translateY(-1px);}
 
-      &::before {border-top-color: #ebeef5;}
+      &::before {border-top-color: $border-color-light;}
     }
 
     &.c-bottom {margin-top: 6px;filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 
       &::after, &::before {bottom: 100%;left: 5px;border-top: none;}
 
-      &::after {border-bottom-color: #ffffff;transform: translateY(1px);}
+      &::after {border-bottom-color: $bg;transform: translateY(1px);}
 
-      &::before {border-bottom-color: #ebeef5;}
+      &::before {border-bottom-color: $border-color-light;}
     }
 
     &.c-left {transform: translateX(-6px);filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 
       &::after, &::before {top: 4px;left: 100%;}
 
-      &::after {border-bottom-color: #ffffff;transform: translateX(-1px) rotate(90deg);}
+      &::after {border-bottom-color: $bg;transform: translateX(-1px) rotate(90deg);}
 
-      &::before {border-bottom-color: #ebeef5;transform: rotate(90deg);}
+      &::before {border-bottom-color: $border-color-light;transform: rotate(90deg);}
     }
 
     &.c-right {transform: translateX(6px);filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));
 
       &::after, &::before {top: 4px;left: 0;margin-left: -12px;}
 
-      &::after {border-bottom-color: #ffffff;transform: translateX(1px) rotate(270deg);}
+      &::after {border-bottom-color: $bg;transform: translateX(1px) rotate(270deg);}
 
-      &::before {border-bottom-color: #ebeef5;transform: rotate(270deg);}
+      &::before {border-bottom-color: $border-color-light;transform: rotate(270deg);}
     }
 
   }

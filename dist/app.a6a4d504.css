@@ -38,11 +38,11 @@
     order: 3;
     margin-left: .2em;
 }
-.c-button.nouse[data-v-f5c9c4] {
+.c-button.nouse nouse[data-v-f5c9c4] {
     cursor: not-allowed;
-    color: #aaaaaa;
+    color: #aaa;
 }
-.c-button.nouse[data-v-f5c9c4]:active {
+.c-button.nouse nouse[data-v-f5c9c4]:active {
       background-color: white;
 }
 .c-button .loading[data-v-f5c9c4] {
@@ -397,7 +397,7 @@ to {
   display: flex;
 }
 .c-tab-row .c-tab-nav[data-v-ba5ba4] {
-  border-bottom: 2px solid #e1e1e1;
+  border-bottom: 2px solid #eee;
   display: flex;
 }
 
@@ -449,7 +449,7 @@ to {
   background: white;
   border: 1px solid #ebeef5;
   position: absolute;
-  color: #606266;
+  color: #aaa;
   font-size: 14px;
   border-radius: 5px;
   max-width: 20em;
@@ -475,7 +475,7 @@ to {
       border-bottom: none;
 }
 .c-content.c-top[data-v-845c96]::after {
-      border-top-color: #ffffff;
+      border-top-color: white;
       transform: translateY(-1px);
 }
 .c-content.c-top[data-v-845c96]::before {
@@ -491,7 +491,7 @@ to {
       border-top: none;
 }
 .c-content.c-bottom[data-v-845c96]::after {
-      border-bottom-color: #ffffff;
+      border-bottom-color: white;
       transform: translateY(1px);
 }
 .c-content.c-bottom[data-v-845c96]::before {
@@ -506,7 +506,7 @@ to {
       left: 100%;
 }
 .c-content.c-left[data-v-845c96]::after {
-      border-bottom-color: #ffffff;
+      border-bottom-color: white;
       transform: translateX(-1px) rotate(90deg);
 }
 .c-content.c-left[data-v-845c96]::before {
@@ -523,7 +523,7 @@ to {
       margin-left: -12px;
 }
 .c-content.c-right[data-v-845c96]::after {
-      border-bottom-color: #ffffff;
+      border-bottom-color: white;
       transform: translateX(1px) rotate(270deg);
 }
 .c-content.c-right[data-v-845c96]::before {
@@ -532,7 +532,7 @@ to {
 }
 
 .c-collapse[data-v-707da9] {
-  border-top: 1px solid #ebeef5;
+  border-top: 1px solid #eee;
 }
 
 .c-collapse-item[data-v-c2e3c5] {
@@ -540,7 +540,7 @@ to {
   color: #303113;
   padding: 16px 0 22px 0;
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-  border-bottom: 1px solid #ebeef5;
+  border-bottom: 1px solid #eee;
 }
 .c-collapse-item .c-collapse-title[data-v-c2e3c5] {
     padding: 0 10px;
@@ -554,12 +554,12 @@ to {
       height: .8em;
 }
 .c-collapse-item .c-collapse-title span[data-v-c2e3c5]:hover {
-      color: #409EFF;
+      color: #4a90e2;
 }
 .c-collapse-item .c-collapse-content[data-v-c2e3c5] {
     padding: 22px 10px 0 10px;
     font-size: 13px;
-    color: #5E6D82;
+    color: #666;
 }
 .open[data-v-c2e3c5] {
   transform: rotate(90deg);

@@ -70,16 +70,9 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../common/scss/base";
   $height: 28px;
-  $border-color: #999;
-  $border-color-hover: #666;
-  $border-radius: 4px;
-  $font-size: 12px;
-  $box-shadow-color: rgba(0, 0, 0, 0.3);
-  $border-radius: 4px;
-  $red: #F1453D;
-  $green: rgb(64, 181, 129);
-  .c-input-wrapper {box-sizing: border-box;font-size: $font-size; display: inline-flex; align-items: center;
+  .c-input-wrapper {box-sizing: border-box;font-size: $font-size-s; display: inline-flex; align-items: center;
 
     &.prompt-right {flex-direction: row;}
 

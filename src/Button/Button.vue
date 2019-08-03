@@ -54,6 +54,7 @@
 
 </script>
 <style lang="scss" scoped>
+  @import "../common/scss/base";
   .c-button {
     vertical-align: top;
     display: inline-flex;
@@ -62,9 +63,9 @@
     padding: .5em 1em;
     font-size: 12px;
     border-radius: 4px;
-    border: 1px solid #999;
-    background: white;
-    color: #333;
+    border: 1px solid $border-color;
+    background: $bg;
+    color: $black;
     outline: none;
     cursor: pointer;
     min-width: 60px;
@@ -74,11 +75,11 @@
     }
 
     &:hover {
-      border-color: #666;
+      border-color: $border-color-hover;
     }
 
     &:active {
-      background-color: #eee;
+      background-color: $active-bg;
     }
 
     &.icon-left {
@@ -95,12 +96,12 @@
       }
     }
 
-    &.nouse {
+    &.nouse nouse{
       cursor: not-allowed;
-      color: #aaaaaa;
+      color: $gray-light;
 
       &:active {
-        background-color: white;
+        background-color: $bg;
       }
     }
 

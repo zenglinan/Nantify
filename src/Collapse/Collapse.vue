@@ -35,7 +35,8 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../common/scss/base";
   .c-collapse {
-    border-top: 1px solid rgb(235, 238, 245);
+    border-top: 1px solid $beige;
   }
 </style>

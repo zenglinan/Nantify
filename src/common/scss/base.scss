@@ -1,16 +1,24 @@
+$active-bg: #eee;
+$bg: white;
+
+$box-shadow-color: rgba(0, 0, 0, 0.3);
+
 $border-color-hover: #666;
 $border-color: #999;
-$border-color-light: lighten($border-color, 30%);
+$border-color-light: #ebeef5;
 $border-radius: 4px;
-$box-shadow-color: rgba(0, 0, 0, 0.5);
-$button-active-bg: #eee;
-$button-bg: white;
-$button-height: 32px;
-$color: #333;
-$light-color: #666;
+
+$font-size-b: 15px;
+$font-size-m: 13px;
+$font-size-s: 12px;
 $font-size: 14px;
-$small-font-size: 12px;
-$input-height: 32px;
+
+
 $red: #F1453D;
-$grey: #eee;
+$brown: #303113;
 $blue: #4a90e2;
+$beige: #eee;
+$gray: #666;
+$gray-light: #aaa;
+$black: #333;
+$green: rgb(64, 181, 129);
