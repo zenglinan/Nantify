@@ -55,8 +55,11 @@
         let contentDom = this.$el.removeChild(this.$refs.content)
         // 作为body的子元素
         document.body.appendChild(contentDom)
-        const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
+        this.setPosition(contentDom)
 
+      },
+      setPosition(contentDom){
+        const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
         switch (this.direction) {
           case 'top':
             contentDom.style.left = `${left + window.scrollX}px`;
@@ -113,7 +116,7 @@
   .c-popover {display: inline-flex;flex-direction: column;position: relative;}
 
   .c-content {box-sizing: border-box;padding: 14px 18px;background: $bg;
-    border: 1px solid $border-color-light;position: absolute;color: $gray-light;font-size: 14px;
+    border: 1px solid $border-color-light;position: absolute;color: $brown;font-size: 14px;
     border-radius: 5px;max-width: 20em;word-break: break-all;z-index: 10;
 
     &::after, &::before {content: '';display: block;position: absolute;

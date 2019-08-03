@@ -18,6 +18,7 @@ import TabItem from './Tab/Tab-Item'
 import Popover from './Popover/Popover'
 import Collapse from './Collapse/Collapse'
 import CollapseItem from './Collapse/CollapseItem'
+import Cascader from './Cascader/Cascader'
 
 Vue.use(Toast)
 new Vue({
@@ -40,7 +41,8 @@ new Vue({
     'c-tab-content': TabContent,
     'c-popover': Popover,
     'c-collapse': Collapse,
-    'c-collapse-item': CollapseItem
+    'c-collapse-item': CollapseItem,
+    'c-cascader': Cascader
   },
   data() {
     return {
@@ -48,7 +50,40 @@ new Vue({
       message: 'Hi,我支持v-model!',
       promptType: 'error',
       selectedTab: "setting",
-      name: '1'
+      name: '1',
+      citys: [{
+        name: '浙江',
+        children: [
+          {
+            name: '杭州',
+            children: [
+              {name: '上城'},
+              {name: '下城'},
+              {name: '江干'},
+            ]
+          },
+          {
+            name: '嘉兴',
+            children: [
+              {name: '南湖'},
+              {name: '秀洲'},
+              {name: '嘉善'},
+            ]
+          },
+        ]
+      }, {
+        name: '福建',
+        children: [
+          {
+            name: '福州',
+            children: [
+              {name: '鼓楼'},
+              {name: '台江'},
+              {name: '仓山'},
+            ]
+          },
+        ]
+      }]
     }
   },
   methods: {
