@@ -65,7 +65,9 @@
 <body>
 <div id="app">
   <div class="cascader">
-    <c-cascader :citys="citys"></c-cascader>
+    <c-cascader :citys="citys">
+      <c-button>click</c-button>
+    </c-cascader>
   </div>
   <div class="collapse">
     <c-collapse :selected.sync="name">

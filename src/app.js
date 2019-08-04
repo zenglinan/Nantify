@@ -52,7 +52,7 @@ new Vue({
       selectedTab: "setting",
       name: '1',
       citys: [{
-        name: '浙江',
+        name: '浙江23333',
         children: [
           {
             name: '杭州',
@@ -83,7 +83,48 @@ new Vue({
             ]
           },
         ]
-      }]
+      }, {
+        name: '浙江23333',
+        children: [
+          {
+            name: '杭州',
+            children: [
+              {name: '上城'},
+              {name: '下城'},
+              {name: '江干'},
+            ]
+          },
+          {
+            name: '嘉兴',
+            children: [
+              {name: '南湖'},
+              {name: '秀洲'},
+              {name: '嘉善'},
+            ]
+          },
+        ]
+      }, {
+        name: '浙江23333',
+        children: [
+          {
+            name: '杭州',
+            children: [
+              {name: '上城'},
+              {name: '下城'},
+              {name: '江干'},
+            ]
+          },
+          {
+            name: '嘉兴',
+            children: [
+              {name: '南湖'},
+              {name: '秀洲'},
+              {name: '嘉善'},
+            ]
+          },
+        ]
+      }
+      ]
     }
   },
   methods: {
