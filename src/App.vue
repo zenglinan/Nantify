@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div class="cascader">
       <div class="cascader">
         <c-cascader :citys="citys" :selected.sync="selected">
           <c-button>click</c-button>
@@ -49,7 +48,6 @@
 <!--          <c-button>Right(click)</c-button>-->
 <!--        </c-popover>-->
 <!--      </div>-->
-    </div>
   </div>
 </template>
 

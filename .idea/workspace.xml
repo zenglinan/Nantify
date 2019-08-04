@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cascader/Cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/Cascader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cascader/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,20 +21,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="80" selection-start-line="80" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="900">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -66,17 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Collapse/CollapseItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="339">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -130,8 +136,8 @@
       <find>border</find>
       <find>shadow</find>
       <find>style</find>
-      <find>selected</find>
       <find>console.log</find>
+      <find>selected</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,20 +183,20 @@
         <option value="$PROJECT_DIR$/docs/components/layout.md" />
         <option value="$PROJECT_DIR$/src/Button/Button.vue" />
         <option value="$PROJECT_DIR$/src/Collapse/Collapse.vue" />
-        <option value="$PROJECT_DIR$/src/Collapse/CollapseItem.vue" />
         <option value="$PROJECT_DIR$/src/Input/Input.vue" />
         <option value="$PROJECT_DIR$/src/Tab/Tab-Nav.vue" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/common/scss/base.scss" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Popover/Popover.vue" />
+        <option value="$PROJECT_DIR$/src/Cascader/README.md" />
+        <option value="$PROJECT_DIR$/src/common/scss/base.scss" />
+        <option value="$PROJECT_DIR$/src/Collapse/CollapseItem.vue" />
+        <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/Cascader/Cascader.vue" />
-        <option value="$PROJECT_DIR$/src/Cascader/README.md" />
-        <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
       </list>
     </option>
   </component>
@@ -235,6 +241,19 @@
               <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Collapse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -321,21 +340,7 @@
       <workItem from="1564887230962" duration="3904000" />
       <workItem from="1564917434100" duration="14000" />
       <workItem from="1564917468336" duration="3986000" />
-      <workItem from="1564925460427" duration="6424000" />
-    </task>
-    <task id="LOCAL-00015" summary="让Input组件支持v-model">
-      <created>1562950996924</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1562950996924</updated>
-    </task>
-    <task id="LOCAL-00016" summary="更改Input组件测试用例，已通过">
-      <created>1562996557881</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1562996557881</updated>
+      <workItem from="1564925460427" duration="9570000" />
     </task>
     <task id="LOCAL-00017" summary="重构Input，添加 Input 组件 pass时的样式">
       <created>1562999141695</created>
@@ -666,11 +671,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564909742000</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="使用单向数据流, 确保唯一的数据修改中心, 解决点击一级时三级不能隐藏的bug">
+      <created>1564934768445</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1564934768446</updated>
+    </task>
+    <task id="LOCAL-00065" summary="完善cascader组件样式">
+      <created>1564937256702</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1564937256702</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337206000" />
+    <option name="totallyTimeSpent" value="340352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,8 +805,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="补充Toast的README文档" />
-    <MESSAGE value="整理组件，进行文件夹分类" />
     <MESSAGE value="创建eventBus作为通信组件，通过发布订阅模式传递选中的tab的name，实现tab切换" />
     <MESSAGE value="完善Tab组件的样式" />
     <MESSAGE value="添加Tab组件的禁用选项" />
@@ -811,7 +828,9 @@
     <MESSAGE value="重构scss代码, 将统一样式抽离为scss变量" />
     <MESSAGE value="创建Cascader组件, 使用递归读取数据" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="使用单向数据流, 确保唯一的数据修改中心, 解决点击一级时三级不能隐藏的bug" />
+    <MESSAGE value="完善cascader组件样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善cascader组件样式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.cache/5d/6c99106d185d86c3833218af215a08.json">
@@ -1054,13 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3726">
@@ -1102,31 +1114,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/icon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="11765" selection-start-column="11765" selection-end-column="11765" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Collapse/Collapse.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Collapse/CollapseItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1148,17 +1139,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+    <entry file="file://$PROJECT_DIR$/src/Collapse/Collapse.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="501">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Collapse/CollapseItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="252">
+          <caret line="80" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
         </state>
       </provider>
     </entry>
