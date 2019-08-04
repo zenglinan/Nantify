@@ -5,63 +5,80 @@
   fill: currentColor;
   overflow: hidden;
 }
+
 .c-input-wrapper[data-v-dd731a] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .c-input-wrapper.prompt-right[data-v-dd731a] {
-  flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .c-input-wrapper.prompt-bottom[data-v-dd731a] {
-  flex-direction: column;
-  align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 .c-input-wrapper > .c-input[data-v-dd731a] {
-  height: 28px;
-  border: 1px solid #999;
-  border-radius: 4px;
-  padding: 0 8px;
-  font-size: inherit;
+    height: 28px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-size: inherit;
 }
 .c-input-wrapper > .c-input[data-v-dd731a]:hover {
-  border-color: #666;
+      border-color: #666;
 }
 .c-input-wrapper > .c-input[data-v-dd731a]:focus {
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
-  outline: none;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+      outline: none;
 }
 .c-input-wrapper > .c-input[disabled][data-v-dd731a] {
-  cursor: not-allowed;
-  border-color: #aaa;
-  color: #aaa;
-  background-color: #fff;
+      cursor: not-allowed;
+      border-color: #aaa;
+      color: #aaa;
+      background-color: #fff;
 }
 .c-input-wrapper.pass.prompt-bottom svg[data-v-dd731a], .c-input-wrapper.error.prompt-bottom svg[data-v-dd731a] {
-  margin-right: 4px;
+    margin-right: 4px;
 }
 .c-input-wrapper.pass.prompt-right[data-v-dd731a] :not(:last-child), .c-input-wrapper.error.prompt-right[data-v-dd731a] :not(:last-child) {
-  margin-right: 4px;
+    margin-right: 4px;
 }
 .c-input-wrapper.error[data-v-dd731a] {
-  color: #F1453D;
+    color: #F1453D;
 }
 .c-input-wrapper.error > input[data-v-dd731a] {
-  border-color: #F1453D;
+      border-color: #F1453D;
 }
 .c-input-wrapper.error > input[data-v-dd731a]:hover {
-  border-color: #F1453D;
+        border-color: #F1453D;
 }
 .c-input-wrapper.error > input[data-v-dd731a]:focus {
-  box-shadow: inset 0 0px 2px #F1453D;
+        -webkit-box-shadow: inset 0 0px 2px #F1453D;
+                box-shadow: inset 0 0px 2px #F1453D;
 }
 .c-input-wrapper.error > svg[data-v-dd731a] {
-  fill: #F1453D;
+      fill: #F1453D;
 }
 .c-input-wrapper.pass[data-v-dd731a] {
-  color: #40b581;
+    color: #40b581;
 }
 .c-input-wrapper.pass > svg[data-v-dd731a] {
-  fill: #40b581;
+      fill: #40b581;
 }
+

@@ -196,7 +196,9 @@ var _default = {
       var contentDom = this.$el.removeChild(this.$refs.content); // 作为body的子元素
 
       document.body.appendChild(contentDom);
-
+      this.setPosition(contentDom);
+    },
+    setPosition: function setPosition(contentDom) {
       var _this$$refs$trigger$g = this.$refs.trigger.getBoundingClientRect(),
           width = _this$$refs$trigger$g.width,
           height = _this$$refs$trigger$g.height,
