@@ -63,7 +63,6 @@
         let copy = JSON.parse(JSON.stringify(this.selected))
         copy[this.level] = item
         copy.splice(this.level+1) // 点击level的时候把level+1的selected数据给删了
-        console.log(copy);
         this.$emit('update:selected', copy)
       }
     }
