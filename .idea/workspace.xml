@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="添加对应">
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/common/scss/scrollbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cascader/Cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/Cascader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,20 +25,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="414">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-414">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="e#328#358#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+        <entry file="file://$PROJECT_DIR$/src/common/scss/scrollbar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-              <folding>
-                <element signature="e#328#358#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -145,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/tabs.test.js" />
-        <option value="$PROJECT_DIR$/test/tab.test.js" />
         <option value="$PROJECT_DIR$/test/tab-item.test.js" />
         <option value="$PROJECT_DIR$/src/Tab/Tab-Pane.vue" />
         <option value="$PROJECT_DIR$/src/Tab/Tabs.vue" />
@@ -194,8 +201,10 @@
         <option value="$PROJECT_DIR$/src/Cascader/db.js" />
         <option value="$PROJECT_DIR$/src/Cascader/database.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
         <option value="$PROJECT_DIR$/src/Cascader/Cascader.vue" />
+        <option value="$PROJECT_DIR$/src/common/scss/scroll.scss" />
+        <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
+        <option value="$PROJECT_DIR$/src/common/scss/scrollbar.scss" />
       </list>
     </option>
   </component>
@@ -227,12 +236,6 @@
               <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Cascader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
@@ -342,21 +345,7 @@
       <workItem from="1564917468336" duration="3986000" />
       <workItem from="1564925460427" duration="10186000" />
       <workItem from="1564938848961" duration="303000" />
-      <workItem from="1564976239739" duration="15088000" />
-    </task>
-    <task id="LOCAL-00020" summary="给col添加offset偏移属性">
-      <created>1563035181608</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1563035181608</updated>
-    </task>
-    <task id="LOCAL-00021" summary="给网格系统添加gutter，基本实现功能">
-      <created>1563092047703</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1563092047703</updated>
+      <workItem from="1564976239739" duration="15926000" />
     </task>
     <task id="LOCAL-00022" summary="重构代码，将复杂的class和style样式拆分到computed中">
       <created>1563094675922</created>
@@ -687,11 +676,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565004903917</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="重构组件代码，添加注释">
+      <created>1565008268374</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1565008268374</updated>
+    </task>
+    <task id="LOCAL-00070" summary="重构组件代码，添加注释">
+      <created>1565008337754</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1565008337754</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356359000" />
+    <option name="totallyTimeSpent" value="357197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,7 +810,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加Tab组件的禁用选项" />
     <MESSAGE value="添加Tab组件的方向选项" />
     <MESSAGE value="子组件不用修改父组件传来的props，去掉sync修饰符" />
     <MESSAGE value="重新添加sync修饰符，同时在tab切换的时候向Tabs组件emit一个事件，修改selected" />
@@ -832,19 +834,10 @@
     <MESSAGE value="完善cascader组件样式" />
     <MESSAGE value="导入省市区数据库" />
     <MESSAGE value="实现省市区级联" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现省市区级联" />
+    <MESSAGE value="重构组件代码，添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构组件代码，添加注释" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="18">
-            <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/introduce/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1166,20 +1159,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="-414">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
             <element signature="e#328#358#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/scss/scrollbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

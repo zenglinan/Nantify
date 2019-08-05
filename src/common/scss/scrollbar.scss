@@ -1,0 +1,20 @@
+::-webkit-scrollbar {
+  background-color: white;
+  width: 6px;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-button {
+  height: 3px;
+}
+/*滚动条两端方向按钮*/
+::-webkit-scrollbar-button {
+  background-color: white;
+}
+
+/*滚动条中间滑动部分*/
+::-webkit-scrollbar-thumb {
+  background-color: rgb(193,193,195);
+  border-radius: 5px;
+}
+
+/*滚动条右下角区域*/

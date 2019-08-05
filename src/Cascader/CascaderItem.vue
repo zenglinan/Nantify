@@ -60,6 +60,7 @@
 
 <style scoped lang="scss">
   @import "../common/scss/base";
+  @import "../common/scss/scrollbar";
 
   .cascaderItem {
     display: flex;
