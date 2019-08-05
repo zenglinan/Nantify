@@ -3,7 +3,6 @@
     <div class="left">
       <div class="cityItem" v-for="itemLeft in city" @click="onClickCity(itemLeft)">
         <div class="name">{{itemLeft.name}}</div>
-        <c-icon v-if="itemLeft.children" icon="i-right"></c-icon>
       </div>
     </div>
     <div class="right" v-if="rightItems">
@@ -53,12 +52,6 @@
       updateSelected(newSelected) {
         this.$emit('update:selected', newSelected)
       },
-      // onClickCity(item){
-      //   console.log(item);
-      //   let copy = JSON.parse(JSON.stringify(this.selected))
-      //   copy[this.level] = item
-      //   this.$emit('update:selected', copy)
-      // }
       onClickCity(item){
         let copy = JSON.parse(JSON.stringify(this.selected))
         copy[this.level] = item
@@ -76,7 +69,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 160px;
+    height: 180px;
     overflow: auto;
     color: $gray-blue;
 

@@ -1,6 +1,6 @@
 <template>
   <div class="cascader">
-    <div class="trigger" @click="popoverVisible = !popoverVisible">
+    <div class="trigger" :class="{active}" @click="clickTrigger">
       {{getSelectedName}}
     </div>
     <div class="popover" v-show="popoverVisible">
@@ -10,14 +10,12 @@
 </template>
 
 <script>
+  import db from './database.js'
   import CascaderItem from './CascaderItem'
 
   export default {
     name: "Cascader",
     props: {
-      citys: {
-        type: Array,
-      },
       selected: {
         type: Array,
         default: () => []
@@ -26,6 +24,8 @@
     data() {
       return {
         popoverVisible: false,
+        active: false,
+        citys: []
       }
     },
     components: {
@@ -33,7 +33,23 @@
     },
     methods: {
       updateSelected(newSelected) {
+        let lastSelected = newSelected[newSelected.length - 1]
+        this.getDb(lastSelected.id).then(res => {
+          this.$set(lastSelected, 'children', res)
+        })
         this.$emit('update:selected', newSelected)
+      },
+      getDb(level = 0) {
+        return new Promise((resolve, reject) => {
+          let result = db.filter(item => {
+            return item.parent_id == level
+          })
+          result && resolve(result)
+        })
+      },
+      clickTrigger(){
+        this.popoverVisible = !this.popoverVisible
+        this.active = !this.active
       }
     },
     computed: {
@@ -43,6 +59,11 @@
         })
         return names.join('/')
       }
+    },
+    mounted() {
+      this.getDb().then(res => {
+        this.citys = res
+      })
     }
   }
 </script>
@@ -56,16 +77,20 @@
 
     .trigger {
       font-size: $font-size;
-      background: white;
+      background: $bg;
       display: inline-flex;
       align-items: center;
-      min-width: 160px;
+      min-width: 180px;
       height: 30px;
+      cursor: pointer;
       padding: 0 8px;
       border-radius: 6px;
       box-shadow: 0 0 2px rgba(0, 0, 0, .2);
       border: 1px solid $border-color-light;
       color: $gray-blue;
+      &.active {
+        border-color: $blue;
+      }
     }
 
     .popover {

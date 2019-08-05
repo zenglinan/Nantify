@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <div class="cascader">
-        <c-cascader :citys="citys" :selected.sync="selected">
+        <c-cascader :selected.sync="selected">
           <c-button>click</c-button>
         </c-cascader>
       </div>
@@ -102,80 +102,6 @@ export default {
       selectedTab: "setting",
       name: '1',
       selected: [],
-      citys: [{
-        name: '浙江23333',
-        children: [
-          {
-            name: '杭州',
-            children: [
-              {name: '上城'},
-              {name: '下城'},
-              {name: '江干'},
-            ]
-          },
-          {
-            name: '嘉兴',
-            children: [
-              {name: '南湖'},
-              {name: '秀洲'},
-              {name: '嘉善'},
-            ]
-          },
-        ]
-      }, {
-        name: '福建',
-        children: [
-          {
-            name: '福州',
-            children: [
-              {name: '鼓楼'},
-              {name: '台江'},
-              {name: '仓山'},
-            ]
-          },
-        ]
-      }, {
-        name: '浙江23333',
-        children: [
-          {
-            name: '杭州',
-            children: [
-              {name: '上城'},
-              {name: '下城'},
-              {name: '江干'},
-            ]
-          },
-          {
-            name: '嘉兴',
-            children: [
-              {name: '南湖'},
-              {name: '秀洲'},
-              {name: '嘉善'},
-            ]
-          },
-        ]
-      }, {
-        name: '浙江23333',
-        children: [
-          {
-            name: '杭州',
-            children: [
-              {name: '上城'},
-              {name: '下城'},
-              {name: '江干'},
-            ]
-          },
-          {
-            name: '嘉兴',
-            children: [
-              {name: '南湖'},
-              {name: '秀洲'},
-              {name: '嘉善'},
-            ]
-          },
-        ]
-      }
-      ]
     }
   },
   methods: {
