@@ -32,14 +32,15 @@
       'cascader-item': CascaderItem
     },
     methods: {
-      updateSelected(newSelected) {
-        let lastSelected = newSelected[newSelected.length - 1]
-        this.getDb(lastSelected.id).then(res => {
+      updateSelected(newSelected) {  // 更新选中区域的数组selected
+        let lastSelectedId = newSelected.length - 1
+        let lastSelected = newSelected[lastSelectedId]
+        this.getDb(lastSelectedId).then(res => {  // 同时请求当前选中区域的children
           this.$set(lastSelected, 'children', res)
         })
-        this.$emit('update:selected', newSelected)
+        this.$emit('update:selected', newSelected)  // 向父组件请求更新selected
       },
-      getDb(level = 0) {
+      getDb(level = 0) {  // 传入当前选中区域的id, 去查找是否有item的parent_id与之相符, 相符的即为下一级区域
         return new Promise((resolve, reject) => {
           let result = db.filter(item => {
             return item.parent_id == level
@@ -53,14 +54,14 @@
       }
     },
     computed: {
-      getSelectedName() {
+      getSelectedName() {  // 组合selected中的区域, 显示在页面
         let names = this.selected.map((item) => {
           return item.name
         })
         return names.join('/')
       }
     },
-    mounted() {
+    mounted() {  // 初始化citys第一级数据
       this.getDb().then(res => {
         this.citys = res
       })
@@ -85,11 +86,12 @@
       cursor: pointer;
       padding: 0 8px;
       border-radius: 6px;
-      box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+      box-shadow: 0 0 2px $box-shadow-color;
       border: 1px solid $border-color-light;
       color: $gray-blue;
       &.active {
         border-color: $blue;
+        box-shadow: none;
       }
     }
 
