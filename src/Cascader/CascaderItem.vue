@@ -13,7 +13,6 @@
 </template>
 
 <script>
-  import Icon from '../component/icon'
 
   export default {
     name: "CascaderItem",
@@ -25,7 +24,7 @@
         type: Array,
         default: () => []
       },
-      level: {
+      level: {  // 级数
         type: Number,
         default: 0
       }
@@ -36,7 +35,7 @@
       }
     },
     computed: {
-      rightItems() {
+      rightItems() {  // 确认当前选中的区域是否有下一级区域
         let currentSelected = this.selected[this.level]
         if (currentSelected && currentSelected.children) {
           return currentSelected.children
@@ -45,18 +44,15 @@
         }
       }
     },
-    components: {
-      'c-icon': Icon
-    },
     methods: {
-      updateSelected(newSelected) {
+      updateSelected(newSelected) {  // 向父组件请求更新selected
         this.$emit('update:selected', newSelected)
       },
       onClickCity(item){
         let copy = JSON.parse(JSON.stringify(this.selected))
         copy[this.level] = item
-        copy.splice(this.level+1) // 点击level的时候把level+1的selected数据给删了
-        this.$emit('update:selected', copy)
+        copy.splice(this.level+1)  // eg: 点击山西时, 将之前选中的内蒙古的市-区的selected数据删除
+        this.updateSelected(copy)
       }
     }
   }
