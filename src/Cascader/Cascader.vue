@@ -1,6 +1,6 @@
 <template>
   <div class="cascader">
-    <div class="trigger" :class="{active}" @click="clickTrigger">
+    <div class="trigger" :class="{active}" @click="clickTrigger" @click.stop>
       {{getSelectedName}}
     </div>
     <div class="popover" v-show="popoverVisible">
@@ -48,7 +48,7 @@
           result && resolve(result)
         })
       },
-      clickTrigger(){
+      clickTrigger() {
         this.popoverVisible = !this.popoverVisible
         this.active = !this.active
       }
@@ -64,6 +64,13 @@
     mounted() {  // 初始化citys第一级数据
       this.getDb().then(res => {
         this.citys = res
+      })
+      document.addEventListener('click', (e) => {  // 点击页面其他地方关闭浮层
+        if (e.target.classList.contains('cityItem') || e.target.classList.contains('name')) {
+        } else {
+          this.popoverVisible = false
+          this.active = false
+        }
       })
     }
   }
@@ -89,6 +96,7 @@
       box-shadow: 0 0 2px $box-shadow-color;
       border: 1px solid $border-color-light;
       color: $gray-blue;
+
       &.active {
         border-color: $blue;
         box-shadow: none;

@@ -1,9 +1,8 @@
-::-webkit-scrollbar {
+::-webkit-scrollbar {  // 滚动条中间道
   background-color: white;
   width: 6px;
-  background-clip: padding-box;
 }
-::-webkit-scrollbar-button {
+::-webkit-scrollbar-button {  // 滚动条上下方两个小按钮, 如果不需要可以设为display: none
   height: 3px;
 }
 /*滚动条两端方向按钮*/
@@ -16,5 +15,3 @@
   background-color: rgb(193,193,195);
   border-radius: 5px;
 }
-
-/*滚动条右下角区域*/
