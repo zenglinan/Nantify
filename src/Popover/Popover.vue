@@ -47,38 +47,38 @@
     mounted() {
       this.trigger === 'click' && this.listenToClick()
       this.trigger === 'hover' && this.listenToHover()
-      this.setPopover()
+      // this.setPopover()
     },
     methods: {
-      setPopover() { // 将popover放置为body的子元素, 并且定位， 避免父元素设了overlow: hidden看不见popover提示框
-        // 将元素移出
-        let contentDom = this.$el.removeChild(this.$refs.content)
-        // 作为body的子元素
-        document.body.appendChild(contentDom)
-        this.setPosition(contentDom)
-
-      },
-      setPosition(contentDom){
-        const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
-        switch (this.direction) {
-          case 'top':
-            contentDom.style.left = `${left + window.scrollX}px`;
-            contentDom.style.top = `${top + window.scrollY}px`;
-            break;
-          case 'bottom':
-            contentDom.style.left = `${left + window.scrollX}px`;
-            contentDom.style.top = `${top + window.scrollY + height}px`;
-            break;
-          case 'left':
-            contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`
-            contentDom.style.top = `${top + window.scrollY}px`
-            break;
-          case 'right':
-            contentDom.style.left = `${left + window.scrollX + width}px`
-            contentDom.style.top = `${top + window.scrollY}px`
-            break;
-        }
-      },
+      // setPopover() { // 将popover放置为body的子元素, 并且定位， 避免父元素设了overlow: hidden看不见popover提示框
+      //   // 将元素移出
+      //   let contentDom = this.$el.removeChild(this.$refs.content)
+      //   // 作为body的子元素
+      //   document.body.appendChild(contentDom)
+      //   this.setPosition(contentDom)
+      //
+      // },
+      // setPosition(contentDom){
+      //   const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
+      //   switch (this.direction) {
+      //     case 'top':
+      //       contentDom.style.left = `${left + window.scrollX}px`;
+      //       contentDom.style.top = `${top + window.scrollY}px`;
+      //       break;
+      //     case 'bottom':
+      //       contentDom.style.left = `${left + window.scrollX}px`;
+      //       contentDom.style.top = `${top + window.scrollY + height}px`;
+      //       break;
+      //     case 'left':
+      //       contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`
+      //       contentDom.style.top = `${top + window.scrollY}px`
+      //       break;
+      //     case 'right':
+      //       contentDom.style.left = `${left + window.scrollX + width}px`
+      //       contentDom.style.top = `${top + window.scrollY}px`
+      //       break;
+      //   }
+      // },
       listenToClick() {
         let eventHandle = (e) => {
           this.close()
@@ -115,9 +115,10 @@
   @import "../common/scss/base";
   .c-popover {display: inline-flex;flex-direction: column;position: relative;}
 
-  .c-content {box-sizing: border-box;padding: 14px 18px;background: $bg;
+  .c-content {padding: 12px;background: $bg;
     border: 1px solid $border-color-light;position: absolute;color: $brown;font-size: 14px;
-    border-radius: 5px;max-width: 20em;word-break: break-all;z-index: 10;
+    border-radius: 5px;max-width: 20em;z-index: 10;word-break: break-all;width: 100%;
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
 
     &::after, &::before {content: '';display: block;position: absolute;
       height: 0;width: 0;border: 6px solid transparent;}
@@ -133,7 +134,7 @@
       &::before {border-top-color: $border-color-light;}
     }
 
-    &.c-bottom {margin-top: 6px;filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
+    &.c-bottom {margin-top: 6px;filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));top:100%;
 
       &::after, &::before {bottom: 100%;left: 5px;border-top: none;}
 
@@ -142,7 +143,7 @@
       &::before {border-bottom-color: $border-color-light;}
     }
 
-    &.c-left {transform: translateX(-6px);filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
+    &.c-left {transform: translateX(-6px);filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));right:100%;
 
       &::after, &::before {top: 4px;left: 100%;}
 
@@ -151,7 +152,7 @@
       &::before {border-bottom-color: $border-color-light;transform: rotate(90deg);}
     }
 
-    &.c-right {transform: translateX(6px);filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));
+    &.c-right {transform: translateX(6px);filter: drop-shadow(0px 0 2px rgba(0, 0, 0, .1));left: 100%;
 
       &::after, &::before {top: 4px;left: 0;margin-left: -12px;}
 
