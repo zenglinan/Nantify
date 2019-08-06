@@ -3,7 +3,7 @@
     <div class="trigger" :class="{active}" @click="clickTrigger" @click.stop>
       {{getSelectedName}}
     </div>
-    <div class="popover" v-show="popoverVisible">
+    <div class="popover" v-show="popoverVisible" ref="popover">
       <cascader-item :city="citys" :selected="selected" @update:selected="updateSelected"></cascader-item>
     </div>
   </div>
@@ -49,8 +49,31 @@
         })
       },
       clickTrigger() {
-        this.popoverVisible = !this.popoverVisible
-        this.active = !this.active
+        this.toggle()
+      },
+      onClickDocument(e){
+        let popover = this.$refs.popover
+        if (e.target === popover || popover.contains(e.target)) {
+        } else {
+          this.close()
+        }
+      },
+      open() {
+        this.active = true
+        this.popoverVisible = true
+        document.addEventListener('click',this.onClickDocument)  // 点击页面其他地方关闭浮层
+      },
+      close() {
+        this.active = false
+        this.popoverVisible = false
+        document.removeEventListener('click',this.onClickDocument)
+      },
+      toggle() {
+        if (this.popoverVisible === false) {
+          this.open()
+        } else {
+          this.close()
+        }
       }
     },
     computed: {
@@ -58,20 +81,14 @@
         let names = this.selected.map((item) => {
           return item.name
         })
-        return names.join('/')
+        return names.join(' / ')
       }
     },
     mounted() {  // 初始化citys第一级数据
       this.getDb().then(res => {
         this.citys = res
       })
-      document.addEventListener('click', (e) => {  // 点击页面其他地方关闭浮层
-        if (e.target.classList.contains('cityItem') || e.target.classList.contains('name')) {
-        } else {
-          this.popoverVisible = false
-          this.active = false
-        }
-      })
+
     }
   }
 </script>
