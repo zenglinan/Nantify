@@ -3,6 +3,7 @@
     <div class="left">
       <div class="cityItem" v-for="itemLeft in city" @click="onClickCity(itemLeft)">
         <div class="name">{{itemLeft.name}}</div>
+        <c-icon icon="i-right" class="icon" v-if="!itemLeft.isLeap"></c-icon>
       </div>
     </div>
     <div class="right" v-if="rightItems">
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+  import Icon from '../component/icon'
 
   export default {
     name: "CascaderItem",
@@ -48,12 +50,15 @@
       updateSelected(newSelected) {  // 向父组件请求更新selected
         this.$emit('update:selected', newSelected)
       },
-      onClickCity(item){
+      onClickCity(item) {
         let copy = JSON.parse(JSON.stringify(this.selected))
         copy[this.level] = item
-        copy.splice(this.level+1)  // eg: 点击山西时, 将之前选中的内蒙古的市-区的selected数据删除
+        copy.splice(this.level + 1)  // eg: 点击山西时, 将之前选中的内蒙古的市-区的selected数据删除
         this.updateSelected(copy)
       }
+    },
+    components:{
+      'c-icon': Icon
     }
   }
 </script>
@@ -88,7 +93,10 @@
       align-items: center;
       cursor: pointer;
       white-space: nowrap;
-
+      .icon {
+        width: .8em;
+        height: .8em;
+      }
       &:hover {
         background: $beige;
       }

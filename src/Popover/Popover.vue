@@ -47,38 +47,8 @@
     mounted() {
       this.trigger === 'click' && this.listenToClick()
       this.trigger === 'hover' && this.listenToHover()
-      // this.setPopover()
     },
     methods: {
-      // setPopover() { // 将popover放置为body的子元素, 并且定位， 避免父元素设了overlow: hidden看不见popover提示框
-      //   // 将元素移出
-      //   let contentDom = this.$el.removeChild(this.$refs.content)
-      //   // 作为body的子元素
-      //   document.body.appendChild(contentDom)
-      //   this.setPosition(contentDom)
-      //
-      // },
-      // setPosition(contentDom){
-      //   const {width, height, top, left, right} = this.$refs.trigger.getBoundingClientRect()
-      //   switch (this.direction) {
-      //     case 'top':
-      //       contentDom.style.left = `${left + window.scrollX}px`;
-      //       contentDom.style.top = `${top + window.scrollY}px`;
-      //       break;
-      //     case 'bottom':
-      //       contentDom.style.left = `${left + window.scrollX}px`;
-      //       contentDom.style.top = `${top + window.scrollY + height}px`;
-      //       break;
-      //     case 'left':
-      //       contentDom.style.right = `${document.body.clientWidth - left + window.scrollX}px`
-      //       contentDom.style.top = `${top + window.scrollY}px`
-      //       break;
-      //     case 'right':
-      //       contentDom.style.left = `${left + window.scrollX + width}px`
-      //       contentDom.style.top = `${top + window.scrollY}px`
-      //       break;
-      //   }
-      // },
       listenToClick() {
         let eventHandle = (e) => {
           this.close()
