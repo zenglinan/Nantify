@@ -1,32 +1,50 @@
 <template>
   <div class="c-carousel">
-    <div class="window">
-      <slot></slot>
-    </div>
+    <slot></slot>
   </div>
 </template>
 
 <script>
   export default {
     name: "coco-carousel",
-    methods: {},
+    data() {
+      return {
+        timer: null,
+        visibleIndex: 0
+      }
+    },
+    props: {
+      delay: {
+        type: String | Number
+      }
+    },
     mounted() {
-
+      const len = this.$children.length
+      this.timer = setInterval(() => {
+        this.$children[this.visibleIndex].visible = false
+        this.visibleIndex++ && (this.visibleIndex = this.visibleIndex % len)
+        this.$children[this.visibleIndex].visible = true
+        console.log(this.visibleIndex);
+      }, this.delay)
     }
   }
 </script>
 
 <style scoped lang="scss">
-  .highZindex{
+
+  .c-carousel {
+    display: inline-flex;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border: 1px solid red;
+  }
+
+  .highZindex {
     z-index: 10
   }
-  .lowerZindex{
+
+  .lowerZindex {
     z-index: 0
-  }
-  .window {
-    position: relative;
-    box-sizing: border-box;
-    width: 200px;
-    border: 1px solid orangered;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="slides">
-      <c-slides  :width="183" :delay="3000">
+    <div class="slides" style="margin-left: 500px">
+      <c-slides  :width="183" :delay="2000">
         <c-slides-item>
           <div class="xxx">1</div>
         </c-slides-item>
@@ -153,6 +153,5 @@
     text-align: center;
     line-height: 150px;
     box-sizing: border-box;
-    border: 1px solid #777;
   }
 </style>
