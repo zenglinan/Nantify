@@ -12,7 +12,8 @@
     data() {
       return {
         timer: null,
-        visibleIndex: 0
+        index: 0,  // 当前可见的幻灯片的索引
+        childLen: 0
       }
     },
     props: {
@@ -21,43 +22,48 @@
       }
     },
     methods: {
-      setCarousel() {
-        const len = this.$children.length
-        this.$children[this.visibleIndex].visible = true
+      startCarousel() {
+        this.showCarousel(this.index)  // 为了使得点上一张下一张后立马显示当前visibleIndex的幻灯片
         this.timer = setInterval(() => {
-          this.$children[this.visibleIndex].visible = false
-          this.visibleIndex++ && (this.visibleIndex = this.visibleIndex % len)
-          this.$children[this.visibleIndex].visible = true
+          this.hideCarousel(this.index)
+          this.index = ((this.index + 1) % this.childLen)
+          this.showCarousel(this.index)
         }, this.delay)
       },
+      showCarousel(index){
+        this.$children[index].visible = true
+      },
+      hideCarousel(index){
+        this.$children[index].visible = false
+      },
       cancelCarousel() {  // 取消定时器, 将当前幻灯片置为不可见
-        this.$children[this.visibleIndex].visible = false
+        this.hideCarousel(this.index)
         clearInterval(this.timer)
       },
       setSize() {
+        const wrapper = this.$refs.carouselWrapper
         const {width, height} = getComputedStyle(this.$el.querySelector('.c-carousel-item'));
-        this.$refs.carouselWrapper.style.width = width;
-        this.$refs.carouselWrapper.style.height = height;
+        wrapper.style.width = width;
+        wrapper.style.height = height;
       },
       init() {
         this.setSize()
       },
       toLast() {
-        const len = this.$children.length
         this.cancelCarousel()  // 先将当前index的visible设为false, 然后在设置上一张可见, 避免因为层级关系被挡住
-        this.visibleIndex = (this.visibleIndex + len - 1) % len
-        this.setCarousel()
+        this.index = (this.index + this.childLen - 1) % this.childLen
+        this.startCarousel()
       },
       toNext() {
-        const len = this.$children.length
         this.cancelCarousel()
-        this.visibleIndex = (this.visibleIndex + 1) % len
-        this.setCarousel()
+        this.index = (this.index + 1) % this.childLen
+        this.startCarousel()
       }
     },
     mounted() {
+      this.childLen = this.$children.length
       this.init()  // 设置c-carousel的宽高, 并且生成小圆点
-      this.setCarousel()  // 开始轮播
+      this.startCarousel()  // 开始轮播
     }
   }
 </script>
