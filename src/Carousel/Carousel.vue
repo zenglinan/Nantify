@@ -1,5 +1,5 @@
 <template>
-  <div class="c-carousel">
+  <div class="c-carousel" ref="carouselWrapper">
     <slot></slot>
   </div>
 </template>
@@ -18,33 +18,32 @@
         type: String | Number
       }
     },
+    methods: {
+      setCarousel() {
+        const len = this.$children.length
+        this.timer = setInterval(() => {
+          this.$children[this.visibleIndex].visible = false
+          this.visibleIndex++ && (this.visibleIndex = this.visibleIndex % len)
+          this.$children[this.visibleIndex].visible = true
+        }, this.delay)
+      },
+      init() {
+        const {width, height} = getComputedStyle(this.$el.querySelector('.c-carousel-item'));
+        this.$refs.carouselWrapper.style.width = width;
+        this.$refs.carouselWrapper.style.height = height;
+      }
+    },
     mounted() {
-      const len = this.$children.length
-      this.timer = setInterval(() => {
-        this.$children[this.visibleIndex].visible = false
-        this.visibleIndex++ && (this.visibleIndex = this.visibleIndex % len)
-        this.$children[this.visibleIndex].visible = true
-        console.log(this.visibleIndex);
-      }, this.delay)
+      this.init()  // 设置c-carousel的宽高
+      this.setCarousel()  // 开始轮播
     }
   }
 </script>
 
 <style scoped lang="scss">
-
   .c-carousel {
     display: inline-flex;
     position: relative;
-    width: 200px;
-    height: 150px;
     border: 1px solid red;
-  }
-
-  .highZindex {
-    z-index: 10
-  }
-
-  .lowerZindex {
-    z-index: 0
   }
 </style>

@@ -14,7 +14,7 @@
         visible: false
       }
     },
-    created() {
+    created() {  // 默认显示第一张
       if(this.$parent.$children[0] === this){
         this.visible = true
       }
