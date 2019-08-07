@@ -1,53 +1,70 @@
 <template>
   <div id="app">
-      <div class="cascader">
-        <c-cascader :selected.sync="selected">
-          <c-button>click</c-button>
-        </c-cascader>
-      </div>
-<!--      <div class="collapse">-->
-<!--        <c-collapse :selected.sync="name">-->
-<!--          <c-collapse-item title="标题1" name="1">-->
-<!--            内容1-->
-<!--          </c-collapse-item>-->
-<!--          <c-collapse-item title="标题2" name="2">-->
-<!--            内容2-->
-<!--          </c-collapse-item>-->
-<!--          <c-collapse-item title="标题3" name="3">-->
-<!--            内容3-->
-<!--          </c-collapse-item>-->
-<!--          <c-collapse-item title="标题4" name="4">-->
-<!--            内容4-->
-<!--          </c-collapse-item>-->
-<!--        </c-collapse>-->
-<!--      </div>-->
-<!--      <div class="popover">-->
-<!--        <c-popover trigger="click" direction="left">-->
-<!--          <template v-slot:content>-->
-<!--            Left-->
-<!--          </template>-->
-<!--          <c-button>Left(click)</c-button>-->
-<!--        </c-popover>-->
-<!--        <c-popover trigger="hover" direction="bottom" delay="300">-->
-<!--          <template v-slot:content="slotProps">-->
-<!--            <p>我里面可以加html标签,还可以加关闭按钮</p>-->
-<!--            <c-button @click="slotProps.close()">关闭</c-button>-->
-<!--          </template>-->
-<!--          <c-button>Delay 300ms</c-button>-->
-<!--        </c-popover>-->
-<!--        <c-popover trigger="hover" direction="top" delay="1000">-->
-<!--          <template v-slot:content="slotProps">-->
-<!--            <c-button @click="slotProps.close()">关闭</c-button>-->
-<!--          </template>-->
-<!--          <c-button>Top(hover)</c-button>-->
-<!--        </c-popover>-->
-<!--        <c-popover trigger="click" direction="right">-->
-<!--          <template v-slot:content>-->
-<!--            Right-->
-<!--          </template>-->
-<!--          <c-button>Right(click)</c-button>-->
-<!--        </c-popover>-->
-<!--      </div>-->
+    <div class="slides">
+      <c-slides  :width="183" :delay="3000">
+        <c-slides-item>
+          <div class="xxx">1</div>
+        </c-slides-item>
+        <c-slides-item>
+          <div class="xxx">2</div>
+        </c-slides-item>
+        <c-slides-item>
+          <div class="xxx">3</div>
+        </c-slides-item>
+        <c-slides-item>
+          <div class="xxx">4</div>
+        </c-slides-item>
+      </c-slides>
+    </div>
+    <!--    <div class="cascader">-->
+    <!--      <c-cascader :selected.sync="selected">-->
+    <!--        <c-button>click</c-button>-->
+    <!--      </c-cascader>-->
+    <!--    </div>-->
+    <!--      <div class="collapse">-->
+    <!--        <c-collapse :selected.sync="name">-->
+    <!--          <c-collapse-item title="标题1" name="1">-->
+    <!--            内容1-->
+    <!--          </c-collapse-item>-->
+    <!--          <c-collapse-item title="标题2" name="2">-->
+    <!--            内容2-->
+    <!--          </c-collapse-item>-->
+    <!--          <c-collapse-item title="标题3" name="3">-->
+    <!--            内容3-->
+    <!--          </c-collapse-item>-->
+    <!--          <c-collapse-item title="标题4" name="4">-->
+    <!--            内容4-->
+    <!--          </c-collapse-item>-->
+    <!--        </c-collapse>-->
+    <!--      </div>-->
+    <!--    <div class="popover" style="margin-left: 200px;">-->
+    <!--      <c-popover trigger="click" direction="left">-->
+    <!--        <template v-slot:content>-->
+    <!--          Left-->
+    <!--        </template>-->
+    <!--        <c-button>Left(click)</c-button>-->
+    <!--      </c-popover>-->
+    <!--      <c-popover trigger="click" direction="bottom" delay="300">-->
+    <!--        <template v-slot:content="slotProps">-->
+    <!--          <p>我里面可以加html标签,还可以加关闭按钮</p>-->
+    <!--          <c-button @click="slotProps.close()">关闭</c-button>-->
+    <!--        </template>-->
+    <!--        <c-button>Delay 300ms</c-button>-->
+    <!--      </c-popover>-->
+    <!--      <c-popover trigger="hover" direction="top" delay="1000">-->
+    <!--        <template v-slot:content="slotProps">-->
+    <!--          <c-button @click="slotProps.close()">关闭</c-button>-->
+    <!--        </template>-->
+    <!--        <c-button>Top(hover)</c-button>-->
+    <!--      </c-popover>-->
+    <!--      <c-popover trigger="click" direction="right">-->
+    <!--        <template v-slot:content>-->
+    <!--          Rightxxxxxxxxxxxxxxx-->
+    <!--          xxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <!--        </template>-->
+    <!--        <c-button>Right(click)</c-button>-->
+    <!--      </c-popover>-->
+    <!--    </div>-->
   </div>
 </template>
 
@@ -71,57 +88,71 @@
   import Collapse from './Collapse/Collapse'
   import CollapseItem from './Collapse/CollapseItem'
   import Cascader from './Cascader/Cascader'
-export default {
-  name: 'app',
-  components: {
-    'c-button': Button,
-    'c-button-group': ButtonGroup,
-    'c-input': Input,
-    'c-col': Col,
-    'c-row': Row,
-    'c-footer': Footer,
-    'c-header': Header,
-    'c-wrapper': Wrapper,
-    'c-slider': Slider,
-    'c-content': Content,
-    'c-tabs': Tabs,
-    'c-tab': TabItem,
-    'c-tab-pane': TabPane,
-    'c-tab-nav': TabNav,
-    'c-tab-content': TabContent,
-    'c-popover': Popover,
-    'c-collapse': Collapse,
-    'c-collapse-item': CollapseItem,
-    'c-cascader': Cascader
-  },
-  data() {
-    return {
-      ifLoading: false,
-      message: 'Hi,我支持v-model!',
-      promptType: 'error',
-      selectedTab: "setting",
-      name: '1',
-      selected: [],
-    }
-  },
-  methods: {
-    toast() {
-      this.$toast(
-          {
-            message: 'hello',
-            autoClose: false,
-            // callback: () => {
-            //   alert(1)
-            // },
-            position: 'top'
-          }
-      )
+  import Slides from './Carousel/Carousel'
+  import SlidesItem from './Carousel/Carousel-Item'
+
+  export default {
+    name: 'app',
+    components: {
+      'c-button': Button,
+      'c-button-group': ButtonGroup,
+      'c-input': Input,
+      'c-col': Col,
+      'c-row': Row,
+      'c-footer': Footer,
+      'c-header': Header,
+      'c-wrapper': Wrapper,
+      'c-slider': Slider,
+      'c-content': Content,
+      'c-tabs': Tabs,
+      'c-tab': TabItem,
+      'c-tab-pane': TabPane,
+      'c-tab-nav': TabNav,
+      'c-tab-content': TabContent,
+      'c-popover': Popover,
+      'c-collapse': Collapse,
+      'c-collapse-item': CollapseItem,
+      'c-cascader': Cascader,
+      'c-slides': Slides,
+      'c-slides-item': SlidesItem
     },
-    x() {
+    data() {
+      return {
+        ifLoading: false,
+        message: 'Hi,我支持v-model!',
+        promptType: 'error',
+        selectedTab: "setting",
+        name: '1',
+        selected: [],
+      }
+    },
+    methods: {
+      toast() {
+        this.$toast(
+            {
+              message: 'hello',
+              autoClose: false,
+              // callback: () => {
+              //   alert(1)
+              // },
+              position: 'top'
+            }
+        )
+      },
+      x() {
+      }
     }
   }
-}
 </script>
 
 <style lang="scss">
+  .xxx {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 150px;
+    box-sizing: border-box;
+    border: 1px solid #777;
+  }
 </style>
