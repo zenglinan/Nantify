@@ -2,11 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Carousel/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/css/0.styles.01ec43f8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/img/search.83621669.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/assets/img/search.83621669.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/1.d32e1350.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/10.b9666796.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/11.e9eb40e6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/12.3b589652.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/13.3429a90e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/14.7d97b64f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/15.abd28abc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/16.5c472aef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/17.4597b55a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/18.2a17231f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/19.7632bb0c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/20.1f701b96.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/21.8de435dd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/22.829b2084.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/23.163695b1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/24.88c4ec82.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/3.1d277aa5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/4.005f7c1c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/5.2eb1821c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/6.eb99d611.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/7.73e60693.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/8.762e1d9f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/9.e020ea2d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/js/app.e49a6f03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/popover.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/popover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/slides.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/slides.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/toast.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/components/toast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/install/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/install/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/introduce/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/introduce/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Carousel/Carousel-Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Carousel/Carousel-Item.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Carousel/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Carousel/Carousel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cascader/node.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +65,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="342">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Carousel/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="36">
+                <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -36,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel-Item.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            <state relative-caret-position="321">
+              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -58,6 +108,7 @@
               <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Button/README.md" />
         <option value="$PROJECT_DIR$/src/Grid System/Col.vue" />
         <option value="$PROJECT_DIR$/src/Grid System/README.md" />
         <option value="$PROJECT_DIR$/src/Layout/README.md" />
@@ -188,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/Cascader/database2.js" />
         <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
         <option value="$PROJECT_DIR$/src/Popover/Popover.vue" />
+        <option value="$PROJECT_DIR$/src/Carousel/README.md" />
         <option value="$PROJECT_DIR$/src/Carousel/Carousel-Item.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/Carousel/Carousel.vue" />
@@ -211,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,16 +280,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Carousel" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Cascader" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,14 +372,8 @@
       <workItem from="1564976239739" duration="21896000" />
       <workItem from="1565062757371" duration="5993000" />
       <workItem from="1565070663338" duration="3014000" />
-      <workItem from="1565174362734" duration="12909000" />
-    </task>
-    <task id="LOCAL-00031" summary="创建Toast组件和插件">
-      <created>1563261800755</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1563261800755</updated>
+      <workItem from="1565174362734" duration="14378000" />
+      <workItem from="1565232334579" duration="3162000" />
     </task>
     <task id="LOCAL-00032" summary="添加Toast的自动关闭选项和关闭按钮">
       <created>1563285819899</created>
@@ -672,11 +711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565192277051</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="重构代码">
+      <created>1565195397999</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1565195397999</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="385083000" />
+    <option name="totallyTimeSpent" value="389714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,11 +737,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3534636" weight="0.27164418" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3516874" visible="true" weight="0.27164418" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info id="Terminal" order="4" sideWeight="0.6465364" side_tool="true" weight="0.27164418" />
+      <window_info active="true" id="Terminal" order="4" sideWeight="0.6483126" side_tool="true" visible="true" weight="0.27164418" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -771,7 +817,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="解决hover时鼠标移到小三角形时抖动的bug" />
     <MESSAGE value="通过slot传递一个close方法，支持外部关闭popover，解决mouseleave后马上mouseenter popover会消失的定时器的bug" />
     <MESSAGE value="添加测试用例" />
     <MESSAGE value="添加Popover项目总结" />
@@ -796,16 +841,10 @@
     <MESSAGE value="实现无缝轮播了" />
     <MESSAGE value="实现轮播自动获取设置宽高" />
     <MESSAGE value="可以实现左右切换" />
-    <option name="LAST_COMMIT_MESSAGE" value="可以实现左右切换" />
+    <MESSAGE value="重构代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30402">
-          <caret line="9016" column="18" selection-start-line="9016" selection-start-column="18" selection-end-line="9016" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1059,10 +1098,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cascader/node.js" />
     <entry file="file://$PROJECT_DIR$/src/common/scss/scrollbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1080,31 +1141,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+    <entry file="file://$PROJECT_DIR$/src/Carousel/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cascader/CascaderItem.vue">
+    <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel-Item.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cascader/node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="321">
+          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1114,21 +1164,15 @@
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel-Item.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="342">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
         </state>
       </provider>
     </entry>

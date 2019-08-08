@@ -13,7 +13,8 @@
       return {
         timer: null,
         index: 0,  // 当前可见的幻灯片的索引
-        childLen: 0
+        childLen: 0,
+        rightDir: false
       }
     },
     props: {
@@ -30,15 +31,25 @@
           this.showCarousel(this.index)
         }, this.delay)
       },
-      showCarousel(index){
+      showCarousel(index) {
+        this.justDirection(index)
         this.$children[index].visible = true
+
       },
-      hideCarousel(index){
+      hideCarousel(index) {
+        this.justDirection(index)
         this.$children[index].visible = false
       },
       cancelCarousel() {  // 取消定时器, 将当前幻灯片置为不可见
         this.hideCarousel(this.index)
         clearInterval(this.timer)
+      },
+      justDirection(index){  // 判断方向是要向左还是向右
+        if (this.rightDir) {
+          this.$children[index].$refs.itemWrapper.classList.add('rightDirection')
+        }else{
+          this.$children[index].$refs.itemWrapper.classList.remove('rightDirection')
+        }
       },
       setSize() {
         const wrapper = this.$refs.carouselWrapper
@@ -50,9 +61,11 @@
         this.setSize()
       },
       toLast() {
+        this.rightDir = true
         this.cancelCarousel()  // 先将当前index的visible设为false, 然后在设置上一张可见, 避免因为层级关系被挡住
-        this.index = (this.index + this.childLen - 1) % this.childLen
+        this.index = ((this.index + this.childLen - 1) % this.childLen)
         this.startCarousel()
+        this.rightDir = false
       },
       toNext() {
         this.cancelCarousel()
