@@ -62,7 +62,7 @@
         clearInterval(this.timer)
       },
       toCarousel(index) {
-        if (index < this.index) {
+        if (index < this.index) {  // 判断要往哪个方向
           this.rightDir = true
         }
         this.cancelCarousel()
@@ -79,7 +79,6 @@
       },
       init() {
         this.setSize()
-        this.bindEvents()  // 绑定鼠标移入移出的事件
       },
       toLast() {
         this.rightDir = true
@@ -99,14 +98,6 @@
         wrapper.style.width = width;
         wrapper.style.height = height;
       },
-      bindEvents(){
-        this.$refs.carouselWrapper.addEventListener('mouseenter',()=>{
-          clearInterval(this.timer)
-        })
-        this.$refs.carouselWrapper.addEventListener('mouseleave',()=>{
-          this.startCarousel()
-        })
-      }
     },
     mounted() {
       this.childLen = this.$children.length

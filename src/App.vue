@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="slides" style="margin-left: 500px">
-      <c-slides  :width="183" :delay="5000">
+      <c-slides  :width="183" :delay="3000">
         <c-slides-item>
           <div class="xxx">1</div>
         </c-slides-item>
@@ -147,11 +147,11 @@
 
 <style lang="scss">
   .xxx {
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
     background-color: rgb(204,204,204);
     text-align: center;
-    line-height: 150px;
+    line-height: 200px;
     box-sizing: border-box;
   }
 </style>
