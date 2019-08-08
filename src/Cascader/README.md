@@ -1,18 +1,22 @@
 ## 省市区级联组件
+### 实现思路
+当点击trigger时显示popover浮层<br>
+
+点击浮层第一级区域时, 会向父组件传递selected被修改的请求, 同时校验当前点击区域是否有下一级区域的信息<br>
+
+因为不知道区域的层级有多深, 这里用到了递归组件, 将CascaderItem组件分为左和右部分.<br>
+
+左就是当前显示的层级, 点击了左层级, 会去检验是否有右层级信息.<br>
+
+如果有的话会调用CascaderItem自身, 原先的右变成了新组件的左
+![](https://github.com/zenglinan/Coco-UI/tree/master/src/Cascader/1.png)
 ### 总结
 1. 如何确定数据的深度层级(传入的数据不一定是省市区三层, 也可能更多)<br>
-**递归组件**: 
-```asp
-v-for循环组件自身, 循环的组件自身又会去进行v-for循环, 只要每次循环将更深一层的数据传过去即可
-<template>
-  <div class="cascaderItem">
-    // 展示每层的name
-    {{city.name}}
-    // 以下为递归过程
-    <cascader-item v-for="cityItem in city.children" :city="cityItem"></cascader-item>
-  </div>
-</template>
-```
-2. 单向数据流, 只能有一个数据修改中心
+**递归组件**: <br>
+将CascaderItem组件分为左(上一级)右(下一级), 点击左部分如果有下一级数据就调用自身, 原先的右变成了新的组件的左部分
+2. 尽量采用单向数据流, 确保只能有一个数据修改中心
 
 3. 在vue中更新响应式数组
+不能直接修改对应位置的元素或者直接更改长度, <br>
+可以用push, pop等方法,<br>
+也可以用$set方法
