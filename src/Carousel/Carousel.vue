@@ -3,6 +3,9 @@
     <div class="arrow arrow-left" @click="toLast"><</div>
     <div class="arrow arrow-right" @click="toNext">></div>
     <slot></slot>
+    <div class="points">
+      <span class="point" v-for="(item,index) in childLen" :key="index"></span>
+    </div>
   </div>
 </template>
 
@@ -44,18 +47,12 @@
         this.hideCarousel(this.index)
         clearInterval(this.timer)
       },
-      justDirection(index){  // 判断方向是要向左还是向右
+      justDirection(index) {  // 判断方向是要向左还是向右
         if (this.rightDir) {
           this.$children[index].$refs.itemWrapper.classList.add('rightDirection')
-        }else{
+        } else {
           this.$children[index].$refs.itemWrapper.classList.remove('rightDirection')
         }
-      },
-      setSize() {
-        const wrapper = this.$refs.carouselWrapper
-        const {width, height} = getComputedStyle(this.$el.querySelector('.c-carousel-item'));
-        wrapper.style.width = width;
-        wrapper.style.height = height;
       },
       init() {
         this.setSize()
@@ -71,7 +68,13 @@
         this.cancelCarousel()
         this.index = (this.index + 1) % this.childLen
         this.startCarousel()
-      }
+      },
+      setSize() {
+        const wrapper = this.$refs.carouselWrapper
+        const {width, height} = getComputedStyle(this.$el.querySelector('.c-carousel-item'));
+        wrapper.style.width = width;
+        wrapper.style.height = height;
+      },
     },
     mounted() {
       this.childLen = this.$children.length
@@ -82,6 +85,7 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../common/scss/base";
   .c-carousel {
     display: inline-flex;
     position: relative;
@@ -108,5 +112,27 @@
         transform: translateY(-50%);
       }
     }
+
+    .points {
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .point {
+        margin-right: 8px;
+        display: block;
+        width: 24px;
+        height: 4px;
+        cursor: pointer;
+        background-color: $white;
+      }
+
+      .point:last-child {
+        margin-right: 0;
+      }
+    }
+
   }
 </style>
