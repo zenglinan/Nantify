@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="实现小圆点点击跳转轮播">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/css/0.styles.01ec43f8.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/assets/img/search.83621669.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/assets/img/search.83621669.svg" afterDir="false" />
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
             </state>
           </provider>
         </entry>
@@ -361,14 +360,7 @@
       <workItem from="1565062757371" duration="5993000" />
       <workItem from="1565070663338" duration="3014000" />
       <workItem from="1565174362734" duration="14378000" />
-      <workItem from="1565232334579" duration="11345000" />
-    </task>
-    <task id="LOCAL-00036" summary="添加Toast动画 淡入、上滑、下滑，消失动画还未做">
-      <created>1563291288108</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1563291288108</updated>
+      <workItem from="1565232334579" duration="12053000" />
     </task>
     <task id="LOCAL-00037" summary="完成Toast的第一个测试用例，解决了异步队列引发的问题">
       <created>1563295200545</created>
@@ -706,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565244179917</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="支持鼠标移入停止轮播">
+      <created>1565244771836</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1565244771837</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397897000" />
+    <option name="totallyTimeSpent" value="398605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,7 +804,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现折叠面板组件的基本功能: 自动折叠和手动折叠" />
     <MESSAGE value="支持Collapse的默认开启选项" />
     <MESSAGE value="重构scss代码, 将统一样式抽离为scss变量" />
     <MESSAGE value="创建Cascader组件, 使用递归读取数据" />
@@ -830,7 +828,8 @@
     <MESSAGE value="动态渲染小圆点" />
     <MESSAGE value="实现小圆点点击跳转轮播" />
     <MESSAGE value="美化小箭头和小圆点, 添加小圆点active效果" />
-    <option name="LAST_COMMIT_MESSAGE" value="美化小箭头和小圆点, 添加小圆点active效果" />
+    <MESSAGE value="支持鼠标移入停止轮播" />
+    <option name="LAST_COMMIT_MESSAGE" value="支持鼠标移入停止轮播" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/deploy.sh">
@@ -1159,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Carousel/Carousel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
