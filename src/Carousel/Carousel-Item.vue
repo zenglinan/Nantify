@@ -1,10 +1,10 @@
 <template>
   <div class="c-carousel-item-wrapper" ref="itemWrapper">
-    <transition name="carousel">
-      <div class="c-carousel-item" v-if="visible">
-        <slot></slot>
-      </div>
-    </transition>
+  <transition name="carousel">
+    <div class="c-carousel-item" v-if="visible">
+      <slot></slot>
+    </div>
+  </transition>
   </div>
 </template>
 
@@ -30,7 +30,7 @@
   }
 
   .carousel-enter-active, .carousel-leave-active {
-    transition: all .8s;
+    transition: all .5s;
   }
 
   .carousel-enter {

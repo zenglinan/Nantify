@@ -1,15 +1,30 @@
 <template>
   <div class="c-carousel" ref="carouselWrapper">
-    <div class="arrow arrow-left" @click="toLast"><</div>
-    <div class="arrow arrow-right" @click="toNext">></div>
     <slot></slot>
+    <div class="arrow arrow-left" @click="toLast">
+      <svg class="icon">
+        <use xlink:href="#i-left"/>
+      </svg>
+    </div>
+    <div class="arrow arrow-right" @click="toNext">
+      <svg class="icon">
+        <use xlink:href="#i-right"/>
+      </svg>
+    </div>
     <div class="points">
-      <span class="point" v-for="(item,index) in childLen" :key="index" @click="toCarousel(index)"></span>
+      <span class="point"
+            ref="point"
+            v-for="(item,itemIndex) in childLen" :key="itemIndex"
+            @click="toCarousel(itemIndex)"
+            :class="{'active':index===itemIndex}"
+      ></span>
     </div>
   </div>
 </template>
 
 <script>
+  import '../../asset/icon'
+
   export default {
     name: "coco-carousel",
     data() {
@@ -47,8 +62,8 @@
         this.hideCarousel(this.index)
         clearInterval(this.timer)
       },
-      toCarousel(index){
-        if(index < this.index){
+      toCarousel(index) {
+        if (index < this.index) {
           this.rightDir = true
         }
         this.cancelCarousel()
@@ -95,16 +110,15 @@
 
 <style scoped lang="scss">
   @import "../common/scss/base";
+
   .c-carousel {
     display: inline-flex;
     position: relative;
-    border: 1px solid red;
 
     .arrow {
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: greenyellow;
       position: absolute;
       z-index: 1;
       top: 50%;
@@ -119,6 +133,15 @@
       &.arrow-right {
         right: 10px;
         transform: translateY(-50%);
+      }
+
+      .icon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: -0.15em;
+        fill: white;
+        overflow: hidden;
+        cursor: pointer;
       }
     }
 
@@ -136,11 +159,17 @@
         height: 4px;
         cursor: pointer;
         background-color: $white;
+
+        &.active {
+          background-color: rgb(207, 232, 252);
+        }
       }
 
       .point:last-child {
         margin-right: 0;
       }
+
+
     }
 
   }
