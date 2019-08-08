@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="slides" style="margin-left: 500px">
-      <c-slides  :width="183" :delay="2000">
+      <c-slides  :width="183" :delay="5000">
         <c-slides-item>
           <div class="xxx">1</div>
         </c-slides-item>
@@ -16,55 +16,55 @@
         </c-slides-item>
       </c-slides>
     </div>
-    <!--    <div class="cascader">-->
-    <!--      <c-cascader :selected.sync="selected">-->
-    <!--        <c-button>click</c-button>-->
-    <!--      </c-cascader>-->
-    <!--    </div>-->
-    <!--      <div class="collapse">-->
-    <!--        <c-collapse :selected.sync="name">-->
-    <!--          <c-collapse-item title="标题1" name="1">-->
-    <!--            内容1-->
-    <!--          </c-collapse-item>-->
-    <!--          <c-collapse-item title="标题2" name="2">-->
-    <!--            内容2-->
-    <!--          </c-collapse-item>-->
-    <!--          <c-collapse-item title="标题3" name="3">-->
-    <!--            内容3-->
-    <!--          </c-collapse-item>-->
-    <!--          <c-collapse-item title="标题4" name="4">-->
-    <!--            内容4-->
-    <!--          </c-collapse-item>-->
-    <!--        </c-collapse>-->
-    <!--      </div>-->
-    <!--    <div class="popover" style="margin-left: 200px;">-->
-    <!--      <c-popover trigger="click" direction="left">-->
-    <!--        <template v-slot:content>-->
-    <!--          Left-->
-    <!--        </template>-->
-    <!--        <c-button>Left(click)</c-button>-->
-    <!--      </c-popover>-->
-    <!--      <c-popover trigger="click" direction="bottom" delay="300">-->
-    <!--        <template v-slot:content="slotProps">-->
-    <!--          <p>我里面可以加html标签,还可以加关闭按钮</p>-->
-    <!--          <c-button @click="slotProps.close()">关闭</c-button>-->
-    <!--        </template>-->
-    <!--        <c-button>Delay 300ms</c-button>-->
-    <!--      </c-popover>-->
-    <!--      <c-popover trigger="hover" direction="top" delay="1000">-->
-    <!--        <template v-slot:content="slotProps">-->
-    <!--          <c-button @click="slotProps.close()">关闭</c-button>-->
-    <!--        </template>-->
-    <!--        <c-button>Top(hover)</c-button>-->
-    <!--      </c-popover>-->
-    <!--      <c-popover trigger="click" direction="right">-->
-    <!--        <template v-slot:content>-->
-    <!--          Rightxxxxxxxxxxxxxxx-->
-    <!--          xxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-    <!--        </template>-->
-    <!--        <c-button>Right(click)</c-button>-->
-    <!--      </c-popover>-->
-    <!--    </div>-->
+    <div class="cascader">
+      <c-cascader :selected.sync="selected">
+        <c-button>click</c-button>
+      </c-cascader>
+    </div>
+    <div class="collapse">
+      <c-collapse :selected.sync="name">
+        <c-collapse-item title="标题1" name="1">
+          内容1
+        </c-collapse-item>
+        <c-collapse-item title="标题2" name="2">
+          内容2
+        </c-collapse-item>
+        <c-collapse-item title="标题3" name="3">
+          内容3
+        </c-collapse-item>
+        <c-collapse-item title="标题4" name="4">
+          内容4
+        </c-collapse-item>
+      </c-collapse>
+    </div>
+    <div class="popover" style="margin-left: 200px;">
+      <c-popover trigger="click" direction="left">
+        <template v-slot:content>
+          Left
+        </template>
+        <c-button>Left(click)</c-button>
+      </c-popover>
+      <c-popover trigger="click" direction="bottom" delay="300">
+        <template v-slot:content="slotProps">
+          <p>我里面可以加html标签,还可以加关闭按钮</p>
+          <c-button @click="slotProps.close()">关闭</c-button>
+        </template>
+        <c-button>Delay 300ms</c-button>
+      </c-popover>
+      <c-popover trigger="hover" direction="top" delay="1000">
+        <template v-slot:content="slotProps">
+          <c-button @click="slotProps.close()">关闭</c-button>
+        </template>
+        <c-button>Top(hover)</c-button>
+      </c-popover>
+      <c-popover trigger="click" direction="right">
+        <template v-slot:content>
+          Rightxxxxxxxxxxxxxxx
+          xxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </template>
+        <c-button>Right(click)</c-button>
+      </c-popover>
+    </div>
   </div>
 </template>
 
@@ -149,7 +149,7 @@
   .xxx {
     width: 200px;
     height: 150px;
-    background-color: #ddd;
+    background-color: rgb(204,204,204);
     text-align: center;
     line-height: 150px;
     box-sizing: border-box;

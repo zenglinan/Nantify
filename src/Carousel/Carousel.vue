@@ -4,7 +4,7 @@
     <div class="arrow arrow-right" @click="toNext">></div>
     <slot></slot>
     <div class="points">
-      <span class="point" v-for="(item,index) in childLen" :key="index"></span>
+      <span class="point" v-for="(item,index) in childLen" :key="index" @click="toCarousel(index)"></span>
     </div>
   </div>
 </template>
@@ -46,6 +46,15 @@
       cancelCarousel() {  // 取消定时器, 将当前幻灯片置为不可见
         this.hideCarousel(this.index)
         clearInterval(this.timer)
+      },
+      toCarousel(index){
+        if(index < this.index){
+          this.rightDir = true
+        }
+        this.cancelCarousel()
+        this.index = index
+        this.startCarousel()
+        this.rightDir = false
       },
       justDirection(index) {  // 判断方向是要向左还是向右
         if (this.rightDir) {
