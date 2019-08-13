@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="重构部分代码">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/datou.xml" afterDir="false" />
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pager/Pager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pager/Pager.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Pager/Pager.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="340">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -382,14 +380,7 @@
       <workItem from="1565440193736" duration="2190000" />
       <workItem from="1565512279676" duration="17000" />
       <workItem from="1565624542302" duration="24000" />
-      <workItem from="1565682106137" duration="9825000" />
-    </task>
-    <task id="LOCAL-00042" summary="完善Tab组件的样式">
-      <created>1563447360463</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1563447360463</updated>
+      <workItem from="1565682106137" duration="12366000" />
     </task>
     <task id="LOCAL-00043" summary="添加Tab组件的禁用选项">
       <created>1563448997049</created>
@@ -727,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565694279605</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="重构部分代码, 添加点击的回调函数">
+      <created>1565695271396</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1565695271396</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="415945000" />
+    <option name="totallyTimeSpent" value="418486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,7 +824,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完善cascader组件样式" />
     <MESSAGE value="导入省市区数据库" />
     <MESSAGE value="实现省市区级联" />
     <MESSAGE value="重构组件代码，添加注释" />
@@ -851,7 +848,8 @@
     <MESSAGE value="创建分页器组件, 实现了传入页码的去重排序" />
     <MESSAGE value="完成分页器样式和基本功能" />
     <MESSAGE value="解决越界bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决越界bug" />
+    <MESSAGE value="重构部分代码, 添加点击的回调函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构部分代码, 添加点击的回调函数" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/toast-demo.vue">
@@ -1174,8 +1172,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pager/Pager.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="340">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
         </state>
       </provider>
     </entry>

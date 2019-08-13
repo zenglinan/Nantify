@@ -1,15 +1,23 @@
 <template>
   <div class="c-pager">
+    <div class="controller" @click="toLastPage">
+      <c-icon icon="i-left"></c-icon>
+    </div>
     <span v-for="(pageIndex,index) in processTotal"
           :key="index"
           class="item"
           :class="{active: currentIndex===pageIndex, pageItem: pageIndex!=='...'}"
           @click="toPage(pageIndex)"
     >{{pageIndex}}</span>
+    <div class="controller" @click="toNextPage">
+      <c-icon icon="i-right"></c-icon>
+    </div>
   </div>
 </template>
 
 <script>
+  import Icon from '../component/icon'
+
   export default {
     name: "Pager",
     props: {
@@ -38,8 +46,8 @@
           i,
           i - 1, i - 2,
           i + 1, i + 2]
-          .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
-          .sort((a, b) => a - b))  // 排序
+            .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
+            .sort((a, b) => a - b))  // 排序
         pages = pages.reduce((pre, currentIndex, index) => {  // 在合适的位置加...
           pre.push(currentIndex)
           pages[index + 1] && pages[index + 1] - pages[index] > 1 && pre.push("...")
@@ -58,8 +66,17 @@
       },
       toPage(index) {
         this.currentIndex = index
-        this.$emit('onChange',index)
+        this.$emit('onChange', index)
+      },
+      toLastPage() {
+        this.currentIndex > 1 && this.currentIndex--
+      },
+      toNextPage() {
+        this.currentIndex < this.total && this.currentIndex++
       }
+    },
+    components: {
+      'c-icon': Icon
     }
   }
 </script>
@@ -68,33 +85,27 @@
   @import "../common/scss/base";
 
   .c-pager {
-    .item {
-      margin-right: 10px;
-      cursor: default;
-      color: $black-deep;
-      user-select: none;
+    display: inline-flex;
+    .item {margin-right: 10px;cursor: default;color: $black-deep;user-select: none;}
 
-      &.pageItem {
-        border: 1px solid $border-color-light;
-        padding: 3px 9px;
-        border-radius: 5px;
-        cursor: pointer;
+    .pageItem, .controller {display: inline;border: 1px solid $border-color-light;
+      padding: 3px 9px;border-radius: 5px;cursor: pointer;
 
-        &:last-child {
-          margin-right: 0;
-        }
+      &:hover {color: $blue;border-color: $blue;}
 
-        &:hover {
-          color: $blue;
-          border-color: $blue;
-        }
+      &.active {border-color: $blue;color: $blue;}
 
-        &.active {
-          border-color: $blue;
-          color: $blue;
-        }
-      }
     }
 
+    .controller {padding: 3px 5px;
+
+      &:first-of-type {margin-right: 10px;}
+
+      &:last-of-type {margin-left: 10px;}
+
+      svg {fill: $black-deep;}
+    }
+
+    .pageItem:last-of-type {margin-right: 0;}
   }
 </style>
