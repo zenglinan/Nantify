@@ -26,17 +26,19 @@
         default: true
       }
     },
-    data(){
+    data() {
       return {
         currentIndex: this.current
       }
     },
     computed: {
       processTotal() {
+
         let pages = this.unique([1, this.total,
           this.currentIndex,
           this.currentIndex - 1, this.currentIndex - 2,
           this.currentIndex + 1, this.currentIndex + 2]
+            .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
             .sort((a, b) => a - b))  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
         pages = pages.reduce((pre, currentIndex, index) => {  // 在合适的位置加...
           pre.push(currentIndex)
@@ -53,7 +55,6 @@
         arr.forEach(item => {
           tmp[item] = true
         })
-        console.log(Object.keys(tmp).map(key => +key));
         return Object.keys(tmp).map(key => +key)  // 对象的键为字符串形式, 要变为数字
       },
       toPage(index) {
