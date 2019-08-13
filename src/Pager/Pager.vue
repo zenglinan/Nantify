@@ -66,13 +66,18 @@
       },
       toPage(index) {
         this.currentIndex = index
-        this.$emit('onChange', index)
+        this.emitPageChange()
       },
       toLastPage() {
         this.currentIndex > 1 && this.currentIndex--
+        this.emitPageChange()
       },
       toNextPage() {
         this.currentIndex < this.total && this.currentIndex++
+        this.emitPageChange()
+      },
+      emitPageChange(){
+        this.$emit('onChange', this.currentIndex)
       }
     },
     components: {
