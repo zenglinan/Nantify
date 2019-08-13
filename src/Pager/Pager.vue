@@ -1,6 +1,11 @@
 <template>
   <div class="c-pager">
-    <span v-for="(item,index) in processTotal" :key="index">{{item}}</span>
+    <span v-for="(pageIndex,index) in processTotal"
+          :key="index"
+          class="item"
+          :class="{active: currentIndex===pageIndex, pageItem: pageIndex!=='...'}"
+          @click="toPage(pageIndex)"
+    >{{pageIndex}}</span>
   </div>
 </template>
 
@@ -21,13 +26,24 @@
         default: true
       }
     },
+    data(){
+      return {
+        currentIndex: this.current
+      }
+    },
     computed: {
       processTotal() {
         let pages = this.unique([1, this.total,
-          this.current,
-          this.current - 1, this.current - 2,
-          this.current + 1, this.current + 2]
-            .sort((a, b) => a - b))
+          this.currentIndex,
+          this.currentIndex - 1, this.currentIndex - 2,
+          this.currentIndex + 1, this.currentIndex + 2]
+            .sort((a, b) => a - b))  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
+        pages = pages.reduce((pre, currentIndex, index) => {  // 在合适的位置加...
+          pre.push(currentIndex)
+          pages[index + 1] && pages[index + 1] - pages[index] > 1 && pre.push("...")
+
+          return pre
+        }, [])
         return pages
       }
     },
@@ -37,13 +53,46 @@
         arr.forEach(item => {
           tmp[item] = true
         })
-        console.log(Object.keys(tmp).map(key=>+key));
+        console.log(Object.keys(tmp).map(key => +key));
         return Object.keys(tmp).map(key => +key)  // 对象的键为字符串形式, 要变为数字
+      },
+      toPage(index) {
+        this.currentIndex = index
       }
     }
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "../common/scss/base";
 
+  .c-pager {
+    .item {
+      margin-right: 10px;
+      cursor: default;
+      color: $black-deep;
+
+      &.pageItem {
+        border: 1px solid $border-color-light;
+        padding: 3px 9px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: $blue;
+          border-color: $blue;
+        }
+
+        &.active {
+          border-color: $blue;
+          color: $blue;
+        }
+      }
+    }
+
+  }
 </style>

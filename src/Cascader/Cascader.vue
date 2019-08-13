@@ -115,7 +115,7 @@
       color: $gray-blue;
 
       &.active {
-        border-color: $blue;
+        border-color: $blue-light;
         box-shadow: none;
       }
     }

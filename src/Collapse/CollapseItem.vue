@@ -80,7 +80,7 @@
       }
 
       & span:hover {
-        color: $blue;
+        color: $blue-light;
       }
     }
 

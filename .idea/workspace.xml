@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pager/Pager.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/x.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/example.spec.js" afterDir="false" />
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="更新项目总结">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/col.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/popover.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/popover.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/row.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/toast.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/toast.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cascader/Cascader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cascader/Cascader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collapse/CollapseItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collapse/CollapseItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pager/Pager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pager/Pager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/scss/base.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,18 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Carousel/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,8 +46,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Pager/Pager.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="160">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -220,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/Cascader/node.js" />
         <option value="$PROJECT_DIR$/src/Cascader/database2.js" />
         <option value="$PROJECT_DIR$/src/Cascader/CascaderItem.vue" />
-        <option value="$PROJECT_DIR$/src/common/scss/base.scss" />
         <option value="$PROJECT_DIR$/src/Carousel/Carousel-Item.vue" />
         <option value="$PROJECT_DIR$/src/Carousel/README.md" />
         <option value="$PROJECT_DIR$/src/Cascader/README.md" />
@@ -234,6 +222,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/common/scss/base.scss" />
         <option value="$PROJECT_DIR$/src/Pager/Pager.vue" />
       </list>
     </option>
@@ -271,13 +260,20 @@
               <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Input" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coco-UI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Pager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Coco-UI" type="b2602c69:ProjectViewProjectNode" />
@@ -383,14 +379,7 @@
       <workItem from="1565440193736" duration="2190000" />
       <workItem from="1565512279676" duration="17000" />
       <workItem from="1565624542302" duration="24000" />
-      <workItem from="1565682106137" duration="2267000" />
-    </task>
-    <task id="LOCAL-00039" summary="补充Toast的README文档">
-      <created>1563336051784</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1563336051784</updated>
+      <workItem from="1565682106137" duration="8376000" />
     </task>
     <task id="LOCAL-00040" summary="整理组件，进行文件夹分类">
       <created>1563370564477</created>
@@ -728,11 +717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565251149095</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="创建分页器组件, 实现了传入页码的去重排序">
+      <created>1565684903448</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1565684903449</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408387000" />
+    <option name="totallyTimeSpent" value="414496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,11 +743,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43539822" visible="true" weight="0.27142859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43539822" visible="true" weight="0.27142859" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info active="true" id="Terminal" order="4" sideWeight="0.5646018" side_tool="true" visible="true" weight="0.27142859" />
+      <window_info id="Terminal" order="4" sideWeight="0.5646018" side_tool="true" visible="true" weight="0.27142859" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32743362" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -827,7 +823,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建Cascader组件, 使用递归读取数据" />
     <MESSAGE value="test" />
     <MESSAGE value="使用单向数据流, 确保唯一的数据修改中心, 解决点击一级时三级不能隐藏的bug" />
     <MESSAGE value="完善cascader组件样式" />
@@ -852,7 +847,8 @@
     <MESSAGE value="支持鼠标移入停止轮播" />
     <MESSAGE value="回退" />
     <MESSAGE value="更新项目总结" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新项目总结" />
+    <MESSAGE value="创建分页器组件, 实现了传入页码的去重排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建分页器组件, 实现了传入页码的去重排序" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/toast-demo.vue">
@@ -1057,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1169,10 +1158,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pager/Pager.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="160">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
