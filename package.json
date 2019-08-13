@@ -4,8 +4,8 @@
   "description": "UI\u001b[D\u001b[DVue\u001b[D\u001b[D\u001b[D基于\u001b[C\u001b[C\u001b[D\u001b[DVue的UI框架",
   "main": "dist/index.js",
   "scripts": {
-    "dev-test": "parcel watch test/* --no-cache & karma start",
-    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
+    "dev-test": "parcel watch tests/* --no-cache & karma start",
+    "test": "parcel build tests/* --no-cache --no-minify && karma start --single-run",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "serve": "vue-cli-service serve",

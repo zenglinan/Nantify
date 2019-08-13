@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="pager">
+      <c-pager :total="20" :current="5" :hide-if-one-page="true"></c-pager>
+    </div>
     <div class="slides" style="margin-left: 500px">
       <c-slides  :width="183" :delay="3000">
         <c-slides-item>
@@ -90,6 +93,7 @@
   import Cascader from './Cascader/Cascader'
   import Slides from './Carousel/Carousel'
   import SlidesItem from './Carousel/Carousel-Item'
+  import Pager from './Pager/Pager'
 
   export default {
     name: 'app',
@@ -114,7 +118,8 @@
       'c-collapse-item': CollapseItem,
       'c-cascader': Cascader,
       'c-slides': Slides,
-      'c-slides-item': SlidesItem
+      'c-slides-item': SlidesItem,
+      'c-pager': Pager
     },
     data() {
       return {
