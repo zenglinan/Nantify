@@ -33,17 +33,16 @@
     },
     computed: {
       processTotal() {
-
-        let pages = this.unique([1, this.total,
-          this.currentIndex,
-          this.currentIndex - 1, this.currentIndex - 2,
-          this.currentIndex + 1, this.currentIndex + 2]
-            .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
-            .sort((a, b) => a - b))  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
+        const i = this.currentIndex
+        let pages = this.unique([1, this.total,  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
+          i,
+          i - 1, i - 2,
+          i + 1, i + 2]
+          .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
+          .sort((a, b) => a - b))  // 排序
         pages = pages.reduce((pre, currentIndex, index) => {  // 在合适的位置加...
           pre.push(currentIndex)
           pages[index + 1] && pages[index + 1] - pages[index] > 1 && pre.push("...")
-
           return pre
         }, [])
         return pages
@@ -59,6 +58,7 @@
       },
       toPage(index) {
         this.currentIndex = index
+        this.$emit('onChange',index)
       }
     }
   }
@@ -72,6 +72,7 @@
       margin-right: 10px;
       cursor: default;
       color: $black-deep;
+      user-select: none;
 
       &.pageItem {
         border: 1px solid $border-color-light;

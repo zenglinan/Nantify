@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="pager">
-      <c-pager :total="20" :current="5" :hide-if-one-page="true"></c-pager>
+      <c-pager :total="20" :current="5" :hide-if-one-page="true" @onChange="x"></c-pager>
     </div>
     <div class="slides" style="margin-left: 500px">
       <c-slides  :width="183" :delay="3000">
@@ -144,7 +144,8 @@
             }
         )
       },
-      x() {
+      x(e) {
+        console.log(e);
       }
     }
   }
