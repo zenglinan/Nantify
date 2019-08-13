@@ -1,15 +1,15 @@
 <template>
   <div class="c-pager">
-    <div class="controller" @click="toLastPage">
+    <div class="controller" @click="toPage(current - 1)">
       <c-icon icon="i-left"></c-icon>
     </div>
     <span v-for="(pageIndex,index) in processTotal"
           :key="index"
           class="item"
-          :class="{active: currentIndex===pageIndex, pageItem: pageIndex!=='...'}"
+          :class="{active: current===pageIndex, pageItem: pageIndex!=='...'}"
           @click="toPage(pageIndex)"
     >{{pageIndex}}</span>
-    <div class="controller" @click="toNextPage">
+    <div class="controller" @click="toPage(current + 1)">
       <c-icon icon="i-right"></c-icon>
     </div>
   </div>
@@ -19,7 +19,7 @@
   import Icon from '../component/icon'
 
   export default {
-    name: "Pager",
+    name: "coco-pager",
     props: {
       total: {
         type: Number,
@@ -34,22 +34,16 @@
         default: true
       }
     },
-    data() {
-      return {
-        currentIndex: this.current
-      }
-    },
     computed: {
       processTotal() {
-        const i = this.currentIndex
-        let pages = this.unique([1, this.total,  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
-          i,
-          i - 1, i - 2,
-          i + 1, i + 2]
-            .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
-            .sort((a, b) => a - b))  // 排序
-        pages = pages.reduce((pre, currentIndex, index) => {  // 在合适的位置加...
-          pre.push(currentIndex)
+        const i = this.current
+        let pages = this.unique(  // 默认显示页码为首页末页 + 当前页 + 当前页的前2页后2页
+            [1, this.total, i, i - 1, i - 2, i + 1, i + 2]
+                .filter(n => (n >= 1 && n <= this.total))  // 过滤掉越界的索引
+                .sort((a, b) => a - b))  // 排序
+
+        pages = pages.reduce((pre, current, index) => {  // 在合适的位置加...
+          pre.push(current)
           pages[index + 1] && pages[index + 1] - pages[index] > 1 && pre.push("...")
           return pre
         }, [])
@@ -65,20 +59,8 @@
         return Object.keys(tmp).map(key => +key)  // 对象的键为字符串形式, 要变为数字
       },
       toPage(index) {
-        this.currentIndex = index
-        this.emitPageChange()
+        index >= 1 && index <= this.total && this.$emit('update:current', index)
       },
-      toLastPage() {
-        this.currentIndex > 1 && this.currentIndex--
-        this.emitPageChange()
-      },
-      toNextPage() {
-        this.currentIndex < this.total && this.currentIndex++
-        this.emitPageChange()
-      },
-      emitPageChange(){
-        this.$emit('onChange', this.currentIndex)
-      }
     },
     components: {
       'c-icon': Icon
@@ -91,6 +73,7 @@
 
   .c-pager {
     display: inline-flex;
+
     .item {margin-right: 10px;cursor: default;color: $black-deep;user-select: none;}
 
     .pageItem, .controller {display: inline;border: 1px solid $border-color-light;

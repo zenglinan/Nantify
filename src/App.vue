@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="pager">
-      <c-pager :total="20" :current="5" :hide-if-one-page="true" @onChange="x"></c-pager>
+      <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>
     </div>
     <div class="slides" style="margin-left: 500px">
       <c-slides  :width="183" :delay="3000">
@@ -129,6 +129,7 @@
         selectedTab: "setting",
         name: '1',
         selected: [],
+        current: 5
       }
     },
     methods: {
@@ -147,6 +148,7 @@
       x(e) {
         console.log(e);
       }
+
     }
   }
 </script>
