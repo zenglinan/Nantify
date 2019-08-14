@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <div class="table" style="width: 60%;">
+      <c-table :columns="columns" :data="dataSource" has-border></c-table>
+    </div>
+    <div class="table" style="width: 60%;">
+      <c-table :columns="columns" :data="dataSource" compressed :index-visible="false"></c-table>
+    </div>
     <div class="pager">
       <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>
     </div>
@@ -94,7 +100,7 @@
   import Slides from './Carousel/Carousel'
   import SlidesItem from './Carousel/Carousel-Item'
   import Pager from './Pager/Pager'
-
+  import Table from './Table/Table'
   export default {
     name: 'app',
     components: {
@@ -119,7 +125,8 @@
       'c-cascader': Cascader,
       'c-slides': Slides,
       'c-slides-item': SlidesItem,
-      'c-pager': Pager
+      'c-pager': Pager,
+      'c-table': Table
     },
     data() {
       return {
@@ -129,7 +136,21 @@
         selectedTab: "setting",
         name: '1',
         selected: [],
-        current: 5
+        current: 5,
+        columns: [
+          {text: '姓名', field: 'name'},
+          {text: '分数', field: 'score'},
+        ],
+        dataSource: [
+          {id: 1, name: '楠', score: 100},
+          {id: 2, name: '小红', score: 99},
+          {id: 3, name: '小明', score: 100},
+          {id: 4, name: '小敏', score: 99},
+          {id: 5, name: '小埋', score: 100},
+          {id: 6, name: '小妹', score: 99},
+          {id: 7, name: '小猫', score: 100},
+          {id: 8, name: '小麦', score: 99},
+        ]
       }
     },
     methods: {
