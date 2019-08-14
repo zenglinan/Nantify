@@ -2,6 +2,8 @@
   <dictionary name="datou">
     <words>
       <w>cascader</w>
+      <w>citys</w>
+      <w>ifselected</w>
     </words>
   </dictionary>
 </component>

@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <div class="table" style="width: 60%;">
-      <c-table :columns="columns" :data="dataSource" has-border></c-table>
+      <c-table :columns="columns"
+               :selected-items.sync="selectedItems"
+               :data="dataSource"
+               has-border
+               selectable
+      ></c-table>
+      {{selectedItems}}
     </div>
     <div class="table" style="width: 60%;">
       <c-table :columns="columns" :data="dataSource" compressed></c-table>
@@ -10,7 +16,7 @@
       <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>
     </div>
     <div class="slides" style="margin-left: 500px">
-      <c-slides  :width="183" :delay="3000">
+      <c-slides :width="183" :delay="3000">
         <c-slides-item>
           <div class="xxx">1</div>
         </c-slides-item>
@@ -101,6 +107,7 @@
   import SlidesItem from './Carousel/Carousel-Item'
   import Pager from './Pager/Pager'
   import Table from './Table/Table'
+
   export default {
     name: 'app',
     components: {
@@ -141,16 +148,17 @@
           {text: '姓名', field: 'name'},
           {text: '分数', field: 'score'},
         ],
-        dataSource: [
-          {id: 1, name: '楠', score: 100},
-          {id: 2, name: '小红', score: 99},
-          {id: 3, name: '小明', score: 100},
-          {id: 4, name: '小敏', score: 99},
-          {id: 5, name: '小埋', score: 100},
-          {id: 6, name: '小妹', score: 99},
-          {id: 7, name: '小猫', score: 100},
-          {id: 8, name: '小麦', score: 99},
-        ]
+        dataSource: [  // id从0开始!
+          {id: 0, name: '楠', score: 100},
+          {id: 1, name: '小红', score: 99},
+          {id: 2, name: '小明', score: 100},
+          {id: 3, name: '小敏', score: 99},
+          {id: 4, name: '小埋', score: 100},
+          {id: 5, name: '小妹', score: 99},
+          {id: 6, name: '小猫', score: 100},
+          {id: 7, name: '小麦', score: 99},
+        ],
+        selectedItems: []
       }
     },
     methods: {
@@ -178,7 +186,7 @@
   .xxx {
     width: 400px;
     height: 200px;
-    background-color: rgb(204,204,204);
+    background-color: rgb(204, 204, 204);
     text-align: center;
     line-height: 200px;
     box-sizing: border-box;

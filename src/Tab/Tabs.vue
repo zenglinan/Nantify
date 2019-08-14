@@ -24,7 +24,7 @@
           return ['column', 'row'].indexOf(value) !== -1
         }
       },
-      selected: {
+      selectedItems: {
         type: String
       }
     },
@@ -34,9 +34,9 @@
       }
     },
     mounted() {
-      this.eventBus.$emit('changeSelectedTab', this.selected)  // 向后代传递修改selectedTab的事件，值为用户初始定义的name
+      this.eventBus.$emit('changeSelectedTab', this.selectedItems)  // 向后代传递修改selectedTab的事件，值为用户初始定义的name
       this.eventBus.$on('changeSelectedTab', (selectedName) => {  // 接收到传递的修改事件
-        this.$emit('update:selected', selectedName)
+        this.$emit('update:selectedItems', selectedName)
       })
     }
   }
