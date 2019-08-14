@@ -4,7 +4,7 @@
       <c-table :columns="columns" :data="dataSource" has-border></c-table>
     </div>
     <div class="table" style="width: 60%;">
-      <c-table :columns="columns" :data="dataSource" compressed :index-visible="false"></c-table>
+      <c-table :columns="columns" :data="dataSource" compressed></c-table>
     </div>
     <div class="pager">
       <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>

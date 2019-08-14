@@ -49,24 +49,33 @@
 <style scoped lang="scss">
   @import "../common/scss/base";
 
+  @mixin border-bottom() {
+    border-bottom: 1px solid darken($beige-light, 15%);
+  }
+
+  @mixin border() {
+    border: 1px solid darken($beige-light, 15%);
+  }
+
   .c-table {
     box-sizing: border-box;
     overflow: hidden;
 
     table {
+      @include border();
       border-collapse: separate;
       border-spacing: 0;
       text-align: left;
       width: 100%;
-      border: 1px solid darken($beige-light, 15%);
       border-radius: 4px;
+
       td, th {
         padding: 16px;
-        border-bottom: 1px solid darken($beige-light, 15%);
+        @include border-bottom();
       }
 
       tr {
-        border-bottom: 1px solid darken($beige-light, 15%);
+        @include border-bottom();
       }
 
       &.compressed {
@@ -77,28 +86,35 @@
 
       &.hasBorder {
         border: none;
-        tr{
-          &:last-child{
-            td{
-              border-bottom: 1px solid darken($beige-light, 15%);
-              &:first-child{
+
+        tr {
+          &:last-child {
+            td {
+              @include border-bottom();
+
+              &:first-child {
                 border-bottom-left-radius: 4px;
               }
-              &:last-child{
+
+              &:last-child {
                 border-bottom-right-radius: 4px;
               }
             }
           }
-          td, th{
-            border: 1px solid darken($beige-light, 15%);
+
+          td, th {
+            @include border();
             border-bottom: none;
           }
+
           td:not(:first-child), th:not(:first-child) {
             border-left: none;
           }
+
           th:first-child {
             border-top-left-radius: 4px;
           }
+
           th:last-child {
             border-top-right-radius: 4px;
           }
