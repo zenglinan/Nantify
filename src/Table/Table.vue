@@ -1,42 +1,48 @@
 <template>
-  <div class="c-table">
-    <table :class="{compressed, hasBorder}">
-      <thead>
-      <tr>
-        <th v-if="selectable" @change="onChangeAll($event)">
-          <input type="checkbox">
-        </th>
-        <th v-if="indexVisible">#</th>
-        <th v-for="(column, columnIndex) in columns"
-            :key="columnIndex"
-            :class="{canSort: column.field in sortRules}"
-            @click="column.field in sortRules && onChangeSortRules(column.field)"
-        >
-          <div class="thContent">
-            <span>{{column.text}}</span>
-            <div class="tableSorter" v-if="column.field in sortRules">
-              <c-icon icon="i-asc" :class="{active: sortRules[column.field] === 'asc'}"></c-icon>
-              <c-icon icon="i-desc" :class="{active: sortRules[column.field] === 'desc'}"></c-icon>
+  <div class="c-table" ref="tableWrapper">
+    <div class="tableInnerWrapper" :style="{height}" ref="innerWrapper">
+      <table :class="{compressed, hasBorder}" ref="table">
+        <thead ref="thead">
+        <tr>
+          <th v-if="selectable" @change="onChangeAll($event)" width='60px'>
+            <div class="thContent">
+              <input type="checkbox" :checked="selector">
+              <span>{{selector ? "全不选": "全选"}}</span>
             </div>
-          </div>
-        </th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="(dataItem, dataIndex) in data" :key="dataIndex">
-        <td v-if="selectable" @change="onChangeItem($event, dataItem, dataIndex)">
-          <input type="checkbox" :checked="selector">
-        </td>
-        <td v-if="indexVisible">
-          {{dataIndex + 1}}
-        </td>
-        <template v-for="column in columns">
-          <td>{{dataItem[column.field]}}</td>
-        </template>
-      </tr>
-      </tbody>
+          </th>
+          <th v-if="indexVisible" :style="{width: '60px'}">#</th>
+          <th v-for="(column, columnIndex) in columns"
+              :key="columnIndex"
+              :class="{canSort: column.field in sortRules}"
+              @click="column.field in sortRules && onChangeSortRules(column.field)"
+              :style="{width: '60px'}"
+          >
+            <div class="thContent">
+              <span>{{column.text}}</span>
+              <div class="tableSorter" v-if="column.field in sortRules">
+                <c-icon icon="i-asc" :class="{active: sortRules[column.field] === 'asc'}"></c-icon>
+                <c-icon icon="i-desc" :class="{active: sortRules[column.field] === 'desc'}"></c-icon>
+              </div>
+            </div>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(dataItem, dataIndex) in data" :key="dataIndex" >
+          <td v-if="selectable" @change="onChangeItem($event, dataItem, dataIndex)" :style="{width: '60px'}">
+            <input type="checkbox" :checked="selector">
+          </td>
+          <td v-if="indexVisible" :style="{width: '60px'}">
+            {{dataIndex + 1}}
+          </td>
+          <template v-for="column in columns">
+            <td>{{dataItem[column.field]}}</td>
+          </template>
+        </tr>
+        </tbody>
 
-    </table>
+      </table>
+    </div>
     <div class="loading" v-show="loading">
       <c-icon icon="i-loading"></c-icon>
     </div>
@@ -50,7 +56,7 @@
     name: "coco-table",
     data() {
       return {
-        selector: false  // 控制所有单选框的开关
+        selector: false  // 所有单选框上都有的属性, 表示是否勾选
       }
     },
     props: {
@@ -91,7 +97,21 @@
       loading: {
         type: Boolean,
         default: true
+      },
+      height: {  // 指定tbody的高度, 固定表头需要用到
+        type: String
       }
+    },
+    mounted() {  // 将 thead 移出, 插入假表作为固定表头
+      let table2 = this.$refs.table.cloneNode(false)
+      let thead = this.$refs.thead
+      let wrapper = this.$refs.tableWrapper
+      table2.appendChild(thead)
+      table2.classList.add('fakeTable')
+      wrapper.appendChild(table2)
+
+      let {height} = getComputedStyle(thead)  // 设置 margin, 防止第一行被挡住
+      this.$refs.innerWrapper.style.marginTop = height
     },
     methods: {
       onChangeItem(e, data, index) {
@@ -135,6 +155,7 @@
 
 <style scoped lang="scss">
   @import "../common/scss/base";
+  @import "../common/scss/scrollbar";
 
   @mixin border-bottom() {
     border-bottom: 1px solid darken($beige-light, 2%);
@@ -145,10 +166,22 @@
   }
 
   @include rotateAnimation;
+
+
   .c-table {
     box-sizing: border-box;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+
+    .fakeTable {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .tableInnerWrapper {
+      overflow: auto;
+    }
 
     table {
       @include border();
@@ -201,14 +234,19 @@
           transition: background .3s;
           color: rgb(89, 89, 89);
 
+          &:nth-child(even) {
+            background-color: rgb(247, 247, 247);
+          }
+
           &:hover {
             background: rgb(230, 247, 255);
           }
+
         }
       }
 
       td, th {
-        padding: 14px;
+        padding: 10px;
         @include border-bottom();
       }
 
@@ -222,7 +260,7 @@
 
       &.compressed {
         td, th {
-          padding: 10px;
+          padding: 6px;
         }
       }
 
@@ -264,6 +302,7 @@
 
       }
     }
+
 
     .loading {
       position: absolute;

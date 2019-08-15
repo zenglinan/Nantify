@@ -9,6 +9,7 @@
                :sort-rules.sync="sortRules"
                :loading="tableLoading"
                @update:sortRules="sort"
+               height="340px"
       ></c-table>
       {{selectedItems}}
     </div>
@@ -161,6 +162,15 @@
           {id: 5, name: '小妹', score: 89, age: 17},
           {id: 6, name: '小猫', score: 70, age: 24},
           {id: 7, name: '小麦', score: 93, age: 88},
+          {id: 9, name: '楠', score: 100, age: 21},
+          {id: 10, name: '小红', score: 90, age: 22},
+          {id: 11, name: '小红', score: 90, age: 22},
+          {id: 12, name: '小明', score: 80, age: 30},
+          {id: 13, name: '小敏', score: 91, age: 16},
+          {id: 14, name: '小埋', score: 60, age: 8},
+          {id: 15, name: '小妹', score: 89, age: 17},
+          {id: 16, name: '小猫', score: 70, age: 24},
+          {id: 17, name: '小麦', score: 93, age: 88},
         ],
         selectedItems: [],
         sortRules: {
