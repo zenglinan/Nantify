@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="table" style="width: 60%;">
+    <div class="table">
       <c-table :columns="columns"
                :selected-items.sync="selectedItems"
                :data="dataSource"
@@ -148,9 +148,9 @@
         name: '1',
         selected: [],
         current: 5,
-        columns: [
-          {text: '姓名', field: 'name'},
-          {text: '分数', field: 'score'},
+        columns: [  // 确保最后一个column的width为空, 以便自适应
+          {text: '姓名', field: 'name', width: '300px'},
+          {text: '分数', field: 'score', width: '300px'},
           {text: '年龄', field: 'age'}
         ],
         dataSource: [  // id从0开始!

@@ -4,10 +4,9 @@
       <table :class="{compressed, hasBorder}" ref="table">
         <thead ref="thead">
         <tr>
-          <th v-if="selectable" @change="onChangeAll($event)" width='60px'>
+          <th v-if="selectable" @change="onChangeAll($event)" :style="{width: '60px'}">
             <div class="thContent">
               <input type="checkbox" :checked="selector">
-              <span>{{selector ? "全不选": "全选"}}</span>
             </div>
           </th>
           <th v-if="indexVisible" :style="{width: '60px'}">#</th>
@@ -15,7 +14,7 @@
               :key="columnIndex"
               :class="{canSort: column.field in sortRules}"
               @click="column.field in sortRules && onChangeSortRules(column.field)"
-              :style="{width: '60px'}"
+              :style="{width: column.width}"
           >
             <div class="thContent">
               <span>{{column.text}}</span>
@@ -29,14 +28,17 @@
         </thead>
         <tbody>
         <tr v-for="(dataItem, dataIndex) in data" :key="dataIndex" >
-          <td v-if="selectable" @change="onChangeItem($event, dataItem, dataIndex)" :style="{width: '60px'}">
+          <td v-if="selectable"
+              @change="onChangeItem($event, dataItem, dataIndex)"
+              :style="{width: '60px'}"
+          >
             <input type="checkbox" :checked="selector">
           </td>
           <td v-if="indexVisible" :style="{width: '60px'}">
             {{dataIndex + 1}}
           </td>
           <template v-for="column in columns">
-            <td>{{dataItem[column.field]}}</td>
+            <td :style="{width: column.width}">{{dataItem[column.field]}}</td>
           </template>
         </tr>
         </tbody>
@@ -96,7 +98,7 @@
       },
       loading: {
         type: Boolean,
-        default: true
+        default: false
       },
       height: {  // 指定tbody的高度, 固定表头需要用到
         type: String
@@ -167,7 +169,7 @@
 
   @include rotateAnimation;
 
-
+  *{box-sizing: border-box;}
   .c-table {
     box-sizing: border-box;
     position: relative;
