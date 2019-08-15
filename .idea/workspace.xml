@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/icon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/Table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/Table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/scss/base.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Table/Table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+            <state relative-caret-position="180">
+              <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
               <folding>
                 <element signature="e#935#1004#0" />
                 <element signature="e#1289#1881#0" />
@@ -64,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
-              <caret line="193" column="78" selection-start-line="193" selection-start-column="78" selection-end-line="193" selection-end-column="78" />
+              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/src/Pager/Pager.vue" />
         <option value="$PROJECT_DIR$/asset/icon.js" />
         <option value="$PROJECT_DIR$/src/common/scss/base.scss" />
-        <option value="$PROJECT_DIR$/src/Table/Table.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/Table/Table.vue" />
       </list>
     </option>
   </component>
@@ -340,21 +338,7 @@
       <workItem from="1565624542302" duration="24000" />
       <workItem from="1565682106137" duration="16831000" />
       <workItem from="1565762475178" duration="16063000" />
-      <workItem from="1565838819461" duration="7336000" />
-    </task>
-    <task id="LOCAL-00049" summary="优化document的监听, 每次开之前先把之前的取消掉">
-      <created>1564405023606</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1564405023606</updated>
-    </task>
-    <task id="LOCAL-00050" summary="优化部分代码">
-      <created>1564406491425</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1564406491430</updated>
+      <workItem from="1565838819461" duration="10725000" />
     </task>
     <task id="LOCAL-00051" summary="支持popover四个方向可选">
       <created>1564417365523</created>
@@ -685,11 +669,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565789534317</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="实现排序功能">
+      <created>1565846588847</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1565846588848</updated>
+    </task>
+    <task id="LOCAL-00099" summary="修复默认排序有问题的bug, 去除排序可逆功能">
+      <created>1565847834782</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1565847834782</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446350000" />
+    <option name="totallyTimeSpent" value="449739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,11 +702,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43185842" visible="true" weight="0.24206349" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43185842" visible="true" weight="0.24206349" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info id="Terminal" order="4" sideWeight="0.5681416" side_tool="true" visible="true" weight="0.24206349" />
+      <window_info active="true" id="Terminal" order="4" sideWeight="0.5681416" side_tool="true" visible="true" weight="0.24206349" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32743362" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -784,8 +782,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="利用node给数据库里的数据添加isLeap, 作为是否为叶子节点的判断, 对于不是叶子节点的item增加小箭头" />
-    <MESSAGE value="创建轮播组件" />
     <MESSAGE value="实现无缝轮播了" />
     <MESSAGE value="实现轮播自动获取设置宽高" />
     <MESSAGE value="可以实现左右切换" />
@@ -809,7 +805,9 @@
     <MESSAGE value="创建Table组件, 完成基本样式" />
     <MESSAGE value="使用mixin简化scss代码" />
     <MESSAGE value="添加间隔tr不同颜色选项, 添加单选框, 实现单选 全选 全不选逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加间隔tr不同颜色选项, 添加单选框, 实现单选 全选 全不选逻辑" />
+    <MESSAGE value="实现排序功能" />
+    <MESSAGE value="修复默认排序有问题的bug, 去除排序可逆功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复默认排序有问题的bug, 去除排序可逆功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
@@ -1116,21 +1114,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Table/Table.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
-          <folding>
-            <element signature="e#935#1004#0" />
-            <element signature="e#1289#1881#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
-          <caret line="193" column="78" selection-start-line="193" selection-start-column="78" selection-end-line="193" selection-end-column="78" />
+          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1141,6 +1128,17 @@
             <element signature="n#div#5;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#6;n#div#0;n#template#0;n#!!top" />
             <element signature="e#3662#4302#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Table/Table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
+          <folding>
+            <element signature="e#935#1004#0" />
+            <element signature="e#1289#1881#0" />
           </folding>
         </state>
       </provider>

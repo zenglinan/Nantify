@@ -103,15 +103,21 @@
         let copy = JSON.parse(JSON.stringify(this.sortRules))
         switch (this.sortRules[field]) {
           case 'asc':
-            copy[field] = 'desc';
+            this.resetObj(copy)  // 先将所有字段的规则置空
+            copy[field] = 'desc';  // 指定对应字段的排序规则
             break;
           case 'desc':
+            this.resetObj(copy)
             copy[field] = 'asc';
             break;
           default:
+            this.resetObj(copy)
             copy[field] = 'asc';
         }
         this.$emit('update:sortRules', copy)
+      },
+      resetObj(object){
+        Object.keys(object).forEach(key => object[key] = '')
       }
     },
     components: {

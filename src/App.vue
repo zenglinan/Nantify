@@ -149,20 +149,22 @@
         columns: [
           {text: '姓名', field: 'name'},
           {text: '分数', field: 'score'},
+          {text: '年龄', field: 'age'}
         ],
         dataSource: [  // id从0开始!
-          {id: 0, name: '楠', score: 100},
-          {id: 1, name: '小红', score: 99},
-          {id: 2, name: '小明', score: 100},
-          {id: 3, name: '小敏', score: 99},
-          {id: 4, name: '小埋', score: 100},
-          {id: 5, name: '小妹', score: 99},
-          {id: 6, name: '小猫', score: 100},
-          {id: 7, name: '小麦', score: 99},
+          {id: 0, name: '楠', score: 100, age: 21},
+          {id: 1, name: '小红', score: 90, age: 22},
+          {id: 2, name: '小明', score: 80, age: 30},
+          {id: 3, name: '小敏', score: 91, age: 16},
+          {id: 4, name: '小埋', score: 60, age: 8},
+          {id: 5, name: '小妹', score:89, age: 17},
+          {id: 6, name: '小猫', score: 70, age: 24},
+          {id: 7, name: '小麦', score: 93, age: 88},
         ],
         selectedItems: [],
         sortRules: {
-          score: ''
+          score: '',
+          age: ''
         }
       }
     },
