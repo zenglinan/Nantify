@@ -9,7 +9,7 @@
         <th v-if="indexVisible">#</th>
         <th v-for="(column, columnIndex) in columns"
             :key="columnIndex"
-            :class="{canSort: sortRules}"
+            :class="{canSort: column.field in sortRules}"
             @click="column.field in sortRules && onChangeSortRules(column.field)"
         >
           <div class="thContent">
@@ -37,6 +37,9 @@
       </tbody>
 
     </table>
+    <div class="loading" v-show="loading">
+      <c-icon icon="i-loading"></c-icon>
+    </div>
   </div>
 </template>
 
@@ -73,17 +76,21 @@
         type: Boolean,
         default: true
       },
-      selectable: {
+      selectable: {  // 是否可勾选
         type: Boolean,
         default: false
       },
-      selectedItems: {
+      selectedItems: {  // 勾选的column数组
         type: Array,
         default: () => []
       },
-      sortRules: {
+      sortRules: {  // 排序规则
         type: Object,
         default: () => ({})
+      },
+      loading: {
+        type: Boolean,
+        default: true
       }
     },
     methods: {
@@ -116,7 +123,7 @@
         }
         this.$emit('update:sortRules', copy)
       },
-      resetObj(object){
+      resetObj(object) {
         Object.keys(object).forEach(key => object[key] = '')
       }
     },
@@ -137,9 +144,11 @@
     border: 1px solid darken($beige-light, 2%);
   }
 
+  @include rotateAnimation;
   .c-table {
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
 
     table {
       @include border();
@@ -186,72 +195,95 @@
           }
         }
       }
-    }
 
-    tbody {
-      tr {
-        transition: background .3s;
-        color: rgb(89, 89, 89);
+      tbody {
+        tr {
+          transition: background .3s;
+          color: rgb(89, 89, 89);
 
-        &:hover {
-          background: $beige-lighter;
+          &:hover {
+            background: rgb(230, 247, 255);
+          }
         }
       }
-    }
 
-    td, th {
-      padding: 14px;
-      @include border-bottom();
-    }
-
-    tr {
-      @include border-bottom();
-
-    }
-
-    &.compressed {
       td, th {
-        padding: 10px;
+        padding: 14px;
+        @include border-bottom();
       }
-    }
-
-    &.hasBorder {
-      border: none;
 
       tr {
+        @include border-bottom();
+
         &:last-child {
-          td {
-            @include border-bottom();
+          border-bottom: none;
+        }
+      }
 
-            &:first-child {
-              border-bottom-left-radius: 4px;
-            }
+      &.compressed {
+        td, th {
+          padding: 10px;
+        }
+      }
 
-            &:last-child {
-              border-bottom-right-radius: 4px;
+      &.hasBorder {
+        border: none;
+
+        tr {
+          &:last-child {
+            td {
+              @include border-bottom();
+
+              &:first-child {
+                border-bottom-left-radius: 4px;
+              }
+
+              &:last-child {
+                border-bottom-right-radius: 4px;
+              }
             }
+          }
+
+          td, th {
+            @include border();
+            border-bottom: none;
+          }
+
+          td:not(:first-child), th:not(:first-child) {
+            border-left: none;
+          }
+
+          th:first-child {
+            border-top-left-radius: 4px;
+          }
+
+          th:last-child {
+            border-top-right-radius: 4px;
           }
         }
 
-        td, th {
-          @include border();
-          border-bottom: none;
-        }
-
-        td:not(:first-child), th:not(:first-child) {
-          border-left: none;
-        }
-
-        th:first-child {
-          border-top-left-radius: 4px;
-        }
-
-        th:last-child {
-          border-top-right-radius: 4px;
-        }
       }
-
     }
+
+    .loading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, .7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        animation: rotate .6s linear infinite;
+      }
+    }
+
   }
+
 
 </style>

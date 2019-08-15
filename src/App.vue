@@ -7,6 +7,7 @@
                has-border
                selectable
                :sort-rules.sync="sortRules"
+               :loading="tableLoading"
                @update:sortRules="sort"
       ></c-table>
       {{selectedItems}}
@@ -157,7 +158,7 @@
           {id: 2, name: '小明', score: 80, age: 30},
           {id: 3, name: '小敏', score: 91, age: 16},
           {id: 4, name: '小埋', score: 60, age: 8},
-          {id: 5, name: '小妹', score:89, age: 17},
+          {id: 5, name: '小妹', score: 89, age: 17},
           {id: 6, name: '小猫', score: 70, age: 24},
           {id: 7, name: '小麦', score: 93, age: 88},
         ],
@@ -165,7 +166,8 @@
         sortRules: {
           score: '',
           age: ''
-        }
+        },
+        tableLoading: false
       }
     },
     methods: {
@@ -185,17 +187,20 @@
         console.log(e);
       },
       sort(rules) {
-        let sortField, sortRule
-        for (let field in rules) {
-          if (rules[field]) {
-            sortField = field
-            sortRule = rules[field]
+        this.tableLoading = true
+        setTimeout(() => {
+          let sortField, sortRule
+          for (let field in rules) {
+            if (rules[field]) {
+              sortField = field
+              sortRule = rules[field]
+            }
           }
-        }
-        sortRule === 'asc' && this.dataSource.sort((a, b) => a[sortField] - b[sortField])
-        sortRule === 'desc' && this.dataSource.sort((a, b) => b[sortField] - a[sortField])
+          sortRule === 'asc' && this.dataSource.sort((a, b) => a[sortField] - b[sortField])
+          sortRule === 'desc' && this.dataSource.sort((a, b) => b[sortField] - a[sortField])
+          this.tableLoading = false
+        }, 600)
       }
-
     }
   }
 </script>
