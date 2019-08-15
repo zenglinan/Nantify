@@ -7,8 +7,18 @@
           <input type="checkbox">
         </th>
         <th v-if="indexVisible">#</th>
-        <th v-for="(column, columnIndex) in columns" :key="columnIndex">
-          {{column.text}}
+        <th v-for="(column, columnIndex) in columns"
+            :key="columnIndex"
+            :class="{canSort: sortRules}"
+            @click="column.field in sortRules && onChangeSortRules(column.field)"
+        >
+          <div class="thContent">
+            <span>{{column.text}}</span>
+            <div class="tableSorter" v-if="column.field in sortRules">
+              <c-icon icon="i-asc" :class="{active: sortRules[column.field] === 'asc'}"></c-icon>
+              <c-icon icon="i-desc" :class="{active: sortRules[column.field] === 'desc'}"></c-icon>
+            </div>
+          </div>
         </th>
       </tr>
       </thead>
@@ -31,9 +41,11 @@
 </template>
 
 <script>
+  import Icon from '../component/icon'
+
   export default {
     name: "coco-table",
-    data(){
+    data() {
       return {
         selector: false  // 控制所有单选框的开关
       }
@@ -68,6 +80,10 @@
       selectedItems: {
         type: Array,
         default: () => []
+      },
+      sortRules: {
+        type: Object,
+        default: () => ({})
       }
     },
     methods: {
@@ -82,7 +98,24 @@
         let ifSelectedAll = e.target.checked
         ifSelectedAll && this.$emit('update:selectedItems', this.data) && (this.selector = true)
         !ifSelectedAll && this.$emit('update:selectedItems', []) && (this.selector = false)
+      },
+      onChangeSortRules(field) {
+        let copy = JSON.parse(JSON.stringify(this.sortRules))
+        switch (this.sortRules[field]) {
+          case 'asc':
+            copy[field] = 'desc';
+            break;
+          case 'desc':
+            copy[field] = '';
+            break;
+          default:
+            copy[field] = 'asc';
+        }
+        this.$emit('update:sortRules', copy)
       }
+    },
+    components: {
+      'c-icon': Icon
     }
   }
 </script>
@@ -113,74 +146,105 @@
       thead {
         tr {
           background-color: $beige-lighter;
-        }
-      }
 
-      tbody {
-        tr {
-          transition: background .3s;
+          th.canSort {
+            transition: all .3s;
+            &:hover {
+              background-color: rgb(233, 233, 233);
+              cursor: pointer;
+            }
 
-          &:hover {
-            background: $beige-lighter;
-          }
-        }
-      }
+            .tableSorter {
+              display: flex;
+              flex-direction: column;
+              margin-left: 4px;
 
-      td, th {
-        padding: 14px;
-        @include border-bottom();
-      }
+              svg {
+                width: 8px;
+                height: 8px;
+                fill: rgb(191, 191, 191);
+                transition: all .2s;
 
-      tr {
-        @include border-bottom();
-
-      }
-
-      &.compressed {
-        td, th {
-          padding: 10px;
-        }
-      }
-
-      &.hasBorder {
-        border: none;
-
-        tr {
-          &:last-child {
-            td {
-              @include border-bottom();
-
-              &:first-child {
-                border-bottom-left-radius: 4px;
-              }
-
-              &:last-child {
-                border-bottom-right-radius: 4px;
+                &.active {
+                  fill: rgb(24, 144, 255);
+                }
               }
             }
           }
 
-          td, th {
-            @include border();
-            border-bottom: none;
-          }
-
-          td:not(:first-child), th:not(:first-child) {
-            border-left: none;
-          }
-
-          th:first-child {
-            border-top-left-radius: 4px;
-          }
-
-          th:last-child {
-            border-top-right-radius: 4px;
+          .thContent {
+            display: flex;
+            align-items: center;
+            color: rgb(76, 76, 76);
           }
         }
-
       }
     }
 
+    tbody {
+      tr {
+        transition: background .3s;
+        color: rgb(89, 89, 89);
 
+        &:hover {
+          background: $beige-lighter;
+        }
+      }
+    }
+
+    td, th {
+      padding: 14px;
+      @include border-bottom();
+    }
+
+    tr {
+      @include border-bottom();
+
+    }
+
+    &.compressed {
+      td, th {
+        padding: 10px;
+      }
+    }
+
+    &.hasBorder {
+      border: none;
+
+      tr {
+        &:last-child {
+          td {
+            @include border-bottom();
+
+            &:first-child {
+              border-bottom-left-radius: 4px;
+            }
+
+            &:last-child {
+              border-bottom-right-radius: 4px;
+            }
+          }
+        }
+
+        td, th {
+          @include border();
+          border-bottom: none;
+        }
+
+        td:not(:first-child), th:not(:first-child) {
+          border-left: none;
+        }
+
+        th:first-child {
+          border-top-left-radius: 4px;
+        }
+
+        th:last-child {
+          border-top-right-radius: 4px;
+        }
+      }
+
+    }
   }
+
 </style>

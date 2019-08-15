@@ -6,6 +6,8 @@
                :data="dataSource"
                has-border
                selectable
+               :sort-rules.sync="sortRules"
+               @update:sortRules="sort"
       ></c-table>
       {{selectedItems}}
     </div>
@@ -158,7 +160,10 @@
           {id: 6, name: '小猫', score: 100},
           {id: 7, name: '小麦', score: 99},
         ],
-        selectedItems: []
+        selectedItems: [],
+        sortRules: {
+          score: 'desc'
+        }
       }
     },
     methods: {
@@ -176,6 +181,17 @@
       },
       x(e) {
         console.log(e);
+      },
+      sort(rules) {
+        let sortField, sortRule
+        for (let field in rules) {
+          if (rules[field]) {
+            sortField = field
+            sortRule = rules[field]
+          }
+        }
+        sortRule === 'asc' && this.dataSource.sort((a, b) => a[sortField] - b[sortField])
+        sortRule === 'desc' && this.dataSource.sort((a, b) => b[sortField] - a[sortField])
       }
 
     }
