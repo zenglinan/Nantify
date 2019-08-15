@@ -106,7 +106,7 @@
             copy[field] = 'desc';
             break;
           case 'desc':
-            copy[field] = '';
+            copy[field] = 'asc';
             break;
           default:
             copy[field] = 'asc';
@@ -149,6 +149,7 @@
 
           th.canSort {
             transition: all .3s;
+
             &:hover {
               background-color: rgb(233, 233, 233);
               cursor: pointer;

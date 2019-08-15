@@ -162,7 +162,7 @@
         ],
         selectedItems: [],
         sortRules: {
-          score: 'desc'
+          score: ''
         }
       }
     },
