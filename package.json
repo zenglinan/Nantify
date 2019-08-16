@@ -19,9 +19,10 @@
   "author": "Zeng Baohao",
   "license": "MIT",
   "dependencies": {
+    "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.3",
-    "core-js": "^2.6.5"
+    "vue-highlightjs": "^1.3.3",
+    "vue-hot-reload-api": "^2.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",

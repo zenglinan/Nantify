@@ -52,7 +52,7 @@
 </template>
 
 <script>
-  import Icon from '../component/icon'
+  import Icon from '../Icon/icon'
 
   export default {
     name: "coco-table",

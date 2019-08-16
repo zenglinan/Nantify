@@ -216,6 +216,7 @@
 </script>
 
 <style lang="scss">
+  *{box-sizing: border-box}
   .xxx {
     width: 400px;
     height: 200px;
