@@ -1,89 +1,101 @@
 <template>
   <div id="app">
-    <div class="table">
-      <c-table :columns="columns"
-               :selected-items.sync="selectedItems"
-               :data="dataSource"
-               has-border
-               selectable
-               :sort-rules.sync="sortRules"
-               :loading="tableLoading"
-               @update:sortRules="sort"
-               height="340px"
-      ></c-table>
-      {{selectedItems}}
+    <div class="button">
+      <c-button type="default" loading size="3">默认按钮</c-button><br>
+      <c-button type="default"  size="3">默认按钮</c-button><br>
+      <c-button type="success" loading size="2">成功按钮</c-button><br>
+      <c-button type="success" size="2">成功按钮</c-button><br>
+      <c-button type="primary" loading size="1">主要按钮</c-button><br>
+      <c-button type="primary" size="1">主要按钮</c-button><br>
+      <c-button type="info" loading>信息按钮</c-button><br>
+      <c-button type="warning">警告按钮</c-button><br>
+      <c-button type="danger">危险按钮</c-button>
+
     </div>
-    <div class="table" style="width: 60%;">
-      <c-table :columns="columns" :data="dataSource" compressed></c-table>
-    </div>
-    <div class="pager">
-      <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>
-    </div>
-    <div class="slides" style="margin-left: 500px">
-      <c-slides :width="183" :delay="3000">
-        <c-slides-item>
-          <div class="xxx">1</div>
-        </c-slides-item>
-        <c-slides-item>
-          <div class="xxx">2</div>
-        </c-slides-item>
-        <c-slides-item>
-          <div class="xxx">3</div>
-        </c-slides-item>
-        <c-slides-item>
-          <div class="xxx">4</div>
-        </c-slides-item>
-      </c-slides>
-    </div>
-    <div class="cascader">
-      <c-cascader :selected.sync="selected">
-        <c-button>click</c-button>
-      </c-cascader>
-    </div>
-    <div class="collapse">
-      <c-collapse :selected.sync="name">
-        <c-collapse-item title="标题1" name="1">
-          内容1
-        </c-collapse-item>
-        <c-collapse-item title="标题2" name="2">
-          内容2
-        </c-collapse-item>
-        <c-collapse-item title="标题3" name="3">
-          内容3
-        </c-collapse-item>
-        <c-collapse-item title="标题4" name="4">
-          内容4
-        </c-collapse-item>
-      </c-collapse>
-    </div>
-    <div class="popover" style="margin-left: 200px;">
-      <c-popover trigger="click" direction="left">
-        <template v-slot:content>
-          Left
-        </template>
-        <c-button>Left(click)</c-button>
-      </c-popover>
-      <c-popover trigger="click" direction="bottom" delay="300">
-        <template v-slot:content="slotProps">
-          <p>我里面可以加html标签,还可以加关闭按钮</p>
-          <c-button @click="slotProps.close()">关闭</c-button>
-        </template>
-        <c-button>Delay 300ms</c-button>
-      </c-popover>
-      <c-popover trigger="hover" direction="top" delay="1000">
-        <template v-slot:content="slotProps">
-          <c-button @click="slotProps.close()">关闭</c-button>
-        </template>
-        <c-button>Top(hover)</c-button>
-      </c-popover>
-      <c-popover trigger="click" direction="right">
-        <template v-slot:content>
-          Rightxxxxxxxxxxxxxxx
-          xxxxxxxxxxxxxxxxxxxxxxxxxxx
-        </template>
-        <c-button>Right(click)</c-button>
-      </c-popover>
-    </div>
+<!--    <div class="table">-->
+<!--      <c-table :columns="columns"-->
+<!--               :selected-items.sync="selectedItems"-->
+<!--               :data="dataSource"-->
+<!--               has-border-->
+<!--               selectable-->
+<!--               :sort-rules.sync="sortRules"-->
+<!--               :loading="tableLoading"-->
+<!--               @update:sortRules="sort"-->
+<!--               height="340px"-->
+<!--      ></c-table>-->
+<!--      {{selectedItems}}-->
+<!--    </div>-->
+<!--    <div class="table" style="width: 60%;">-->
+<!--      <c-table :columns="columns" :data="dataSource" compressed></c-table>-->
+<!--    </div>-->
+<!--    <div class="pager">-->
+<!--      <c-pager :total="20" :current.sync="current" :hide-if-one-page="true" @onChange="x"></c-pager>-->
+<!--    </div>-->
+<!--    <div class="slides" style="margin-left: 500px">-->
+<!--      <c-slides :width="183" :delay="3000">-->
+<!--        <c-slides-item>-->
+<!--          <div class="xxx">1</div>-->
+<!--        </c-slides-item>-->
+<!--        <c-slides-item>-->
+<!--          <div class="xxx">2</div>-->
+<!--        </c-slides-item>-->
+<!--        <c-slides-item>-->
+<!--          <div class="xxx">3</div>-->
+<!--        </c-slides-item>-->
+<!--        <c-slides-item>-->
+<!--          <div class="xxx">4</div>-->
+<!--        </c-slides-item>-->
+<!--      </c-slides>-->
+<!--    </div>-->
+<!--    <div class="cascader">-->
+<!--      <c-cascader :selected.sync="selected">-->
+<!--        <c-button>click</c-button>-->
+<!--      </c-cascader>-->
+<!--    </div>-->
+<!--    <div class="collapse">-->
+<!--      <c-collapse :selected.sync="name">-->
+<!--        <c-collapse-item title="标题1" name="1">-->
+<!--          内容1-->
+<!--        </c-collapse-item>-->
+<!--        <c-collapse-item title="标题2" name="2">-->
+<!--          内容2-->
+<!--        </c-collapse-item>-->
+<!--        <c-collapse-item title="标题3" name="3">-->
+<!--          内容3-->
+<!--        </c-collapse-item>-->
+<!--        <c-collapse-item title="标题4" name="4">-->
+<!--          内容4-->
+<!--        </c-collapse-item>-->
+<!--      </c-collapse>-->
+<!--    </div>-->
+<!--    <div class="popover" style="margin-left: 200px;">-->
+<!--      <c-popover trigger="click" direction="left">-->
+<!--        <template v-slot:content>-->
+<!--          Left-->
+<!--        </template>-->
+<!--        <c-button>Left(click)</c-button>-->
+<!--      </c-popover>-->
+<!--      <c-popover trigger="click" direction="bottom" delay="300">-->
+<!--        <template v-slot:content="slotProps">-->
+<!--          <p>我里面可以加html标签,还可以加关闭按钮</p>-->
+<!--          <c-button @click="slotProps.close()">关闭</c-button>-->
+<!--        </template>-->
+<!--        <c-button>Delay 300ms</c-button>-->
+<!--      </c-popover>-->
+<!--      <c-popover trigger="hover" direction="top" delay="1000">-->
+<!--        <template v-slot:content="slotProps">-->
+<!--          <c-button @click="slotProps.close()">关闭</c-button>-->
+<!--        </template>-->
+<!--        <c-button>Top(hover)</c-button>-->
+<!--      </c-popover>-->
+<!--      <c-popover trigger="click" direction="right">-->
+<!--        <template v-slot:content>-->
+<!--          Rightxxxxxxxxxxxxxxx-->
+<!--          xxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!--        </template>-->
+<!--        <c-button>Right(click)</c-button>-->
+<!--      </c-popover>-->
+<!--    </div>-->
   </div>
 </template>
 
