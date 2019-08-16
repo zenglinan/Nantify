@@ -1,46 +1,107 @@
 <template>
-  <div class="card">
-    <div class="card-content">
+  <div class="c-card">
+    <div class="main">
       <slot></slot>
-      <div>
-        <div v-if="codeVisible"><slot name="code"></slot></div>
-      </div>
+      <transition name="code">
+        <div class="c-code" v-if="codeVisiable" style="height: 300px;">
+          <pre><code v-text="code">{{code}}</code></pre>
+        </div>
+      </transition>
     </div>
-    <div class="card-operation" @click="toggle">
-      {{msg}}
-    </div>
+    <footer class="codeTrigger" ref="footer" @click="codeVisiable = !codeVisiable">
+      <c-icon icon="i-expand"></c-icon>
+      <span>{{codeVisiable ? "隐藏代码": "显示代码"}}</span>
+    </footer>
   </div>
 </template>
+
 <script>
+  import Icon from '../../src/Icon/icon'
+
   export default {
-    data(){
-      return{
-        codeVisible: false,
-        msg:'展开代码'
+    name: "coco-card",
+    props: {
+      code: {
+        type: String,
+        required: true
       }
     },
-    methods:{
-      toggle(){
-        this.codeVisible = !this.codeVisible
-        this.msg = this.codeVisible?'收起代码':'展开代码'
+    data() {
+      return {
+        codeVisiable: false,
+        footerTextVisiable: false
       }
+    },
+    components: {
+      'c-icon': Icon
+    },
+    mounted() {
+      const footer = this.$refs.footer
+      footer.addEventListener('mouseenter', () => {
+        this.footerTextVisiable = true
+      })
+      footer.addEventListener('mouseleave', () => {
+        this.footerTextVisiable = false
+      })
     }
   }
 </script>
+
 <style lang="scss" scoped>
-  .card{
-    border:1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 3px 0 #ccc;
-    .card-content{
-      padding:14px;
-      border-bottom:1px solid #ccc;
+  @import "../../src/common/scss/base";
+
+  .c-card {
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+    border: 1px solid #ebebeb;
+    position: relative;
+
+    .main {
+      padding: 24px;
+      border-bottom: 1px solid #ebebeb;
     }
-    .card-operation{
-      height: 40px;
+
+    .c-code {
+      height: 300px;
+      code {
+        color: red;
+      }
+    }
+
+    footer {
+      font-size: $font-size;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
+      padding: 12px 0;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        background-color: rgb(249, 250, 252);
+
+        svg {
+          fill: rgb(64, 158, 255);
+        }
+      }
+
+      svg {
+        transition: all .3s;
+        width: 1.2em;
+        height: 1.2em;
+        fill: #ccc;
+        margin-right: 5px;
+      }
     }
   }
+  .code-enter-active, .code-leave-active {
+    transition: all .5s;
+  }
+  .code-enter, .code-leave-to{
+    opacity: 0;
+    height: 0;
+  }
+  /*.code-enter-to, .code-leave{*/
+  /*  height: 100%;*/
+  /*}*/
 </style>
