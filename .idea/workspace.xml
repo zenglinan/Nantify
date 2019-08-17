@@ -12,9 +12,7 @@
       <change afterPath="$PROJECT_DIR$/docs/views/components/notice/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docs/views/guide/install.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docs/views/guide/start.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/datou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/datou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/icon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/views/components/button.md" afterDir="false" />
@@ -27,8 +25,7 @@
       <change beforePath="$PROJECT_DIR$/docs/components/toast.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/views/components/toast.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/install/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/introduce/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/Button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Card/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/Card.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,10 +56,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state>
+              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
               <folding>
-                <element signature="e#156#203#0" expanded="true" />
+                <element signature="e#875#922#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,11 +68,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Card/Card.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="103" column="2" selection-start-line="103" selection-start-column="4" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="160">
+              <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#transition#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#673#711#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -83,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="600">
               <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
@@ -101,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1880">
+            <state relative-caret-position="100">
               <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="10" selection-end-column="50" />
             </state>
           </provider>
@@ -120,8 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>style</find>
-      <find>&quot;id&quot;:1</find>
       <find>console.log</find>
       <find>min-wid</find>
       <find>parent_id&quot;: 31</find>
@@ -150,6 +154,8 @@
       <find>nouse</find>
       <find>padding</find>
       <find>ico</find>
+      <find>height</find>
+      <find>300px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,8 +217,8 @@
         <option value="$PROJECT_DIR$/docs/style.styl" />
         <option value="$PROJECT_DIR$/docs/.vuepress/override.styl" />
         <option value="$PROJECT_DIR$/docs/.vuepress/style.styl" />
-        <option value="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" />
         <option value="$PROJECT_DIR$/asset/icon.js" />
+        <option value="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" />
         <option value="$PROJECT_DIR$/src/Card/Card.vue" />
       </list>
     </option>
@@ -234,7 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,6 +315,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,21 +414,8 @@
       <workItem from="1565762475178" duration="16063000" />
       <workItem from="1565838819461" duration="25757000" />
       <workItem from="1565932126308" duration="10535000" />
-      <workItem from="1565947914484" duration="13833000" />
-    </task>
-    <task id="LOCAL-00056" summary="添加Popover项目总结">
-      <created>1564504534716</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1564504534717</updated>
-    </task>
-    <task id="LOCAL-00057" summary="upload dist">
-      <created>1564504836229</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1564504836229</updated>
+      <workItem from="1565947914484" duration="14092000" />
+      <workItem from="1566019975119" duration="4718000" />
     </task>
     <task id="LOCAL-00058" summary="完善README">
       <created>1564550542865</created>
@@ -753,11 +746,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565939365535</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="添加Button的样式">
+      <created>1565976502712</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1565976502713</updated>
+    </task>
+    <task id="LOCAL-00106" summary="添加Card组件, 未添加展开收起动画">
+      <created>1565976604494</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1565976604494</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489139000" />
+    <option name="totallyTimeSpent" value="494116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,11 +779,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4283186" visible="true" weight="0.32380953" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.42654866" visible="true" weight="0.21746032" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info id="Terminal" order="4" sideWeight="0.57168144" side_tool="true" visible="true" weight="0.32380953" />
+      <window_info active="true" id="Terminal" order="4" sideWeight="0.57345134" side_tool="true" visible="true" weight="0.21746032" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32743362" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -852,8 +859,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建小圆点" />
-    <MESSAGE value="动态渲染小圆点" />
     <MESSAGE value="实现小圆点点击跳转轮播" />
     <MESSAGE value="美化小箭头和小圆点, 添加小圆点active效果" />
     <MESSAGE value="支持鼠标移入停止轮播" />
@@ -877,7 +882,9 @@
     <MESSAGE value="实现固定表头, 但表头宽度失效" />
     <MESSAGE value="解决表格宽度问题, 用户自定义宽度" />
     <MESSAGE value="抽离icon组件, 添加card组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="抽离icon组件, 添加card组件" />
+    <MESSAGE value="添加Button的样式" />
+    <MESSAGE value="添加Card组件, 未添加展开收起动画" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Card组件, 未添加展开收起动画" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,13 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1207,9 +1207,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/override.styl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/.vuepress/override.styl" />
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/style.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1217,20 +1215,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1880">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="e#156#203#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="600">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1241,19 +1229,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/scss/base.scss">
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="100">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#875#922#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Card/Card.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="103" column="2" selection-start-line="103" selection-start-column="4" selection-end-line="105" selection-end-column="5" />
+        <state relative-caret-position="160">
+          <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#transition#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#673#711#0" expanded="true" />
           </folding>
         </state>
       </provider>

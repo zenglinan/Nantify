@@ -2,9 +2,12 @@
   <div class="c-card">
     <div class="main">
       <slot></slot>
-      <transition name="code">
-        <div class="c-code" v-if="codeVisiable" style="height: 300px;">
-          <pre><code v-text="code">{{code}}</code></pre>
+      <transition name="code"
+                  v-on:before-enter="beforeEnter"
+                  v-on:enter="enter"
+                  v-on:leave="leave">
+        <div class="c-code" v-if="codeVisiable">
+          <pre v-highlightjs><code v-text="code" class="html">{{code}}</code></pre>
         </div>
       </transition>
     </div>
@@ -17,6 +20,10 @@
 
 <script>
   import Icon from '../../src/Icon/icon'
+  import Vue from 'vue'
+  import VueHighlightJS from 'vue-highlightjs'
+  import 'highlight.js/styles/atom-one-dark.css'
+  Vue.use(VueHighlightJS)
 
   export default {
     name: "coco-card",
@@ -43,12 +50,33 @@
       footer.addEventListener('mouseleave', () => {
         this.footerTextVisiable = false
       })
+    },
+    methods: {
+      beforeEnter(el) {
+        el.style.height = '0';
+        el.style.opacity = '0';
+      },
+      enter(el, done) {
+        console.log(el.children[0].scrollHeight);
+        el.offsetWidth;
+        el.style.height = el.children[0].scrollHeight + 'px';
+        el.style.opacity = '1';
+        el.style.transition = "all .3s ease"
+        done()
+      },
+      leave(el) {
+        el.style.height = '0';
+        el.style.opacity = '0';
+        el.style.transition = "all .3s ease"
+      },
     }
   }
 </script>
 
 <style lang="scss" scoped>
   @import "../../src/common/scss/base";
+
+  .my-transition {transition: 3s height ease-in-out}
 
   .c-card {
     border-radius: 4px;
@@ -62,10 +90,13 @@
     }
 
     .c-code {
-      height: 300px;
-      code {
-        color: red;
+      pre {
+        background-color: rgb(250, 250, 250);
+        code {
+        color: rgb(131,131,131);
+        }
       }
+
     }
 
     footer {
@@ -79,7 +110,7 @@
 
       &:hover {
         background-color: rgb(249, 250, 252);
-
+        color: rgb(64, 158, 255);
         svg {
           fill: rgb(64, 158, 255);
         }
@@ -94,13 +125,8 @@
       }
     }
   }
-  .code-enter-active, .code-leave-active {
-    transition: all .5s;
-  }
-  .code-enter, .code-leave-to{
-    opacity: 0;
-    height: 0;
-  }
+
+
   /*.code-enter-to, .code-leave{*/
   /*  height: 100%;*/
   /*}*/
