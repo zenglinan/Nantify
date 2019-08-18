@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/dist/views/components/basic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/views/components/basic/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/coco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coco.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/datou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/datou.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/icon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/layout-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/layout-demo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/button.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/grid.html" beforeDir="false" />
@@ -21,26 +12,10 @@
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/slides.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/tabs.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/components/toast.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/install/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/introduce/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/views/components/basic/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/views/guide/install.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/grid.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/input.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/layout.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/popover.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/slides.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/tabs.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/toast.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/install/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/introduce/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/Button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/Slider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/views/components/basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/views/components/basic/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="140">
+              <caret line="85" selection-start-line="85" selection-end-line="86" />
               <folding>
                 <element signature="e#2560#2607#0" expanded="true" />
               </folding>
@@ -70,72 +45,72 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/layout-demo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="n#style#0;n#c-wrapper#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-wrapper#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-sidebar#0;n#c-wrapper#0;n#c-wrapper#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-wrapper#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-sidebar#0;n#c-wrapper#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#0;n#c-wrapper#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#0;n#c-wrapper#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1775#1824#0" expanded="true" />
-                <element signature="n#style#0;n#c-wrapper#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-wrapper#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-sidebar#0;n#c-wrapper#0;n#c-wrapper#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-wrapper#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-sidebar#0;n#c-wrapper#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-header#0;n#c-wrapper#0;n#c-wrapper#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-content#0;n#c-wrapper#0;n#c-wrapper#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#c-footer#0;n#c-wrapper#0;n#c-wrapper#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/views/components/form/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/.vuepress/dist/views/components/button.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="400">
+              <caret line="167" column="18" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
+              <folding>
+                <element signature="n#c-card#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#3;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#4;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#5;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#c-card#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#3;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#0;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#0;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#2;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#1504#1550#0" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#3;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#4;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#5;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#2;n#c-row#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,43 +119,19 @@
         <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/.vuepress/dist/views/components/basic/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/views/components/basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <first_editor relative-caret-position="681">
+                <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Layout/Sidebar.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/icon-demo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -241,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database.js" />
         <option value="$PROJECT_DIR$/src/Cascader/db.js" />
         <option value="$PROJECT_DIR$/src/common/scss/scroll.scss" />
@@ -292,6 +242,7 @@
         <option value="$PROJECT_DIR$/src/Button/Button.vue" />
         <option value="$PROJECT_DIR$/docs/.vuepress/components/layout-demo.vue" />
         <option value="$PROJECT_DIR$/docs/views/components/basic/README.md" />
+        <option value="$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue" />
       </list>
     </option>
   </component>
@@ -505,14 +456,7 @@
       <workItem from="1565932126308" duration="10535000" />
       <workItem from="1565947914484" duration="14092000" />
       <workItem from="1566019975119" duration="19923000" />
-      <workItem from="1566102576366" duration="4939000" />
-    </task>
-    <task id="LOCAL-00059" summary="实现折叠面板组件的基本功能: 自动折叠和手动折叠">
-      <created>1564567609630</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1564567609630</updated>
+      <workItem from="1566102576366" duration="8655000" />
     </task>
     <task id="LOCAL-00060" summary="支持Collapse的默认开启选项">
       <created>1564577068748</created>
@@ -850,11 +794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566032772665</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="完成icon button layout的文档">
+      <created>1566107611797</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1566107611799</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514260000" />
+    <option name="totallyTimeSpent" value="517976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -869,11 +820,11 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64247787" visible="true" weight="0.2968254" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64247787" visible="true" weight="0.2968254" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="npm" order="2" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
       <window_info id="Favorites" order="3" sideWeight="0.50121063" side_tool="true" weight="0.22081016" />
-      <window_info id="Terminal" order="4" sideWeight="0.35752213" side_tool="true" visible="true" weight="0.2968254" />
+      <window_info active="true" id="Terminal" order="4" sideWeight="0.35752213" side_tool="true" visible="true" weight="0.2968254" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32743362" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -949,7 +900,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="美化小箭头和小圆点, 添加小圆点active效果" />
     <MESSAGE value="支持鼠标移入停止轮播" />
     <MESSAGE value="回退" />
     <MESSAGE value="更新项目总结" />
@@ -974,7 +924,8 @@
     <MESSAGE value="添加Button的样式" />
     <MESSAGE value="添加Card组件, 未添加展开收起动画" />
     <MESSAGE value="完成展开收起动画, 使用 vuehighlight 高亮代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成展开收起动画, 使用 vuehighlight 高亮代码" />
+    <MESSAGE value="完成icon button layout的文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成icon button layout的文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -988,16 +939,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cascader/Cascader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#366#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Table/Table.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1275,16 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#2560#2607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/icon-demo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1292,17 +1223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1312,9 +1236,6 @@
           <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Layout/Sidebar.vue">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/layout-demo.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -1354,6 +1275,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layout/Sidebar.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/views/components/form/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1367,10 +1291,96 @@
     <entry file="file://$PROJECT_DIR$/docs/views/components/basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <first_editor relative-caret-position="681">
+            <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="85" selection-start-line="85" selection-end-line="86" />
+          <folding>
+            <element signature="e#2560#2607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/grid-demo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="167" column="18" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
+          <folding>
+            <element signature="n#c-card#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#0;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#2;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#3;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#4;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#5;n#c-row#3;n#div#0;n#c-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#c-card#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#1;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#3;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#0;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#0;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#1;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#2;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#div#0;n#c-card#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#1504#1550#0" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#3;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#4;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#5;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#2;n#c-row#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#1;n#c-row#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#c-col#0;n#c-row#3;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
