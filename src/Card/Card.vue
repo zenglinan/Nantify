@@ -1,7 +1,12 @@
 <template>
   <div class="c-card">
     <div class="main">
-      <slot></slot>
+      <div class="show">
+        <slot></slot>
+      </div>
+      <div class="descript">
+        <slot name="descript"></slot>
+      </div>
       <transition name="code"
                   v-on:before-enter="beforeEnter"
                   v-on:enter="enter"
@@ -23,6 +28,7 @@
   import Vue from 'vue'
   import VueHighlightJS from 'vue-highlightjs'
   import 'highlight.js/styles/atom-one-dark.css'
+
   Vue.use(VueHighlightJS)
 
   export default {
@@ -57,7 +63,6 @@
         el.style.opacity = '0';
       },
       enter(el, done) {
-        console.log(el.children[0].scrollHeight);
         el.offsetWidth;
         el.style.height = el.children[0].scrollHeight + 'px';
         el.style.opacity = '1';
@@ -87,17 +92,39 @@
     .main {
       padding: 24px;
       border-bottom: 1px solid #ebebeb;
-    }
+      .c-code {
+        pre {
+          background-color: rgb(250, 250, 250);
 
-    .c-code {
-      pre {
-        background-color: rgb(250, 250, 250);
-        code {
-        color: rgb(131,131,131);
+          code {
+            color: rgb(131, 131, 131);
+          }
+        }
+
+      }
+
+      .descript {
+        border: 1px solid #ebebeb;
+        padding: 18px;
+        border-radius: 4px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+        margin-top: 20px;
+        font-size: $font-size;
+        color: #5e6d82;
+
+        .md {
+          color: #5e6d82;
+          padding: 3px 6px;
+          border-radius: 4px;
+          display: inline-flex;
+          font-size: $font-size-s;
+          font-family: Menlo, Monaco, Consolas, Courier, monospace;;
+          background-color: rgb(230, 239, 251);
         }
       }
 
     }
+
 
     footer {
       font-size: $font-size;
@@ -111,6 +138,7 @@
       &:hover {
         background-color: rgb(249, 250, 252);
         color: rgb(64, 158, 255);
+
         svg {
           fill: rgb(64, 158, 255);
         }

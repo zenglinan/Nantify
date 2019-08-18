@@ -14,7 +14,7 @@
             :icon=icon>
     </c-icon>
     <div class="content">
-      <slot>按钮</slot>
+      <slot></slot>
     </div>
   </button>
 </template>
@@ -32,7 +32,8 @@
         type: String,
         validator(value) {
           return ['success', 'primary', 'info', 'warning', 'danger', 'default'].indexOf(value) !== -1
-        }
+        },
+        default: 'default'
       },
       iconPosition: {
         type: String,

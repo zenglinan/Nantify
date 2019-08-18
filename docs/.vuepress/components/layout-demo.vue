@@ -1,30 +1,43 @@
 <template>
-  <div class="layout">
-    <!--    上中下结构-->
-    <c-wrapper style="margin-bottom: 30px;">
-      <c-header>Header</c-header>
-      <c-content>Content</c-content>
-      <c-footer>Footer</c-footer>
-    </c-wrapper>
-    <!--    中左slider-->
-    <c-wrapper style="margin-bottom: 30px;">
-      <c-header>Header</c-header>
-      <c-wrapper>
-        <c-slider style="width: 100px">Slider</c-slider>
-        <c-content style="width: 200px">Content</c-content>
-      </c-wrapper>
-      <c-footer>Footer</c-footer>
-    </c-wrapper>
-    <!--    侧边栏-->
-    <c-wrapper style="margin-bottom: 30px;">
-      <c-slider style="width: 200px">Slider</c-slider>
-      <c-wrapper>
-        <c-header>Header</c-header>
-        <c-content>Content</c-content>
-        <c-footer>Footer</c-footer>
-      </c-wrapper>
-    </c-wrapper>
+  <div class="demo">
+    <h3>常用布局</h3>
+    <c-card :code="code1">
+      <div class="layout">
+        <!-- 上中下布局 -->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-header class="c-header" style="height: 60px;">Header</c-header>
+          <c-content class="c-content" style="height: 200px;">Content</c-content>
+          <c-footer class="c-footer" style="height: 60px;">Footer</c-footer>
+        </c-wrapper>
+
+        <!-- 上中下布局, 带侧边栏 -->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-header class="c-header" style="height: 60px;">Header</c-header>
+          <c-wrapper>
+            <c-sidebar class="c-sidebar" style="width: 100px; height: 200px">Slider</c-sidebar>
+            <c-content class="c-content" style="width: 200px; height: 200px">Content</c-content>
+          </c-wrapper>
+          <c-footer class="c-footer" style="height: 60px;">Footer</c-footer>
+        </c-wrapper>
+
+        <!-- 左右布局 -->
+        <c-wrapper style="margin-bottom: 30px;">
+          <c-sidebar class="c-sidebar" style="width: 160px; height:320px">Slider</c-sidebar>
+          <c-wrapper>
+            <c-header class="c-header" style="height: 60px;">Header</c-header>
+            <c-content class="c-content" style="height: 200px;">Content</c-content>
+            <c-footer class="c-footer" style="height: 60px;">Footer</c-footer>
+          </c-wrapper>
+        </c-wrapper>
+      </div>
+      <template v-slot:descript>
+        使用 <span class="md">c-wrapper</span>、<span class="md">c-header</span>、<span class="md">c-content</span>、<span
+              class="md">c-footer</span>、<span class="md">c-sidebar</span> 组建默认布局。
+        要注意, 除了 <span class="md">c-sidebar</span> , 其他组件的宽度会自适应
+      </template>
+    </c-card>
   </div>
+
 </template>
 
 <script>
@@ -32,7 +45,8 @@
   import Content from '../../../src/Layout/Content'
   import Footer from '../../../src/Layout/Footer'
   import Header from '../../../src/Layout/Header'
-  import Slider from '../../../src/Layout/Slider'
+  import Sidebar from '../../../src/Layout/Sidebar'
+  import Card from '../../../src/Card/Card'
 
   export default {
     name: "layout-demo",
@@ -41,30 +55,73 @@
       'c-content': Content,
       'c-footer': Footer,
       'c-header': Header,
-      'c-slider': Slider
+      'c-sidebar': Sidebar,
+      'c-card': Card
+    },
+    data() {
+      return {
+        code1: `
+<!-- 上中下布局 -->
+<c-wrapper style="margin-bottom: 30px;">
+  <c-header style="height: 60px;">Header</c-header>
+  <c-content style="height: 200px;">Content</c-content>
+  <c-footer style="height: 60px;">Footer</c-footer>
+</c-wrapper>
+
+<!-- 上中下布局, 带侧边栏 -->
+<c-wrapper style="margin-bottom: 30px;">
+  <c-header style="height: 60px;">Header</c-header>
+  <c-wrapper>
+    <c-sidebar style="width: 100px; height: 200px">Slider</c-sidebar>
+    <c-content style="width: 200px; height: 200px">Content</c-content>
+  </c-wrapper>
+  <c-footer style="height: 60px;">Footer</c-footer>
+</c-wrapper>
+
+<!-- 左右布局 -->
+<c-wrapper style="margin-bottom: 30px;">
+  <c-sidebar style="width: 160px; height:320px">Slider</c-sidebar>
+  <c-wrapper>
+    <c-header style="height: 60px;">Header</c-header>
+    <c-content style="height: 200px;">Content</c-content>
+    <c-footer style="height: 60px;">Footer</c-footer>
+  </c-wrapper>
+</c-wrapper>
+            `.trim()
+      }
     }
-  }
+    }
 </script>
 
 <style scoped>
-  .layout .c-wrapper div {
-    border-radius: 4px;
-    height: 110px;
-  }
 
   .c-header {
-    background-color: rgba(153, 169, 191, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 192, 209);
   }
 
   .c-content {
-    background-color: rgba(153, 169, 191, .6);
-  }
-
-  .c-slider {
-    background-color: rgba(153, 169, 191, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(233, 238, 243);
   }
 
   .c-footer {
-    background-color: rgba(153, 169, 191, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 192, 209);
   }
+
+  .c-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 220, 230);
+  }
+
+
 </style>

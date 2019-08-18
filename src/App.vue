@@ -105,7 +105,7 @@
   import Input from './Input/Input'
   import Col from './Grid System/Col'
   import Row from './Grid System/Row'
-  import Slider from './Layout/Slider'
+  import Slider from './Layout/Sidebar'
   import Wrapper from './Layout/Wrapper'
   import Header from './Layout/Header'
   import Footer from './Layout/Footer'
