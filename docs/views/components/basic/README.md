@@ -38,4 +38,10 @@ sidebarDepth: 2
 ## Grid 栅格系统
 <ClientOnly>
   <grid-demo/>
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| span | 单元格所占格数 | String | 1 ~ 24 | - |
+| offset | 单元格左偏移格数 | String, Number | 0 ~ 23 | - |
+| gutter | 单元格间的间距, 单位为 'px' | String, Number | - | - |
 </ClientOnly>

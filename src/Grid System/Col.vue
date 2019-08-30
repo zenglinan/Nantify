@@ -11,7 +11,9 @@
   export default {
     name: "coco-col",
     props: {
-      span: {},
+      span: {
+        type: [Number,String]
+      },
       offset: {
         type: [Number, String]
       },

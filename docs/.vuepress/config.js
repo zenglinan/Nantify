@@ -20,7 +20,8 @@ module.exports = {
         title: '组件',
         collapsable: true,
         children: [
-          'views/components/basic/'
+          'views/components/basic/',
+          'views/components/form/',
         ]
       },
     ],

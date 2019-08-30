@@ -10,7 +10,7 @@
            @input="$emit('input',$event.target.value)"
            @focus="$emit('focus',$event.target.value)"
     >
-    <div v-if="prompt">
+    <div v-if="prompt" class="prompt">
       <c-icon icon="i-error"></c-icon>
       <span>{{prompt === 'error' ? errorMessage : passMessage}}</span>
     </div>
@@ -52,14 +52,22 @@
           return ['right', 'bottom'].indexOf(value) !== -1
         },
         default: 'bottom'
+      },
+      size: {
+        type: [String, Number],
+        default: 2,
+        validator(value){
+          return value >=1 && value <=3
+        }
       }
     },
     computed: {
       inputClass() {
-        let {prompt, promptPosition} = this
+        let {prompt, promptPosition, size} = this
         return {
-          [`${prompt}`]: prompt,
-          [`prompt-${promptPosition}`]: promptPosition
+          [`${prompt}`]: true,
+          [`prompt-${promptPosition}`]: true,
+          [`size-${size}`]: true
         }
       }
     },
@@ -71,22 +79,32 @@
 
 <style lang="scss" scoped>
   @import "../common/scss/base";
-  $height: 28px;
-  .c-input-wrapper {box-sizing: border-box;font-size: $font-size-s; display: inline-flex; align-items: center;
+
+  $height-b: 36px;
+  $height-m: 32px;
+  $height-s: 30px;
+  .c-input-wrapper {box-sizing: border-box; display: inline-flex; align-items: center;
+
+    &.size-3{ > input{height: $height-b; font-size: 12px;} }
+    &.size-2{ > input{height: $height-m; font-size: 11px;} }
+    &.size-1{ > input{height: $height-s; font-size: 11px;} }
 
     &.prompt-right {flex-direction: row;}
 
     &.prompt-bottom {flex-direction: column;align-items: end;}
 
-    > .c-input {height: $height;border: 1px solid $border-color;border-radius: $border-radius;padding: 0 8px;font-size: inherit;
+    > .c-input {border: 1px solid #c0c4cc;transition: all .2s;cursor: pointer;border-radius: $border-radius;padding: 0 8px;font-size: inherit;
 
-      &:hover {border-color: $border-color-hover;}
+      &:hover {border-color: $border-color;}
 
-      &:focus {box-shadow: inset 0 1px 1px $box-shadow-color;outline: none;}
+      &:focus {border-color: #409eff;outline: none;}
 
-      &[disabled] {cursor: not-allowed;border-color: #aaa;color: #aaa;background-color: #fff;}
+      &[disabled] {cursor: not-allowed;border-color: #aaa;color: #aaa;background-color: rgb(245,245,245);}
     }
 
+    .prompt {
+      font-size: 12px;
+    }
     &.pass, &.error {
       &.prompt-bottom {
         svg {margin-right: 4px;}
@@ -103,7 +121,7 @@
 
         &:hover {border-color: $red;}
 
-        &:focus {box-shadow: inset 0 0px 2px $red;}
+        &:focus {border-color: $red;box-shadow: inset 0 0 1px $red;}
       }
 
       > svg {fill: $red;}
