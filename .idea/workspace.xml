@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="Basic 部分文档完成">
-      <change afterPath="$PROJECT_DIR$/src/Sticky/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sticky/Sticky.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/input-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/input-demo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/views/components/basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/views/components/basic/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/views/components/form/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/views/components/form/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grid System/Col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid System/Col.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Input/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input/Input.vue" afterDir="false" />
-    </list>
+    <list default="true" id="9e209d8e-9473-4c14-8fa8-9e200e85237e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -35,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/input-demo.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+              <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
               <folding>
                 <element signature="e#1108#1152#0" expanded="true" />
               </folding>
@@ -47,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/Grid System/Col.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/Grid System/Row.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="29" />
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -66,7 +53,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="361">
-                <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+                <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -412,7 +399,7 @@
       <workItem from="1566307710153" duration="1083000" />
       <workItem from="1566564549696" duration="8722000" />
       <workItem from="1566785746226" duration="151000" />
-      <workItem from="1567156329932" duration="7151000" />
+      <workItem from="1567156329932" duration="7718000" />
     </task>
     <task id="LOCAL-00060" summary="支持Collapse的默认开启选项">
       <created>1564577068748</created>
@@ -761,7 +748,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539126000" />
+    <option name="totallyTimeSpent" value="539693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,7 +843,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="回退" />
     <MESSAGE value="更新项目总结" />
     <MESSAGE value="创建分页器组件, 实现了传入页码的去重排序" />
     <MESSAGE value="完成分页器样式和基本功能" />
@@ -881,7 +867,8 @@
     <MESSAGE value="完成展开收起动画, 使用 vuehighlight 高亮代码" />
     <MESSAGE value="完成icon button layout的文档" />
     <MESSAGE value="Basic 部分文档完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic 部分文档完成" />
+    <MESSAGE value="完善input组件的文档, 修改部分样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善input组件的文档, 修改部分样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1155,7 +1142,7 @@
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/components/input-demo.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
           <folding>
             <element signature="e#1108#1152#0" expanded="true" />
           </folding>
@@ -1216,14 +1203,14 @@
     <entry file="file://$PROJECT_DIR$/src/Grid System/Col.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Grid System/Row.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="29" />
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1218,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="361">
-            <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
