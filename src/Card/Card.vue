@@ -17,7 +17,7 @@
       </transition>
     </div>
     <footer class="codeTrigger" ref="footer" @click="codeVisiable = !codeVisiable">
-      <c-icon icon="i-expand"></c-icon>
+      <c-icon :icon="codeVisiable ? 'i-pick': 'i-expand'"></c-icon>
       <span>{{codeVisiable ? "隐藏代码": "显示代码"}}</span>
     </footer>
   </div>
