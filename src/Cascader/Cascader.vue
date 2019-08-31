@@ -100,15 +100,17 @@
   @import "../common/scss/base";
 
   .cascader {
-    display: inline-flex;
+    display: flex;
     position: relative;
+    align-items: center;
 
     .trigger {
       font-size: $font-size;
       background: $bg;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       min-width: 180px;
+      max-width: 320px;
       height: 30px;
       cursor: pointer;
       padding: 0 8px;
