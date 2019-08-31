@@ -18,3 +18,15 @@ sidebarDepth: 2
 | promptPosition | 提示信息出现位置 | String | 'right', 'bottom' | 'bottom' |
 | size | 输入框大小 | String, Number | 3, 2, 1 | 2 |
 </ClientOnly>
+
+<br><br><br><br>
+
+## Cascader 级联选择器
+<ClientOnly>
+  <cascader-demo/>
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| selected | 选中项的数组 | Array | - | - |
+| db | 级联数据 | Array | - | - |
+</ClientOnly>

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  import db from './database.js'
   import CascaderItem from './CascaderItem'
 
   export default {
@@ -19,6 +18,9 @@
       selected: {
         type: Array,
         default: () => []
+      },
+      db: {
+        type: Array
       }
     },
     data() {
@@ -38,11 +40,12 @@
         this.getDb(lastSelected.id).then(res => {  // 同时请求当前选中区域的children
           this.$set(lastSelected, 'children', res)
         })
+        console.log(newSelected);
         this.$emit('update:selected', newSelected)  // 向父组件请求更新selected
       },
       getDb(level = 0) {  // 传入当前选中区域的id, 去查找是否有item的parent_id与之相符, 相符的即为下一级区域
-        return new Promise((resolve, reject) => {
-          let result = db.filter(item => {
+        return new Promise((resolve) => {
+          let result = this.db.filter(item => {
             return item.parent_id == level
           })
           result && resolve(result)

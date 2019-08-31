@@ -77,27 +77,26 @@
     <!--        </c-slides-item>-->
     <!--      </c-slides>-->
     <!--    </div>-->
-    <!--    <div class="cascader">-->
-    <!--      <c-cascader :selected.sync="selected">-->
-    <!--        <c-button>click</c-button>-->
-    <!--      </c-cascader>-->
-    <!--    </div>-->
-    <!--    <div class="collapse">-->
-    <!--      <c-collapse :selected.sync="name">-->
-    <!--        <c-collapse-item title="标题1" name="1">-->
-    <!--          内容1-->
-    <!--        </c-collapse-item>-->
-    <!--        <c-collapse-item title="标题2" name="2">-->
-    <!--          内容2-->
-    <!--        </c-collapse-item>-->
-    <!--        <c-collapse-item title="标题3" name="3">-->
-    <!--          内容3-->
-    <!--        </c-collapse-item>-->
-    <!--        <c-collapse-item title="标题4" name="4">-->
-    <!--          内容4-->
-    <!--        </c-collapse-item>-->
-    <!--      </c-collapse>-->
-    <!--    </div>-->
+        <div class="cascader">
+          <c-cascader :selected.sync="selected" :db="data">
+          </c-cascader>
+        </div>
+        <div class="collapse">
+          <c-collapse :selected.sync="name">
+            <c-collapse-item title="标题1" name="1">
+              内容1
+            </c-collapse-item>
+            <c-collapse-item title="标题2" name="2">
+              内容2
+            </c-collapse-item>
+            <c-collapse-item title="标题3" name="3">
+              内容3
+            </c-collapse-item>
+            <c-collapse-item title="标题4" name="4">
+              内容4
+            </c-collapse-item>
+          </c-collapse>
+        </div>
     <!--    <div class="popover" style="margin-left: 200px;">-->
     <!--      <c-popover trigger="click" direction="left">-->
     <!--        <template v-slot:content>-->
@@ -154,6 +153,7 @@
   import Pager from './Pager/Pager'
   import Table from './Table/Table'
   import Sticky from './Sticky/Sticky'
+  import data from './Cascader/database'
 
   export default {
     name: 'app',
@@ -186,6 +186,7 @@
     data() {
       return {
         ifLoading: false,
+        data,
         message: 'Hi,我支持v-model!',
         promptType: 'error',
         selectedTab: "setting",
