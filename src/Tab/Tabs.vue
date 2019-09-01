@@ -43,9 +43,12 @@
 </script>
 
 <style scoped lang="scss">
+
   .c-tabs {
     &.c-tab-column {
       display: flex;
     }
+
+
   }
 </style>

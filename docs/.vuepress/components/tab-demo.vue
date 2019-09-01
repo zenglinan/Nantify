@@ -1,7 +1,7 @@
 <template>
   <div class="tabs">
     <h3>基础用法</h3>
-    <c-tabs :selected.sync="selectedTab" direction="row">
+    <c-tabs :selectedItems.sync="selectedItems" direction="row">
       <c-tab-nav>
         <c-tab name="setting" icon="i-setting">用户设置</c-tab>
         <c-tab name="tab2">权限管理</c-tab>
@@ -21,46 +21,9 @@
     </c-tabs>
     <h3>禁用Tab</h3>
 
-    <c-tabs :selected.sync="selectedTab" direction="row">
-      <c-tab-nav>
-        <c-tab name="setting" icon="i-setting">用户设置</c-tab>
-        <c-tab name="tab2">权限管理</c-tab>
-        <c-tab name="girl" disabled>隐私中心</c-tab>
-      </c-tab-nav>
 
-      <c-tab-content>
-        <c-tab-pane name="setting">
-          <div>用户设置</div>
-        </c-tab-pane>
-        <c-tab-pane name="tab2">
-          <div>权限管理</div>
-        </c-tab-pane>
-        <c-tab-pane name="girl">
-          <div>骗你的</div>
-        </c-tab-pane>
-      </c-tab-content>
-    </c-tabs>
-    <h3>方向</h3>
 
-    <c-tabs :selected.sync="selectedTab" direction="column">
-      <c-tab-nav>
-        <c-tab name="setting" icon="i-setting">用户设置</c-tab>
-        <c-tab name="tab2">权限管理</c-tab>
-        <c-tab name="girl" disabled>隐私中心</c-tab>
-      </c-tab-nav>
 
-      <c-tab-content>
-        <c-tab-pane name="setting">
-          <div>用户设置</div>
-        </c-tab-pane>
-        <c-tab-pane name="tab2">
-          <div>权限管理</div>
-        </c-tab-pane>
-        <c-tab-pane name="girl">
-          <div>骗你的</div>
-        </c-tab-pane>
-      </c-tab-content>
-    </c-tabs>
   </div>
 </template>
 
@@ -81,7 +44,7 @@
     },
     data(){
       return {
-        selectedTab: "setting",
+        selectedItems: "setting",
       }
     }
   }

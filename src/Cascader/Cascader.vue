@@ -40,7 +40,6 @@
         this.getDb(lastSelected.id).then(res => {  // 同时请求当前选中区域的children
           this.$set(lastSelected, 'children', res)
         })
-        console.log(newSelected);
         this.$emit('update:selected', newSelected)  // 向父组件请求更新selected
       },
       getDb(level = 0) {  // 传入当前选中区域的id, 去查找是否有item的parent_id与之相符, 相符的即为下一级区域

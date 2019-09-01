@@ -21,15 +21,15 @@
     <br><br><br><br>
     <br><br><br><br>
     <br><br><br><br><br><br>
-<!--    <div class="input">-->
-<!--      <c-input placeholder="请输入用户名" value="支持value,placeholder"></c-input>-->
-<!--      <c-input prompt='error' error-message="用户名只能为6~12个英文字符" prompt-position="right"></c-input>-->
-<!--      <c-input :prompt='promptType' placeholder="点我一下就通过" error-message="用户名只能为6~12个英文字符" pass-message="通过"-->
-<!--               @blur="promptType = 'pass'"></c-input>-->
-<!--      <c-input value="禁止输入" :disabled=true></c-input>-->
-<!--      <c-input v-model="message"></c-input>-->
-<!--      <span>{{message}}</span>-->
-<!--    </div>-->
+    <!--    <div class="input">-->
+    <!--      <c-input placeholder="请输入用户名" value="支持value,placeholder"></c-input>-->
+    <!--      <c-input prompt='error' error-message="用户名只能为6~12个英文字符" prompt-position="right"></c-input>-->
+    <!--      <c-input :prompt='promptType' placeholder="点我一下就通过" error-message="用户名只能为6~12个英文字符" pass-message="通过"-->
+    <!--               @blur="promptType = 'pass'"></c-input>-->
+    <!--      <c-input value="禁止输入" :disabled=true></c-input>-->
+    <!--      <c-input v-model="message"></c-input>-->
+    <!--      <span>{{message}}</span>-->
+    <!--    </div>-->
     <!--    <div class="button">-->
     <!--      <c-button type="default" loading size="3">默认按钮</c-button><br>-->
     <!--      <c-button type="default"  size="3">默认按钮</c-button><br>-->
@@ -77,26 +77,26 @@
     <!--        </c-slides-item>-->
     <!--      </c-slides>-->
     <!--    </div>-->
-        <div class="cascader">
-          <c-cascader :selected.sync="selected" :db="data">
-          </c-cascader>
-        </div>
-        <div class="collapse">
-          <c-collapse :selected.sync="name">
-            <c-collapse-item title="标题1" name="1">
-              内容1
-            </c-collapse-item>
-            <c-collapse-item title="标题2" name="2">
-              内容2
-            </c-collapse-item>
-            <c-collapse-item title="标题3" name="3">
-              内容3
-            </c-collapse-item>
-            <c-collapse-item title="标题4" name="4">
-              内容4
-            </c-collapse-item>
-          </c-collapse>
-        </div>
+    <!--        <div class="cascader">-->
+    <!--          <c-cascader :selected.sync="selected" :db="data">-->
+    <!--          </c-cascader>-->
+    <!--        </div>-->
+    <!--        <div class="collapse">-->
+    <!--          <c-collapse :selected.sync="name">-->
+    <!--            <c-collapse-item title="标题1" name="1">-->
+    <!--              内容1-->
+    <!--            </c-collapse-item>-->
+    <!--            <c-collapse-item title="标题2" name="2">-->
+    <!--              内容2-->
+    <!--            </c-collapse-item>-->
+    <!--            <c-collapse-item title="标题3" name="3">-->
+    <!--              内容3-->
+    <!--            </c-collapse-item>-->
+    <!--            <c-collapse-item title="标题4" name="4">-->
+    <!--              内容4-->
+    <!--            </c-collapse-item>-->
+    <!--          </c-collapse>-->
+    <!--        </div>-->
     <!--    <div class="popover" style="margin-left: 200px;">-->
     <!--      <c-popover trigger="click" direction="left">-->
     <!--        <template v-slot:content>-->
@@ -125,6 +125,66 @@
     <!--        <c-button>Right(click)</c-button>-->
     <!--      </c-popover>-->
     <!--    </div>-->
+
+    <div class="tabs">
+      <c-tabs :selectedItems.sync="selectedItems" direction="row">
+        <c-tab-nav>
+          <c-tab name="setting" icon="i-setting">Setting</c-tab>
+          <c-tab name="tab2">Tab2</c-tab>
+          <c-tab name="tab3">Tab3</c-tab>
+          <c-tab name="tab4">Tab4</c-tab>
+          <c-tab name="tab5">Tab5</c-tab>
+          <c-tab name="tab6">Tab6</c-tab>
+          <c-tab name="girl" disabled>美女</c-tab>
+        </c-tab-nav>
+
+        <c-tab-content>
+          <c-tab-pane name="setting">
+            <div>content1</div>
+          </c-tab-pane>
+          <c-tab-pane name="tab2">
+            <div>content2</div>
+          </c-tab-pane>
+          <c-tab-pane name="tab3">
+            <div>content2</div>
+          </c-tab-pane>
+          <c-tab-pane name="tab4">
+            <div>content2</div>
+          </c-tab-pane>
+          <c-tab-pane name="tab5">
+            <div>content2</div>
+          </c-tab-pane>
+          <c-tab-pane name="tab6">
+            <div>content2</div>
+          </c-tab-pane>
+          <c-tab-pane name="girl">
+            <div>骗你的</div>
+          </c-tab-pane>
+        </c-tab-content>
+      </c-tabs>
+    </div>
+
+    <div class="tabs">
+      <!--      <c-tabs :selectedItems.sync="selectedItems" direction="column">-->
+      <!--        <c-tab-nav>-->
+      <!--          <c-tab name="setting" icon="i-setting">Setting</c-tab>-->
+      <!--          <c-tab name="tab2">Tab2</c-tab>-->
+      <!--          <c-tab name="girl" disabled>美女</c-tab>-->
+      <!--        </c-tab-nav>-->
+
+      <!--        <c-tab-content>-->
+      <!--          <c-tab-pane name="setting">-->
+      <!--            <div>content1</div>-->
+      <!--          </c-tab-pane>-->
+      <!--          <c-tab-pane name="tab2">-->
+      <!--            <div>content2</div>-->
+      <!--          </c-tab-pane>-->
+      <!--          <c-tab-pane name="girl">-->
+      <!--            <div>骗你的</div>-->
+      <!--          </c-tab-pane>-->
+      <!--        </c-tab-content>-->
+      <!--      </c-tabs>-->
+    </div>
   </div>
 </template>
 
@@ -190,6 +250,7 @@
         message: 'Hi,我支持v-model!',
         promptType: 'error',
         selectedTab: "setting",
+        selectedItems: "setting",
         name: '1',
         selected: [],
         current: 5,
@@ -217,7 +278,6 @@
           {id: 16, name: '小猫', score: 70, age: 24},
           {id: 17, name: '小麦', score: 93, age: 88},
         ],
-        selectedItems: [],
         sortRules: {
           score: '',
           age: ''
