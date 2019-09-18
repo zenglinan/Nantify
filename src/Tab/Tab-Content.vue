@@ -17,6 +17,6 @@
     }
   }
   .c-tab-content {
-    padding: 1em;
+    padding: 14px;
   }
 </style>

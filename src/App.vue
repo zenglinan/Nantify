@@ -199,7 +199,7 @@
   import Header from './Layout/Header'
   import Footer from './Layout/Footer'
   import Content from './Layout/Content'
-  import Tabs from './Tab/Tabs'
+  import Tabs from './Tab/Tab'
   import TabContent from './Tab/Tab-Content'
   import TabNav from './Tab/Tab-Nav'
   import TabPane from './Tab/Tab-Pane'

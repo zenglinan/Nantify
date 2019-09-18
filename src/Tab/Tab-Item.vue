@@ -48,19 +48,16 @@
   .c-tab-column {  // 纵向
     .c-tab-item {
       padding: 1em .5em;
+      &:nth-child(1){
+        padding-top: .5em;
+      }
     }
   }
 
   .c-tab-item {box-sizing: border-box;display: inline-flex;align-items: center;justify-content: center;
-    min-height: 32px;padding: 0 1em;position: relative;cursor: pointer;
+    min-height: 32px;padding: 0 14px;position: relative;cursor: pointer;font-size: 14px;
 
     .icon {padding-right: 5px;}
-
-    /*&::after {content: '';position: absolute;top: 100%;display: block;height: 2px;width: 100%;background: none;}*/
-
-    /*&.active, &:not(.disabled):hover {color: $active-color;}
-
-    &.active::after {transition: all .5s;background: $active-color;}*/
 
     &.disabled {cursor: not-allowed;color: rgb(170, 170, 170);}
   }
